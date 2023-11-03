@@ -13,7 +13,12 @@ from market import MarketEnvironment
 
 class QLearningAgent:
 
-    def __init__(self, dim_X, dim_Y, dim_action_a, dim_action_b, Delta, N_RL_iter=10**5, N_learning_steps=3*10**4):
+    def __init__(self, dim_X, dim_Y, dim_action_a, dim_action_b, Delta,  \
+        Q_upper_bound=4., UCB=True,\
+        bonus_coef_0=0., bonus_coef_1=0., ucb_H=50, \
+        eps = 0.8, eps0 = 0.95, eps_epoch = 2, \
+        exp = 1.0, exp0 = 0.8, exp_epoch = 100, \
+        N_RL_iter=10**5, N_learning_steps=3*10**4):
         self.dim_X = dim_X
         self.dim_Y = dim_Y
         self.dim_action_a = dim_action_a
@@ -23,6 +28,20 @@ class QLearningAgent:
         self.Delta = Delta
         self.GAMMA = 0.95
         self.GAMMA_Delta = np.exp(-self.GAMMA*self.Delta)
+        self.Q_upper_bound = Q_upper_bound
+        # ucb
+        self.UCB = UCB  # if True , use UCB exploration; if False, use eps-greedy exploration
+        self.bonus_coef_0 = bonus_coef_0
+        self.bonus_coef_1 = bonus_coef_1
+        self.ucb_H = ucb_H
+
+        # eps-greedy
+        self.eps = eps
+        self.eps0 = eps0
+        self.eps_epoch = eps_epoch
+        self.exp = exp
+        self.exp0 = exp0
+        self.exp_epoch = exp_epoch
 
         # Initialize Q-table and other matrices (for vanilla Q-learning with eps-greedy exploration)
         self.Q_table = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b))
@@ -31,85 +50,47 @@ class QLearningAgent:
         self.state_action_counter_matrix = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b))
 
         # Initialize an additional Q_hat-table for Q-learning with UCB exploration
-        self.Q_upper_bound = 4
         self.Q_hat_table = np.zeros( (dim_X, dim_Y, dim_action_a, dim_action_b) ) + self.Q_upper_bound
         self.Q_hat_table_track = np.zeros( (dim_X, dim_Y, dim_action_a, dim_action_b, N_RL_iter) ) + self.Q_upper_bound
 
-        # Define learning rate (for vanilla Q-learning with eps-greedy exploration)
-        eps = 0.8
-        eps0 = 0.95
-        epoch = 2
-        learning_rate = [eps*((eps0)**(i//epoch)) for i in range(N_learning_steps)]
-        self.learning_rate_matrix = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b, N_learning_steps))
+        self.set_learning_rate()
+
+        if self.UCB:
+            # Define bonus rate (for Q-learning with UCB exploration)
+            bonus_list = [np.sqrt( (self.bonus_coef_1 * np.log(i+2) + self.bonus_coef_0 )/(i+1) ) for i in range(N_learning_steps)]
+            self.bonus_matrix = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b, N_learning_steps))
+            for idx_x in range(dim_X):
+                for idx_y in range(dim_Y):
+                    for p_a in range(dim_action_a):
+                        for p_b in range(dim_action_b):
+                            self.bonus_matrix[idx_x, idx_y, p_a, p_b, :] = np.array(bonus_list)
+
+        else:
+            # Define exploration probability (for vanilla Q-learning with eps-greedy exploration)
+            explore_epsilon_list = [self.exp*((self.exp0)**(i//self.exp_epoch)) for i in range(N_learning_steps)]
+            self.explore_prob_matrix = np.zeros((dim_X, dim_Y, N_learning_steps))
+            for idx_x in range(dim_X):
+                for idx_y in range(dim_Y):
+                    self.explore_prob_matrix[idx_x, idx_y, :] = np.array(explore_epsilon_list)
+
+    def set_learning_rate(self, ):
+        if self.UCB:
+            # Define learning rate (for Q-learning with UCB exploration)
+            learning_rate_schedule = [(self.ucb_H+1)/(self.ucb_H+i) for i in range(self.N_learning_steps)]
+        else:
+            # Define learning rate (for vanilla Q-learning with eps-greedy exploration)
+            learning_rate_schedule = [self.eps*((self.eps0)**(i//self.eps_epoch)) for i in range(self.N_learning_steps)]
+
+        self.learning_rate_matrix = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b, self.N_learning_steps))
         for idx_x in range(dim_X):
             for idx_y in range(dim_Y):
                 for p_a in range(dim_action_a):
                     for p_b in range(dim_action_b):
-                        self.learning_rate_matrix[idx_x, idx_y, p_a, p_b, :] = np.array(learning_rate)
+                        self.learning_rate_matrix[idx_x, idx_y, p_a, p_b, :] = np.array(learning_rate_schedule)
 
-        # Define exploration probability (for vanilla Q-learning with eps-greedy exploration)
-        eps = 1.0
-        eps0 = 0.8
-        epoch = 100
-        EPSILON_list = [eps*((eps0)**(i//epoch)) for i in range(N_learning_steps)]
-        self.explore_prob_matrix = np.zeros((dim_X, dim_Y, N_learning_steps))
-        for idx_x in range(dim_X):
-            for idx_y in range(dim_Y):
-                self.explore_prob_matrix[idx_x, idx_y, :] = np.array(EPSILON_list)
 
-        # Define learning rate (for Q-learning with UCB exploration)
-        H = 50
-        learning_rate_UCB = [(H+1)/(H+i) for i in range(N_learning_steps)]
-        self.learning_rate_UCB_matrix = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b, N_learning_steps))
-        for idx_x in range(dim_X):
-            for idx_y in range(dim_Y):
-                for p_a in range(dim_action_a):
-                    for p_b in range(dim_action_b):
-                        self.learning_rate_UCB_matrix[idx_x, idx_y, p_a, p_b, :] = np.array(learning_rate_UCB)
-
-        # Define bonus rate (for Q-learning with UCB exploration)
-        bonus_coef_1 = 1
-        bonus_coef_0 = 0.1
-        bonus_list = [np.sqrt( (bonus_coef_1 * np.log(i+2) + bonus_coef_0 )/(i+1) ) for i in range(N_learning_steps)]
-        self.bonus_matrix = np.zeros((dim_X, dim_Y, dim_action_a, dim_action_b, N_learning_steps))
-        for idx_x in range(dim_X):
-            for idx_y in range(dim_Y):
-                for p_a in range(dim_action_a):
-                    for p_b in range(dim_action_b):
-                        self.bonus_matrix[idx_x, idx_y, p_a, p_b, :] = np.array(bonus_list)
-
-    def plot_learning_parameters(self, method = 'eps-greedy'):
-        if method == 'eps-greedy':
-            # Plot learning rate
-            plt.figure(1, figsize=(16, 5))
-            plt.plot(self.learning_rate_matrix[0, 0, 0, 0, :], label='learning rate')
-            plt.xlabel('step')
-            plt.ylabel('Learning Rate')
-            plt.show()
-
-            # Plot exploration probability
-            plt.figure(2, figsize=(16, 5))
-            plt.plot(self.explore_prob_matrix[0, 0, :], label='exploration probability')
-            plt.xlabel('step')
-            plt.ylabel('Probability for Exploration')
-            plt.show()
-        elif method == 'UCB':
-            # Plot learning rate
-            plt.figure(1, figsize=(16, 5))
-            plt.plot(self.learning_rate_UCB_matrix[0, 0, 0, 0, :], label='learning rate')
-            plt.xlabel('step')
-            plt.ylabel('Learning Rate')
-            plt.show()
-
-            # Plot bonus
-            plt.figure(2, figsize=(16, 5))
-            plt.plot(self.bonus_matrix[0, 0, 0, 0, :], label='bonus')
-            plt.xlabel('step')
-            plt.ylabel('Bonus')
-            plt.show()
-
-    def update(self, env, method = 'eps-greedy'):
-        if method == 'UCB':
+    def update(self, env):
+        if self.UCB:
             self.Q_table = np.zeros( (dim_X, dim_Y, dim_action_a, dim_action_b) ) + self.Q_upper_bound
 
         for i in range(self.N_RL_iter):
@@ -143,7 +124,7 @@ class QLearningAgent:
                 # but the quoted price is on grid: 0,1,2,...
                 p_a = dim_action_a-1
 
-                if np.random.binomial(1, EPSILON) == 1 and method == 'eps-greedy':
+                if np.random.binomial(1, EPSILON) == 1 and not self.UCB:
                     p_b = np.random.choice(action_b_list)
                 else:
                     Q_values_xy = self.Q_table[idx_x, idx_y, :, :][np.ix_( list(action_a_list), list(action_b_list) )]
@@ -155,7 +136,7 @@ class QLearningAgent:
                 action_b_list = [dim_action_b-1] # do nothing for buy order
                 p_b = dim_action_b-1
 
-                if np.random.binomial(1, EPSILON) == 1 and method == 'eps-greedy':
+                if np.random.binomial(1, EPSILON) == 1 and not self.UCB:
                     p_a = np.random.choice(action_a_list)
                 else:
                     Q_values_xy = self.Q_table[idx_x, idx_y, :, :][np.ix_( list(action_a_list), list(action_b_list) )]
@@ -166,7 +147,7 @@ class QLearningAgent:
             else: # then both sell and buy orders are allowed
                 action_a_list = env.prices[env.prices>x/2] # the action is exactly equal to the index
                 action_b_list = env.prices[env.prices<x/2] # the action is exactly equal to the index
-                if np.random.binomial(1, EPSILON) == 1 and method == 'eps-greedy':
+                if np.random.binomial(1, EPSILON) == 1 and not self.UCB:
                     p_a = np.random.choice(action_a_list)
                     p_b = np.random.choice(action_b_list)
                 else:
@@ -191,25 +172,26 @@ class QLearningAgent:
             Q_value_max_new_i1 = Q_values_xy.max()
 
             # Update Q-table
-            if method == 'eps-greedy':
+            if self.UCB:
+
+                Q_value_new = reward + self.GAMMA_Delta * Q_value_max_new_i1 + self.bonus_matrix[idx_x, idx_y, p_a, p_b, count_s_a]
+                Q_value_old = self.Q_hat_table[idx_x, idx_y, p_a, p_b]
+
+                self.Q_hat_table[idx_x, idx_y, p_a, p_b] = self.learning_rate_matrix[idx_x, idx_y, p_a, p_b, count_s_a] * (Q_value_new-Q_value_old) + Q_value_old
+
+                self.Q_table[idx_x, idx_y, p_a, p_b] = min(self.Q_table[idx_x, idx_y, p_a, p_b], self.Q_hat_table[idx_x, idx_y, p_a, p_b])
+
+            else:
 
                 Q_value_new = reward + self.GAMMA_Delta * Q_value_max_new_i1
                 Q_value_old = self.Q_table[idx_x, idx_y, p_a, p_b]
 
                 self.Q_table[idx_x, idx_y, p_a, p_b] = self.learning_rate_matrix[idx_x, idx_y, p_a, p_b, count_s_a] * (Q_value_new-Q_value_old) + Q_value_old
 
-            elif method == 'UCB':
 
-                Q_value_new = reward + self.GAMMA_Delta * Q_value_max_new_i1 + self.bonus_matrix[idx_x, idx_y, p_a, p_b, count_s_a]
-                Q_value_old = self.Q_hat_table[idx_x, idx_y, p_a, p_b]
+        self.plot_result()
 
-                self.Q_hat_table[idx_x, idx_y, p_a, p_b] = self.learning_rate_UCB_matrix[idx_x, idx_y, p_a, p_b, count_s_a] * (Q_value_new-Q_value_old) + Q_value_old
-
-                self.Q_table[idx_x, idx_y, p_a, p_b] = min(self.Q_table[idx_x, idx_y, p_a, p_b], self.Q_hat_table[idx_x, idx_y, p_a, p_b])
-
-        self.plot_result(method)
-
-    def plot_result(self, method = 'eps-greedy'):
+    def plot_result(self,):
         plt.figure(1, figsize=(20, 8))
         M=self.N_RL_iter
         plt.plot(self.Q_table_track[0,2,1,3,:M], label='a=1')
@@ -220,7 +202,7 @@ class QLearningAgent:
         plt.ylabel('Q(s,a)')
         plt.show()
 
-        if method == 'UCB':
+        if self.UCB:
             plt.figure(2, figsize=(20, 8))
             M=self.N_RL_iter
             plt.plot(self.Q_hat_table_track[0,2,1,3,:M], label='a=1')
@@ -229,6 +211,33 @@ class QLearningAgent:
             plt.plot(self.Q_hat_table_track[0,2,3,3,:M])
             plt.xlabel('step')
             plt.ylabel('Q_hat(s,a)')
+            plt.show()
+
+    def plot_learning_parameters(self):
+        if self.UCB:
+            label_prefix = 'UCB'
+        else:
+            label_prefix = 'epsilon-greedy'
+        # Plot learning rate
+        plt.figure(1, figsize=(16, 5))
+        plt.plot(self.learning_rate_matrix[0, 0, 0, 0, :], label=f'{label_prefix}: learning rate')
+        plt.xlabel('step')
+        plt.ylabel('Learning Rate')
+        plt.show()
+
+        if self.UCB:
+            # Plot bonus
+            plt.figure(2, figsize=(16, 5))
+            plt.plot(self.bonus_matrix[0, 0, 0, 0, :], label='bonus')
+            plt.xlabel('step')
+            plt.ylabel('Bonus')
+            plt.show()
+        else:
+            # Plot exploration probability
+            plt.figure(2, figsize=(16, 5))
+            plt.plot(self.explore_prob_matrix[0, 0, :], label='exploration probability')
+            plt.xlabel('step')
+            plt.ylabel('Probability for Exploration')
             plt.show()
 
     def results_check(self, ):
@@ -295,42 +304,42 @@ class QLearningAgent:
         print(action_a_RL)
         print(action_b_RL)
 
+if __name__ == "__main__":
 
+    # Example usage
+    N_P = 2 # price grid dimension - 1 (because we start from 0)
+    N_Y = 1 # (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
+    Delta = 0.1
 
-# Example usage
-N_P = 2 # price grid dimension - 1 (because we start from 0)
-N_Y = 1 # (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
-Delta = 0.1
+    dim_X = 2*N_P-1
+    dim_Y = 2*N_Y+1
+    dim_action_a = N_P+2
+    dim_action_b = N_P+2
 
-dim_X = 2*N_P-1
-dim_Y = 2*N_Y+1
-dim_action_a = N_P+2
-dim_action_b = N_P+2
+    """##UCB"""
 
-"""##UCB"""
+    agent = QLearningAgent(dim_X, dim_Y, dim_action_a, dim_action_b, Delta, UCB=True, bonus_coef_0=0.1,  bonus_coef_1=1.)
+    agent.plot_learning_parameters()
 
-agent = QLearningAgent(dim_X, dim_Y, dim_action_a, dim_action_b, Delta)
-agent.plot_learning_parameters(method = 'UCB')
+    env = MarketEnvironment(N_P, N_Y, dim_action_a, dim_action_b, Delta)
+    env.reset()
 
-env = MarketEnvironment(N_P, N_Y, dim_action_a, dim_action_b, Delta)
-env.reset()
+    np.random.seed(999)
 
-np.random.seed(999)
+    agent.update(env)
 
-agent.update(env, method = 'UCB')
+    agent.results_check()
 
-agent.results_check()
+    """## eps-greedy"""
 
-"""## eps-greedy"""
+    agent = QLearningAgent(dim_X, dim_Y, dim_action_a, dim_action_b, Delta, UCB=False)
+    agent.plot_learning_parameters()
 
-agent = QLearningAgent(dim_X, dim_Y, dim_action_a, dim_action_b, Delta)
-agent.plot_learning_parameters(method = 'eps-greedy')
+    env = MarketEnvironment(N_P, N_Y, dim_action_a, dim_action_b, Delta)
+    env.reset()
 
-env = MarketEnvironment(N_P, N_Y, dim_action_a, dim_action_b, Delta)
-env.reset()
+    np.random.seed(999)
 
-np.random.seed(999)
+    agent.update(env)
 
-agent.update(env, method = 'eps-greedy')
-
-agent.results_check()
+    agent.results_check()
