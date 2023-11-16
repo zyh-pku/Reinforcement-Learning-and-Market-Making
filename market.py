@@ -1,106 +1,113 @@
 import numpy as np
 
 class MarketEnvironment:
-    def __init__(self, N_P, N_Y, dim_action_a, dim_action_b, Delta):
+    def __init__(self, dim_price_grid, bound_inventory, dim_action_ask_price, dim_action_buy_price, Delta):
         # basic dimensions and state space grid
-        self.N_P = N_P
-        self.N_Y = N_Y
-        self.dim_X = 2*self.N_P-1
-        self.dim_Y = 2*self.N_Y+1
-        self.dim_action_a = dim_action_a
-        self.dim_action_b = dim_action_b
-        self.prices = np.array(list(range(self.N_P+1)))
-        self.Delta = Delta
+        self.dim_price_grid = dim_price_grid
+        self.bound_inventory = bound_inventory
+        self.dim_midprice_grid = 2*self.dim_price_grid-1
+        self.dim_inventory_grid = 2*self.bound_inventory+1
+        self.dim_action_ask_price = dim_action_ask_price
+        self.dim_action_buy_price = dim_action_buy_price
+        self.price_list = np.array(list(range(self.dim_price_grid+1)))
+        self.Delta = Delta # time increment
 
-        self.tick = 1/3
-        self.k1 = 2
-        self.p0 = 0.4
-        self.A = np.exp(1)*(1/self.Delta)*self.p0
+        self.tick_size = 1/3
         
+        # The two parameters below: for a limit order at price level p, the probability that this order is executed is 
+        # equal to A*exp(-k1*|p-midprice|)*Delta, where |p-midprice| is the absolute distance between p and midprice.
+        self.k1 = 2
+        self.A = np.exp(1)*(1/self.Delta)*0.4
 
         # Transition probability matrix
-        self.Q_X_i_i1 = np.zeros((self.dim_X-1, self.dim_X))
-        self.Q_X_i1_i = np.zeros((self.dim_X-1, self.dim_X))
-        self.lambda_i_i1 = (1/self.Delta)*np.array([0.5,1/3])
-        self.lambda_i1_i = (1/self.Delta)*np.array([1/3,0.5])
-        self._init_transition_probs()
+        self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries = np.zeros((self.dim_midprice_grid-1, self.dim_midprice_grid))
+        self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries = np.zeros((self.dim_midprice_grid-1, self.dim_midprice_grid))
+        self.lambda_upper_offdiagonal_entries = (1/self.Delta)*np.array([0.5,1/3])
+        self.lambda_lower_offdiagonal_entries = (1/self.Delta)*np.array([1/3,0.5])
+        self._init_transitiodim_price_gridrobs()
         
         # Initial data for state variables
-        self.N_RL_iter = 10000  # # total steps of Q-learning iteration
+        # self.N_RL_iter = 10000  # # total steps of Q-learning iteration
         self.reset()
         
-    def _init_transition_probs(self):
-        for i in range(self.dim_X-1):
-            self.Q_X_i1_i[i,i] = self.lambda_i1_i[i]
-            self.Q_X_i1_i[i,i+1] = -self.lambda_i1_i[i]
-            self.Q_X_i_i1[i,i] = -self.lambda_i_i1[i]
-            self.Q_X_i_i1[i,i+1] = self.lambda_i_i1[i]
+    def _init_transitiodim_price_gridrobs(self):
+        for i in range(self.dim_midprice_grid-1):
+            self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries[i,i] = self.lambda_lower_offdiagonal_entries[i]
+            self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries[i,i+1] = -self.lambda_lower_offdiagonal_entries[i]
+            self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries[i,i] = -self.lambda_upper_offdiagonal_entries[i]
+            self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries[i,i+1] = self.lambda_upper_offdiagonal_entries[i]
 
-        self.Q_X = np.zeros((self.dim_X, self.dim_X))
-        self.Q_X[0:(self.dim_X-1), 0:self.dim_X] += self.Q_X_i_i1
-        self.Q_X[1:self.dim_X, 0:self.dim_X] += self.Q_X_i1_i
+        self.trans_prob_Q_matrix_midprice = np.zeros((self.dim_midprice_grid, self.dim_midprice_grid))
+        self.trans_prob_Q_matrix_midprice[0:(self.dim_midprice_grid-1), 0:self.dim_midprice_grid] += self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries
+        self.trans_prob_Q_matrix_midprice[1:self.dim_midprice_grid, 0:self.dim_midprice_grid] += self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries
         
-        self.P_X = np.identity(self.dim_X) + self.Delta*self.Q_X
+        self.trans_prob_matrix_midprice = np.identity(self.dim_midprice_grid) + self.Delta*self.trans_prob_Q_matrix_midprice
 
-    def lambda_e(self, D):
-        return np.exp(-self.k1*D)*self.A
+    # For a limit order at price level p, the probability that this order is executed is 
+    # equal to A*exp(-k1*|p-midprice|)*Delta, where |p-midprice| is the absolute distance between p and midprice.
+    def prob_executed(self, price_distance):
+        return self.A*np.exp(-self.k1*price_distance)*self.Delta
 
     def reset(self, ):
         """Reset the environment to its initial state."""
-        # self.X_data = np.zeros(self.N_RL_iter+1)
-        # self.Y_data = np.zeros(self.N_RL_iter+1)
+        # self.midprice_data = np.zeros(self.N_RL_iter+1)
+        # self.inventory_data = np.zeros(self.N_RL_iter+1)
 
         
-        self.X_data = self.dim_X//2
-        self.Y_data = self.dim_Y//2
+        self.midprice_data = self.dim_midprice_grid//2
+        self.inventory_data = self.dim_inventory_grid//2
 
-    def step(self, p_a, p_b, x, y, idx_x):
-        if x == 1:
-            x_i1 = x + np.dot( np.random.multinomial(1, [ self.P_X[idx_x,idx_x],self.P_X[idx_x,idx_x+1] ]),
+    def step(self, idx_ask_price, idx_buy_price, midprice_integer, inventory):
+        # inventory is in [-dim_inventory_grid, -dim_inventory_grid+1,...,-1,0,1,...,dim_inventory_grid-1,dim_inventory_grid]
+        # midprice = midprice_integer*(tick_size/2)
+        idx_midprice = midprice_integer - 1
+        if midprice_integer == 1:
+            midprice_next = midprice_integer + np.dot( np.random.multinomial(1, [ self.trans_prob_matrix_midprice[idx_midprice,idx_midprice],self.trans_prob_matrix_midprice[idx_midprice,idx_midprice+1] ]),
                             np.array([0,1]) )
-        elif x == self.dim_X:
-            x_i1 = x + np.dot( np.random.multinomial(1, [ self.P_X[idx_x,idx_x-1],self.P_X[idx_x,idx_x] ]),
+        elif midprice_integer == self.dim_midprice_grid:
+            midprice_next = midprice_integer + np.dot( np.random.multinomial(1, [ self.trans_prob_matrix_midprice[idx_midprice,idx_midprice-1],self.trans_prob_matrix_midprice[idx_midprice,idx_midprice] ]),
                             np.array([-1,0]) )
         else:
-            x_i1 = x + np.dot( np.random.multinomial(1, [ self.P_X[idx_x,idx_x-1],self.P_X[idx_x,idx_x],self.P_X[idx_x,idx_x+1] ]),
+            midprice_next = midprice_integer + np.dot( np.random.multinomial(1, [ self.trans_prob_matrix_midprice[idx_midprice,idx_midprice-1],self.trans_prob_matrix_midprice[idx_midprice,idx_midprice],self.trans_prob_matrix_midprice[idx_midprice,idx_midprice+1] ]),
                             np.array([-1,0,1]) )
 
-        # y inventory variable update: Bernouli RV to simulate if the ask or buy order is executed or not:
-        p_ask_fill = self.lambda_e( -x*self.tick/2+p_a*self.tick )*self.Delta
-        p_buy_fill = self.lambda_e( x*self.tick/2-p_b*self.tick )*self.Delta
+        # inventory inventory variable update: Bernouli RV to simulate if the ask or buy order is executed or not:
+        prob_ask_order_filled = self.prob_executed( idx_ask_price*self.tick_size - midprice_integer*self.tick_size/2 )
+        prob_buy_order_filled = self.prob_executed( midprice_integer*self.tick_size/2 - idx_buy_price*self.tick_size )
 
-        dna = 1 if np.random.uniform() <= p_ask_fill else 0
-        dnb = 1 if np.random.uniform() <= p_buy_fill else 0
+        ask_order_change = 1 if np.random.uniform() <= prob_ask_order_filled else 0
+        buy_order_change = 1 if np.random.uniform() <= prob_buy_order_filled else 0
 
-        if y == -self.N_Y:
-            dna = 0
-        if y == self.N_Y:
-            dnb = 0
+        if inventory == -self.bound_inventory: # inventory hits the lower bound, then no sell order is allowed
+            ask_order_change = 0
+        if inventory == self.bound_inventory: # inventory hits the upper bound, then no buy order is allowed
+            buy_order_change = 0
 
-        y_i1 = y - dna + dnb
-        # translate back from x,y values to x,y index
-        idx_x_i1 = int(x_i1 - 1)
-        idx_y_i1 = int(y_i1 + self.N_Y)
-        if y_i1 == -self.N_Y: # then sell order is not allowed
-            action_a_list = [self.dim_action_a-1] # do nothing for ask order
-            action_b_list = self.prices[self.prices<x_i1/2] # the action is exactly equal to the index
+        inventory_next = inventory - ask_order_change + buy_order_change
+        # translate back from midprice_integer,inventory values to midprice_integer,inventory index
+        idx_midprice_next = int(midprice_next - 1)
+        idx_inventory_next = int(inventory_next + self.bound_inventory)
+        
+        if inventory_next == -self.bound_inventory: # then sell order is not allowed
+            action_ask_price_list = [self.dim_action_ask_price-1] # do nothing for ask order
+            action_buy_price_list = self.price_list[self.price_list<midprice_next/2] # the action is exactly equal to the index
 
-        elif y_i1 == self.N_Y: # then buy order is not allowed
-            action_a_list = self.prices[self.prices>x_i1/2]
-            action_b_list = [self.dim_action_b-1] # do nothing for buy order
+        elif inventory_next == self.bound_inventory: # then buy order is not allowed
+            action_ask_price_list = self.price_list[self.price_list>midprice_next/2]
+            action_buy_price_list = [self.dim_action_buy_price-1] # do nothing for buy order
 
         else: # then both sell and buy orders are allowed
-            action_a_list = self.prices[self.prices>x_i1/2] # the action is exactly equal to the index
-            action_b_list = self.prices[self.prices<x_i1/2] # the action is exactly equal to the index
+            action_ask_price_list = self.price_list[self.price_list>midprice_next/2] # the action is exactly equal to the index
+            action_buy_price_list = self.price_list[self.price_list<midprice_next/2] # the action is exactly equal to the index
         
         # update the data of state variable
-        self.X_data = idx_x_i1 # all are integers, i.e., 0,1,2,...,dim_X-1
-        self.Y_data = idx_y_i1 # all are integers, i.e., 0,1,2,...,dim_Y-1
+        self.midprice_data = idx_midprice_next # all are integers, i.e., 0,1,2,...,dim_midprice_grid-1
+        self.inventory_data = idx_inventory_next # all are integers, i.e., 0,1,2,...,dim_inventory_grid-1
 
 
-        reward = ( -x*self.tick/2+p_a*self.tick )*dna + ( x*self.tick/2-p_b*self.tick )*dnb # - (y**2)*Delta + (x_i1-x)*y
+        reward = ( -midprice_integer*self.tick_size/2+idx_ask_price*self.tick_size )*ask_order_change + ( midprice_integer*self.tick_size/2-idx_buy_price*self.tick_size )*buy_order_change # - (inventory**2)*Delta + (midprice_next-midprice_integer)*inventory
 
-        return reward, idx_x_i1, idx_y_i1, action_a_list, action_b_list
+        return reward, idx_midprice_next, idx_inventory_next, action_ask_price_list, action_buy_price_list
 
 
 # Example Usage:
