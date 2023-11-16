@@ -306,11 +306,13 @@ class QLearningAgent:
         print(action_ask_price_RL)
         print(action_buy_price_RL)
 
+        return None
+
 if __name__ == "__main__":
 
     # Example usage
-    dim_price_grid = 3 # N_P: price grid dimension - 1 (because we start from 0)
-    bound_inventory = 2 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
+    dim_price_grid = 10 # N_P: price grid dimension - 1 (because we start from 0)
+    bound_inventory = 5 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
     Delta = 0.1
 
     dim_midprice_grid = 2*dim_price_grid-1

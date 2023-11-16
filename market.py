@@ -13,6 +13,7 @@ class MarketEnvironment:
         self.Delta = Delta # time increment
 
         self.tick_size = 1/3
+        self.order_size = 1
         
         # The two parameters below: for a limit order at price level p, the probability that this order is executed is 
         # equal to A*exp(-k1*|p-midprice|)*Delta, where |p-midprice| is the absolute distance between p and midprice.
@@ -83,13 +84,14 @@ class MarketEnvironment:
         prob_ask_order_filled = self.prob_executed( idx_ask_price*self.tick_size - midprice_integer*self.tick_size/2 )
         prob_buy_order_filled = self.prob_executed( midprice_integer*self.tick_size/2 - idx_buy_price*self.tick_size )
 
-        ask_order_change = 1 if np.random.uniform() <= prob_ask_order_filled else 0
-        buy_order_change = 1 if np.random.uniform() <= prob_buy_order_filled else 0
+        ask_order_change = self.order_size if np.random.uniform() <= prob_ask_order_filled else 0
+        buy_order_change = self.order_size if np.random.uniform() <= prob_buy_order_filled else 0
 
-        if inventory == -self.bound_inventory: # inventory hits the lower bound, then no sell order is allowed
-            ask_order_change = 0
-        if inventory == self.bound_inventory: # inventory hits the upper bound, then no buy order is allowed
-            buy_order_change = 0
+        if inventory < -self.bound_inventory + self.order_size: # inventory hits/below the lower bound, then no sell order is allowed
+            ask_order_change = self.bound_inventory - np.abs(inventory)
+        elif inventory > self.bound_inventory - self.order_size: # inventory hits/over the upper bound, then no buy order is allowed
+            buy_order_change = self.bound_inventory - np.abs(inventory)
+    
 
         inventory_next = inventory - ask_order_change + buy_order_change
         # translate back from midprice_integer,inventory values to midprice_integer,inventory index
