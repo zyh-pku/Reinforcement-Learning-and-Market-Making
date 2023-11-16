@@ -3,10 +3,10 @@ import numpy as np
 class MarketEnvironment:
     def __init__(self, dim_price_grid, bound_inventory, dim_action_ask_price, dim_action_buy_price, Delta):
         # basic dimensions and state space grid
-        self.dim_price_grid = dim_price_grid
-        self.bound_inventory = bound_inventory
-        self.dim_midprice_grid = 2*self.dim_price_grid-1
-        self.dim_inventory_grid = 2*self.bound_inventory+1
+        self.dim_price_grid = dim_price_grid  # S_P
+        self.bound_inventory = bound_inventory # N_Y
+        self.dim_midprice_grid = 2*self.dim_price_grid-1  # S_X
+        self.dim_inventory_grid = 2*self.bound_inventory+1 # S_Y
         self.dim_action_ask_price = dim_action_ask_price
         self.dim_action_buy_price = dim_action_buy_price
         self.price_list = np.array(list(range(self.dim_price_grid+1)))
@@ -22,19 +22,27 @@ class MarketEnvironment:
         # Transition probability matrix
         self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries = np.zeros((self.dim_midprice_grid-1, self.dim_midprice_grid))
         self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries = np.zeros((self.dim_midprice_grid-1, self.dim_midprice_grid))
-        self.lambda_upper_offdiagonal_entries = (1/self.Delta)*np.array([0.5,1/3])
-        self.lambda_lower_offdiagonal_entries = (1/self.Delta)*np.array([1/3,0.5])
-        self._init_transitiodim_price_gridrobs()
+        self._generate_transition_matrix()
         
         # Initial data for state variables
         # self.N_RL_iter = 10000  # # total steps of Q-learning iteration
         self.reset()
+
+    def _generate_transition_matrix(self, lambda_seq=None):
+        if lambda_seq is None:
+            # generate N random lambda value
+            # lambda_seq = np.random.uniform(0, 1, self.dim_midprice_grid-1)
+            lambda_seq = np.array((self.dim_midprice_grid-1)*[1/3])
+            lambda_seq[0] = 0.5
+            lambda_seq *= (1/self.Delta)
+
+        self.lambda_upper_offdiagonal_entries = lambda_seq
+        self.lambda_lower_offdiagonal_entries = np.flip(lambda_seq, axis=0)
         
-    def _init_transitiodim_price_gridrobs(self):
         for i in range(self.dim_midprice_grid-1):
-            self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries[i,i] = self.lambda_lower_offdiagonal_entries[i]
+            self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries[i,i] = self.lambda_lower_offdiagonal_entries[i] 
             self.trans_prob_Q_matrix_midprice_lower_offdiagonal_entries[i,i+1] = -self.lambda_lower_offdiagonal_entries[i]
-            self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries[i,i] = -self.lambda_upper_offdiagonal_entries[i]
+            self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries[i,i] = -self.lambda_upper_offdiagonal_entries[i] 
             self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries[i,i+1] = self.lambda_upper_offdiagonal_entries[i]
 
         self.trans_prob_Q_matrix_midprice = np.zeros((self.dim_midprice_grid, self.dim_midprice_grid))
