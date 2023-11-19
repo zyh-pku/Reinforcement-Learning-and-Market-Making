@@ -118,7 +118,7 @@ class MarketEnvironment:
         reward = ( -midprice_integer*self.tick_size/2+idx_ask_price*self.tick_size )*ask_order_change + ( midprice_integer*self.tick_size/2-idx_buy_price*self.tick_size )*buy_order_change # - (inventory**2)*Delta + (midprice_next-midprice_integer)*inventory
 
         return reward, idx_midprice_next, idx_inventory_next, action_ask_price_list, action_buy_price_list
-
+           
 
 # Example Usage:
 # market_env = MarketEnvironment()
