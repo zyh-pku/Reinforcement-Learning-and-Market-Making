@@ -24,51 +24,58 @@ def extract_hyperparameters_and_results(text):
             runtime = float(re.search(r'\d+\.\d+', line).group())  # Extract runtime as a float
     return hyperparameters, result, runtime
 
-# Read the contents of the text file
-with open("results/hyperparameter_results.txt", "r") as file:
-    lines = file.read()
+def result_analysis(file_path, save_to):
 
-# Split the text into individual result entries
-result_entries = re.split(r'\n(?=Hyperparameters:)', lines)
+    # Read the contents of the text file
+    with open(file_path, "r") as file:
+        lines = file.read()
 
-# Initialize lists to store filtered data and all parameter combinations with Result=0
-filtered_data = []
-parameter_combinations_with_result_0 = []
+    # Split the text into individual result entries
+    result_entries = re.split(r'\n(?=Hyperparameters:)', lines)
 
-# Parse the data and filter based on Result
-for entry in result_entries:
-    hyperparameters, result, runtime = extract_hyperparameters_and_results(entry)
-    if result == 0:
-        filtered_data.append(hyperparameters)
-        parameter_combinations_with_result_0.append(entry)
+    # Initialize lists to store filtered data and all parameter combinations with Result=0
+    filtered_data = []
+    parameter_combinations_with_result_0 = []
 
-# Create a plot to visualize parameter distribution
-parameter_names = list(filtered_data[0].keys())
-num_parameters = len(parameter_names)
+    # Parse the data and filter based on Result
+    for entry in result_entries:
+        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry)
+        if result == 0:
+            filtered_data.append(hyperparameters)
+            parameter_combinations_with_result_0.append(entry)
 
-fig, axes = plt.subplots(nrows=1, ncols=num_parameters, figsize=(15, 5))
-for i, param_name in enumerate(parameter_names):
-    param_values = [entry[param_name] for entry in filtered_data]
-    axes[i].hist(param_values, bins=20)
-    axes[i].set_xlabel(param_name)
-    axes[i].set_ylabel("Frequency (result=0)")
-    axes[i].set_title(f"{param_name} Distribution")
+    # Create a plot to visualize parameter distribution
+    parameter_names = list(filtered_data[0].keys())
+    num_parameters = len(parameter_names)
 
-plt.tight_layout()
-plt.show()
+    fig, axes = plt.subplots(nrows=1, ncols=num_parameters, figsize=(15, 5))
+    for i, param_name in enumerate(parameter_names):
+        param_values = [entry[param_name] for entry in filtered_data]
+        axes[i].hist(param_values, bins=20)
+        axes[i].set_xlabel(param_name)
+        axes[i].set_ylabel("Frequency (result=0)")
+        axes[i].set_title(f"{param_name} Distribution")
 
-# Summarize the data
-print("Parameter Distribution for Result=0:")
-for param_name in parameter_names:
-    param_values = [entry[param_name] for entry in filtered_data]
-    min_value = min(param_values)
-    max_value = max(param_values)
-    avg_value = sum(param_values) / len(param_values)
-    print(f"{param_name}:")
-    print(f"  Min: {min_value}")
-    print(f"  Max: {max_value}")
-    print(f"  Avg: {avg_value}\n")
+    plt.tight_layout()
+    plt.show()
 
-# Save all parameter combinations with Result=0 to another file
-with open("results/parameter_combinations_with_result_0.txt", "w") as result_0_file:
-    result_0_file.write("\n\n".join(parameter_combinations_with_result_0))
+    # Summarize the data
+    print("Parameter Distribution for Result=0:")
+    for param_name in parameter_names:
+        param_values = [entry[param_name] for entry in filtered_data]
+        min_value = min(param_values)
+        max_value = max(param_values)
+        avg_value = sum(param_values) / len(param_values)
+        print(f"{param_name}:")
+        print(f"  Min: {min_value}")
+        print(f"  Max: {max_value}")
+        print(f"  Avg: {avg_value}\n")
+
+    # Save all parameter combinations with Result=0 to another file
+    with open(save_to, "w") as result_0_file:
+        result_0_file.write("\n\n".join(parameter_combinations_with_result_0))
+
+if __name__ == '__main__':
+    file_path = "results/hyperparameter_results_NP2_NY1.txt"
+    save_to = "results/parameter_combinations_with_result_0_NP2_NY1.txt"
+    result_analysis(file_path, save_to)

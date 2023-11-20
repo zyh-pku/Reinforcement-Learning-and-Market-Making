@@ -70,7 +70,7 @@ for delta, bonus_coef_0, bonus_coef_1, ucb_H, Q_upper_bound in hyperparameter_co
     results[tuple(param_values)] = result_with_params
 
 # Save results to a file
-with open("results/hyperparameter_results.txt", "w") as f:
+with open("results/hyperparameter_results_NP{dim_price_grid}_NY{bound_inventory}.txt", "w") as f:
     for params, result_info in results.items():
         f.write(f"Hyperparameters:\n")
         for param_name, param_value in result_info['parameters'].items():
