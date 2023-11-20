@@ -39,7 +39,7 @@ def evaluate_agent(delta, bonus_coef_0, bonus_coef_1, ucb_H, Q_upper_bound):
     env.reset()
 
     agent = QLearningAgent(env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, delta,
-                            UCB=True, N_RL_iter=20, bonus_coef_0=bonus_coef_0, bonus_coef_1=bonus_coef_1, ucb_H=ucb_H, Q_upper_bound=Q_upper_bound)
+                            UCB=True, N_RL_iter=10**5, bonus_coef_0=bonus_coef_0, bonus_coef_1=bonus_coef_1, ucb_H=ucb_H, Q_upper_bound=Q_upper_bound)
     start_time = time.time()
     agent.update()
     end_time = time.time()
