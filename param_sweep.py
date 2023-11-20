@@ -13,7 +13,7 @@ Delta_values = np.linspace(0.1, 1.0, num=3)  # Creates 10 values from 0.1 to 1.0
 bonus_coef_0_values = np.linspace(0.1, 1.0, num=3)
 bonus_coef_1_values = [0.5, 1.0]
 ucb_H_values = [5,10]
-Q_upper_bound_values = np.linspace(3.0, 4.0, num=1)
+Q_upper_bound_values = np.linspace(3.0, 4.0, num=3)
 # Define parameter names
 parameter_names = ['Delta', 'bonus_coef_0', 'bonus_coef_1', 'ucb_H', 'Q_upper_bound']
 
