@@ -25,7 +25,6 @@ results = {}
 
 dim_price_grid = 2 # N_P: price grid dimension - 1 (because we start from 0)
 bound_inventory = 1 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
-Delta = 0.1
 
 dim_midprice_grid = 2*dim_price_grid-1
 dim_inventory_grid = 2*bound_inventory+1
@@ -35,7 +34,7 @@ dim_action_buy_price = dim_price_grid+2
 
 # Define a function to evaluate the agent with given hyperparameters
 def evaluate_agent(delta, bonus_coef_0, bonus_coef_1, ucb_H, Q_upper_bound):
-    env = MarketEnvironment(dim_price_grid, bound_inventory, dim_action_ask_price, dim_action_buy_price, Delta)
+    env = MarketEnvironment(dim_price_grid, bound_inventory, dim_action_ask_price, dim_action_buy_price, delta)
     env.reset()
 
     agent = QLearningAgent(env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, delta,
