@@ -15,14 +15,14 @@ from market import MarketEnvironment
 
 class QLearningAgent:
 
-    def __init__(self, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta,  \
+    def __init__(self, env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta,  \
         N_Bellman_iter = 100, \
         Q_upper_bound=4., UCB=True,\
         bonus_coef_0=0.1, bonus_coef_1=1., ucb_H=50, \
         eps = 0.8, eps0 = 0.95, eps_epoch = 2, \
         exp = 1.0, exp0 = 0.8, exp_epoch = 100, \
         N_RL_iter=12*10**4, N_learning_steps=3*10**4):
-        
+        self.env = env
         self.dim_midprice_grid = dim_midprice_grid
         self.dim_inventory_grid = dim_inventory_grid
         self.dim_action_ask_price = dim_action_ask_price
@@ -36,10 +36,10 @@ class QLearningAgent:
         
         # true value function and optimal policy obtained by Bellman equation iteration
         self.N_Bellman_iter = N_Bellman_iter
-        self.V_star = np.zeros((dim_midprice_grid, dim_inventory_grid))
-        self.V_star_converge_track = np.zeros((dim_midprice_grid, dim_inventory_grid, N_Bellman_iter+1))
-        self.ask_price_star = np.zeros((dim_midprice_grid, dim_inventory_grid))
-        self.buy_price_star = np.zeros((dim_midprice_grid, dim_inventory_grid))
+        self.V_star = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid))
+        self.V_star_converge_track = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, N_Bellman_iter+1))
+        self.ask_price_star = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid))
+        self.buy_price_star = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid))
         
         # ucb
         self.UCB = UCB  # if True , use UCB exploration; if False, use eps-greedy exploration
@@ -48,44 +48,45 @@ class QLearningAgent:
         self.ucb_H = ucb_H
 
         # eps-greedy
-        self.eps = eps
-        self.eps0 = eps0
-        self.eps_epoch = eps_epoch
-        self.exp = exp
+        self.exp = exp  # exploration rate
         self.exp0 = exp0
         self.exp_epoch = exp_epoch
+        self.eps = eps  # learning rate
+        self.eps0 = eps0
+        self.eps_epoch = eps_epoch
+
 
         # Initialize Q-table and other matrices (for vanilla Q-learning with eps-greedy exploration)
-        self.Q_table = np.zeros((dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price))
-        self.Q_table_track = np.zeros((dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, N_RL_iter))
-        self.state_counter_matrix = np.zeros((dim_midprice_grid, dim_inventory_grid))
-        self.state_action_counter_matrix = np.zeros((dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price))
+        self.Q_table = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price))
+        self.Q_table_track = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price, N_RL_iter))
+        self.state_counter_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid))
+        self.state_action_counter_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price))
 
         # Initialize an additional Q_hat-table for Q-learning with UCB exploration
-        self.Q_hat_table = np.zeros( (dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price) ) + self.Q_upper_bound
-        self.Q_hat_table_track = np.zeros( (dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, N_RL_iter) ) + self.Q_upper_bound
+        self.Q_hat_table = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price) ) + self.Q_upper_bound
+        self.Q_hat_table_track = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price, N_RL_iter) ) + self.Q_upper_bound
 
         self.set_learning_rate()
         
         self._find_V_star_and_optimal_policy()
-        self.print_true_values_and_plot_Bellman_iteration()
+        # self.print_true_values_and_plot_Bellman_iteration()
 
         if self.UCB:
             # Define bonus rate (for Q-learning with UCB exploration)
             bonus_list = [np.sqrt( (self.bonus_coef_1 * np.log(i+2) + self.bonus_coef_0 )/(i+1) ) for i in range(N_learning_steps)]
-            self.bonus_matrix = np.zeros((dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, N_learning_steps))
-            for idx_midprice in range(dim_midprice_grid):
-                for idx_inventory in range(dim_inventory_grid):
-                    for idx_ask_price in range(dim_action_ask_price):
-                        for idx_buy_price in range(dim_action_buy_price):
+            self.bonus_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price, N_learning_steps))
+            for idx_midprice in range(self.dim_midprice_grid):
+                for idx_inventory in range(self.dim_inventory_grid):
+                    for idx_ask_price in range(self.dim_action_ask_price):
+                        for idx_buy_price in range(self.dim_action_buy_price):
                             self.bonus_matrix[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price, :] = np.array(bonus_list)
 
         else:
             # Define exploration probability (for vanilla Q-learning with eps-greedy exploration)
             explore_epsilon_list = [self.exp*((self.exp0)**(i//self.exp_epoch)) for i in range(N_learning_steps)]
-            self.explore_prob_matrix = np.zeros((dim_midprice_grid, dim_inventory_grid, N_learning_steps))
-            for idx_midprice in range(dim_midprice_grid):
-                for idx_inventory in range(dim_inventory_grid):
+            self.explore_prob_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, N_learning_steps))
+            for idx_midprice in range(self.dim_midprice_grid):
+                for idx_inventory in range(self.dim_inventory_grid):
                     self.explore_prob_matrix[idx_midprice, idx_inventory, :] = np.array(explore_epsilon_list)
 
     def set_learning_rate(self, ):
@@ -96,17 +97,17 @@ class QLearningAgent:
             # Define learning rate (for vanilla Q-learning with eps-greedy exploration)
             learning_rate_schedule = [self.eps*((self.eps0)**(i//self.eps_epoch)) for i in range(self.N_learning_steps)]
 
-        self.learning_rate_matrix = np.zeros((dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, self.N_learning_steps))
-        for idx_midprice in range(dim_midprice_grid):
-            for idx_inventory in range(dim_inventory_grid):
-                for idx_ask_price in range(dim_action_ask_price):
-                    for idx_buy_price in range(dim_action_buy_price):
+        self.learning_rate_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price, self.N_learning_steps))
+        for idx_midprice in range(self.dim_midprice_grid):
+            for idx_inventory in range(self.dim_inventory_grid):
+                for idx_ask_price in range(self.dim_action_ask_price):
+                    for idx_buy_price in range(self.dim_action_buy_price):
                         self.learning_rate_matrix[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price, :] = np.array(learning_rate_schedule)
 
 
-    def update(self, env):
+    def update(self, ):
         if self.UCB:
-            self.Q_table = np.zeros( (dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price) ) + self.Q_upper_bound
+            self.Q_table = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price) ) + self.Q_upper_bound
 
         for i in range(self.N_RL_iter):
             if i % (10**4) == 0:
@@ -121,8 +122,8 @@ class QLearningAgent:
             idx_buy_price = 0 # quoted bid price
             #########
             # Make a list of the actions available from the current state
-            idx_midprice = int(env.midprice_data) # all are integers, i.e., 0,1,2,...,dim_midprice_grid-1
-            idx_inventory = int(env.inventory_data) # all are integers, i.e., 0,1,2,...,dim_inventory_grid-1
+            idx_midprice = int(self.env.midprice_data) # all are integers, i.e., 0,1,2,...,self.dim_midprice_grid-1
+            idx_inventory = int(self.env.inventory_data) # all are integers, i.e., 0,1,2,...,self.dim_inventory_grid-1
             count_state = int(self.state_counter_matrix[idx_midprice, idx_inventory])
 
             self.state_counter_matrix[idx_midprice,idx_inventory] = count_state+1
@@ -130,15 +131,15 @@ class QLearningAgent:
             if not self.UCB:
                 EPSILON = self.explore_prob_matrix[ idx_midprice, idx_inventory, count_state ]  #exploration probability for this state
 
-            midprice_integer = idx_midprice + 1 # midprice=midprice_integer*tick_size/2 and midprice_integer is in (1,2,...,dim_midprice_grid)
-            inventory = idx_inventory - env.bound_inventory # inventory = the true signed integer value of inventory
+            midprice_integer = idx_midprice + 1 # midprice=midprice_integer*tick_size/2 and midprice_integer is in (1,2,...,self.dim_midprice_grid)
+            inventory = idx_inventory - self.env.bound_inventory # inventory = the true signed integer value of inventory
 
-            if inventory == -env.bound_inventory: # then sell order is not allowed
-                action_ask_price_list = [dim_action_ask_price-1] # do nothing for ask order
-                action_buy_price_list = env.price_list[env.price_list<midprice_integer/2] # the action is exactly equal to the index
+            if inventory == -self.env.bound_inventory: # then sell order is not allowed
+                action_ask_price_list = [self.dim_action_ask_price-1] # do nothing for ask order
+                action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
                 # midprice_integer/2 is because the middle price is on grid: 0, 1/2, 1, 3/2, 2, ...,
                 # but the quoted price is on grid: 0,1,2,...
-                idx_ask_price = dim_action_ask_price-1
+                idx_ask_price = self.dim_action_ask_price-1
 
                 if not self.UCB and np.random.binomial(1, EPSILON) == 1:
                     idx_buy_price = np.random.choice(action_buy_price_list)
@@ -147,10 +148,10 @@ class QLearningAgent:
                     idx_optimal_ask, idx_optimal_buy = np.where(Q_values_at_state == Q_values_at_state.max())
                     idx_buy_price = action_buy_price_list[ idx_optimal_buy[0] ]
 
-            elif inventory == env.bound_inventory: # then buy order is not allowed
-                action_ask_price_list = env.price_list[env.price_list>midprice_integer/2]
-                action_buy_price_list = [dim_action_buy_price-1] # do nothing for buy order
-                idx_buy_price = dim_action_buy_price-1
+            elif inventory == self.env.bound_inventory: # then buy order is not allowed
+                action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2]
+                action_buy_price_list = [self.dim_action_buy_price-1] # do nothing for buy order
+                idx_buy_price = self.dim_action_buy_price-1
 
                 if not self.UCB and np.random.binomial(1, EPSILON) == 1:
                     idx_ask_price = np.random.choice(action_ask_price_list)
@@ -161,8 +162,8 @@ class QLearningAgent:
 
 
             else: # then both sell and buy orders are allowed
-                action_ask_price_list = env.price_list[env.price_list>midprice_integer/2] # the action is exactly equal to the index
-                action_buy_price_list = env.price_list[env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2] # the action is exactly equal to the index
+                action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
                 if not self.UCB and np.random.binomial(1, EPSILON) == 1:
                     idx_ask_price = np.random.choice(action_ask_price_list)
                     idx_buy_price = np.random.choice(action_buy_price_list)
@@ -181,7 +182,7 @@ class QLearningAgent:
 
             # observe the reward and the next state
 
-            reward, idx_midprice_next, idx_inventory_next, action_ask_price_list, action_buy_price_list = env.step(idx_ask_price, idx_buy_price, midprice_integer, inventory)
+            reward, idx_midprice_next, idx_inventory_next, action_ask_price_list, action_buy_price_list = self.env.step(idx_ask_price, idx_buy_price, midprice_integer, inventory)
 
             Q_values_at_state = self.Q_table[idx_midprice_next, idx_inventory_next, :, :][np.ix_( action_ask_price_list, action_buy_price_list )]
 
@@ -203,7 +204,7 @@ class QLearningAgent:
                 self.Q_table[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price] = self.learning_rate_matrix[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price, count_state_action] * (Q_value_new-Q_value_old) + Q_value_old
 
 
-        self.plot_result()
+        # self.plot_result()
 
     def plot_result(self,):
         plt.figure(1, figsize=(20, 8))
@@ -260,24 +261,24 @@ class QLearningAgent:
             for idx_midprice in range(self.dim_midprice_grid):
                 for idx_inventory in range(self.dim_inventory_grid):
                     midprice_integer = int(idx_midprice + 1)
-                    inventory = int(idx_inventory - env.bound_inventory)
+                    inventory = int(idx_inventory - self.env.bound_inventory)
                     
                     V_max_at_this_state = -float('inf') # 
                     
-                    if inventory == -env.bound_inventory: # then sell order is not allowed
+                    if inventory == -self.env.bound_inventory: # then sell order is not allowed
                         action_ask_price_list = [self.dim_action_ask_price-1] # do nothing for ask order
-                        action_buy_price_list = env.price_list[env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                        action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
                         self.ask_price_star[idx_midprice , idx_inventory] = action_ask_price_list[0]
                         for idx_buy_price in action_buy_price_list:
-                            prob_buy_order_filled = env.prob_executed( midprice_integer*env.tick_size/2 - idx_buy_price*env.tick_size )  
+                            prob_buy_order_filled = self.env.prob_executed( midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size )  
 
-                            prob_price = env.trans_prob_matrix_midprice[idx_midprice, ] # probability distribution vector
+                            prob_price = self.env.trans_prob_matrix_midprice[idx_midprice, ] # probability distribution vector
 
                             prob_inventory = np.zeros( self.dim_inventory_grid ) # probability distribution vector
                             prob_inventory[idx_inventory + 1] = prob_buy_order_filled
                             prob_inventory[idx_inventory] = 1 - prob_buy_order_filled
 
-                            V_tmp = prob_buy_order_filled * (midprice_integer*env.tick_size/2 - idx_buy_price*env.tick_size) + \
+                            V_tmp = prob_buy_order_filled * (midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size) + \
                             self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
 
                             if V_tmp > V_max_at_this_state:
@@ -285,20 +286,20 @@ class QLearningAgent:
                                 self.buy_price_star[idx_midprice , idx_inventory] = idx_buy_price
                                 
     
-                    elif inventory == env.bound_inventory: # then buy order is not allowed
-                        action_ask_price_list = env.price_list[env.price_list>midprice_integer/2]
+                    elif inventory == self.env.bound_inventory: # then buy order is not allowed
+                        action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2]
                         action_buy_price_list = [self.dim_action_buy_price-1] # do nothing for buy order
                         self.buy_price_star[idx_midprice , idx_inventory] = action_buy_price_list[0]
                         for idx_ask_price in action_ask_price_list:
-                            prob_ask_order_filled = env.prob_executed( idx_ask_price*env.tick_size - midprice_integer*env.tick_size/2 )
+                            prob_ask_order_filled = self.env.prob_executed( idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2 )
                             
-                            prob_price = env.trans_prob_matrix_midprice[idx_midprice, ] # probability distribution vector
+                            prob_price = self.env.trans_prob_matrix_midprice[idx_midprice, ] # probability distribution vector
 
-                            prob_inventory = np.zeros( env.dim_inventory_grid ) # probability distribution vector
+                            prob_inventory = np.zeros( self.env.dim_inventory_grid ) # probability distribution vector
                             prob_inventory[idx_inventory] = 1 - prob_ask_order_filled
                             prob_inventory[idx_inventory - 1] = prob_ask_order_filled
    
-                            V_tmp = prob_ask_order_filled * (idx_ask_price*env.tick_size - midprice_integer*env.tick_size/2) + \
+                            V_tmp = prob_ask_order_filled * (idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2) + \
                             self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
 
                             if V_tmp > V_max_at_this_state:
@@ -307,23 +308,23 @@ class QLearningAgent:
                                 
                     else: # then both sell and buy orders are allowed
                     
-                        action_ask_price_list = env.price_list[env.price_list>midprice_integer/2] # the action is exactly equal to the index
-                        action_buy_price_list = env.price_list[env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                        action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2] # the action is exactly equal to the index
+                        action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
                         
                         for idx_ask_price in action_ask_price_list:
                             for idx_buy_price in action_buy_price_list:
-                                prob_ask_order_filled = env.prob_executed( idx_ask_price*env.tick_size - midprice_integer*env.tick_size/2 )
-                                prob_buy_order_filled = env.prob_executed( midprice_integer*env.tick_size/2 - idx_buy_price*env.tick_size )  
+                                prob_ask_order_filled = self.env.prob_executed( idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2 )
+                                prob_buy_order_filled = self.env.prob_executed( midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size )  
     
-                                prob_price = env.trans_prob_matrix_midprice[idx_midprice, ] # probability distribution vector
+                                prob_price = self.env.trans_prob_matrix_midprice[idx_midprice, ] # probability distribution vector
     
                                 prob_inventory = np.zeros( self.dim_inventory_grid ) # probability distribution vector
                                 prob_inventory[idx_inventory + 1] = ( 1 - prob_ask_order_filled )*prob_buy_order_filled
                                 prob_inventory[idx_inventory] = ( 1 - prob_ask_order_filled )*( 1 - prob_buy_order_filled ) + prob_ask_order_filled * prob_buy_order_filled
                                 prob_inventory[idx_inventory - 1] = ( 1 - prob_buy_order_filled )*prob_ask_order_filled
     
-                                V_tmp = prob_ask_order_filled * (idx_ask_price*env.tick_size - midprice_integer*env.tick_size/2) + \
-                                prob_buy_order_filled * (midprice_integer*env.tick_size/2 - idx_buy_price*env.tick_size) + \
+                                V_tmp = prob_ask_order_filled * (idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2) + \
+                                prob_buy_order_filled * (midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size) + \
                                 self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
     
                                 if V_tmp > V_max_at_this_state:
@@ -374,17 +375,17 @@ class QLearningAgent:
         '''
         # print('---------- the visiting number for each state: ----------')
         # print(self.state_counter_matrix)
-        action_ask_price_RL = np.zeros( (dim_midprice_grid, dim_inventory_grid) )
-        action_buy_price_RL = np.zeros( (dim_midprice_grid, dim_inventory_grid) )
-        V_RL = np.zeros( (dim_midprice_grid, dim_inventory_grid) )
+        action_ask_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
+        action_buy_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
+        V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
         # print('---------- the Q function for each state: ----------')
-        for idx_midprice in range(dim_midprice_grid):
-            for idx_inventory in range(dim_inventory_grid):
+        for idx_midprice in range(self.dim_midprice_grid):
+            for idx_inventory in range(self.dim_inventory_grid):
                 midprice_integer = int(idx_midprice + 1)
-                inventory = int(idx_inventory - env.bound_inventory)
-                if inventory == -env.bound_inventory: # then sell order is not allowed
-                    action_ask_price_list = [dim_action_ask_price-1] # do nothing for ask order
-                    action_buy_price_list = env.price_list[env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                inventory = int(idx_inventory - self.env.bound_inventory)
+                if inventory == -self.env.bound_inventory: # then sell order is not allowed
+                    action_ask_price_list = [self.dim_action_ask_price-1] # do nothing for ask order
+                    action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
                     # print( f'(midprice_integer,inventory)={midprice_integer},{inventory}' )
                     # print(action_ask_price_list)
                     # print(action_buy_price_list)
@@ -394,12 +395,12 @@ class QLearningAgent:
 
                     Q_values_at_state = self.Q_table[idx_midprice, idx_inventory, :, :][np.ix_( action_ask_price_list, action_buy_price_list )]
                     idx_optimal_ask, idx_optimal_buy = np.where(Q_values_at_state == Q_values_at_state.max())
-                    idx_ask_price = dim_action_ask_price-1
+                    idx_ask_price = self.dim_action_ask_price-1
                     idx_buy_price = action_buy_price_list[ idx_optimal_buy[0] ]
 
-                elif inventory == env.bound_inventory: # then buy order is not allowed
-                    action_ask_price_list = env.price_list[env.price_list>midprice_integer/2]
-                    action_buy_price_list = [dim_action_buy_price-1] # do nothing for buy order
+                elif inventory == self.env.bound_inventory: # then buy order is not allowed
+                    action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2]
+                    action_buy_price_list = [self.dim_action_buy_price-1] # do nothing for buy order
                     # print( f'(midprice_integer,inventory)={midprice_integer},{inventory}' )
                     # print(action_ask_price_list)
                     # print(action_buy_price_list)
@@ -410,11 +411,11 @@ class QLearningAgent:
                     Q_values_at_state = self.Q_table[idx_midprice, idx_inventory, :, :][np.ix_( action_ask_price_list, action_buy_price_list )]
                     idx_optimal_ask, idx_optimal_buy = np.where(Q_values_at_state == Q_values_at_state.max())
                     idx_ask_price = action_ask_price_list[ idx_optimal_ask[0] ]
-                    idx_buy_price = dim_action_buy_price-1
+                    idx_buy_price = self.dim_action_buy_price-1
 
                 else: # then both sell and buy orders are allowed
-                    action_ask_price_list = env.price_list[env.price_list>midprice_integer/2] # the action is exactly equal to the index
-                    action_buy_price_list = env.price_list[env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                    action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2] # the action is exactly equal to the index
+                    action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
                     # print( f'(midprice_integer,inventory)={midprice_integer},{inventory}' )
                     # print(action_ask_price_list)
                     # print(action_buy_price_list)
@@ -453,7 +454,7 @@ if __name__ == "__main__":
     env = MarketEnvironment(dim_price_grid, bound_inventory, dim_action_ask_price, dim_action_buy_price, Delta)
     env.reset()
     
-    agent = QLearningAgent(dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta,
+    agent = QLearningAgent(env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta,
                             UCB=True)#, bonus_coef_0=0.1,  bonus_coef_1=1., ucb_H=5, Q_upper_bound=3.8)
     
     agent.plot_learning_parameters()
@@ -461,7 +462,7 @@ if __name__ == "__main__":
     np.random.seed(999)
 
 
-    agent.update(env)
+    agent.update()
     print('---------- the total number for wrong actions (UCB): ----------')
     print(agent.results_check())
 
@@ -469,13 +470,13 @@ if __name__ == "__main__":
     env = MarketEnvironment(dim_price_grid, bound_inventory, dim_action_ask_price, dim_action_buy_price, Delta)
     env.reset()
 
-    agent = QLearningAgent(dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta, 
+    agent = QLearningAgent(env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta, 
                             UCB=False, N_RL_iter=6*10**3, N_learning_steps=3*10**3) #eps, eps0 )
     agent.plot_learning_parameters()
 
 
     np.random.seed(999)
 
-    agent.update(env)
+    agent.update()
     print('---------- the total number for wrong actions (epsilon greedy): ----------')
     print(agent.results_check())
