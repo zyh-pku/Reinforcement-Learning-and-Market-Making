@@ -25,7 +25,7 @@ def extract_hyperparameters_and_results(text):
     return hyperparameters, result, runtime
 
 # Read the contents of the text file
-with open("hyperparameter_results.txt", "r") as file:
+with open("results/hyperparameter_results.txt", "r") as file:
     lines = file.read()
 
 # Split the text into individual result entries
@@ -70,5 +70,5 @@ for param_name in parameter_names:
     print(f"  Avg: {avg_value}\n")
 
 # Save all parameter combinations with Result=0 to another file
-with open("parameter_combinations_with_result_0.txt", "w") as result_0_file:
+with open("results/parameter_combinations_with_result_0.txt", "w") as result_0_file:
     result_0_file.write("\n\n".join(parameter_combinations_with_result_0))
