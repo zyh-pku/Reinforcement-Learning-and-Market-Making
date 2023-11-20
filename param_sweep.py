@@ -23,8 +23,8 @@ hyperparameter_combinations = itertools.product(Delta_values, bonus_coef_0_value
 # Initialize a dictionary to store results
 results = {}
 
-dim_price_grid = 2 # N_P: price grid dimension - 1 (because we start from 0)
-bound_inventory = 1 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
+dim_price_grid = 10 # N_P: price grid dimension - 1 (because we start from 0)
+bound_inventory = 5 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
 
 dim_midprice_grid = 2*dim_price_grid-1
 dim_inventory_grid = 2*bound_inventory+1
