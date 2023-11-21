@@ -5,7 +5,7 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
 Result: 1
-Runtime: 16.82782530784607 seconds
+Runtime: 21.265461206436157 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -14,718 +14,718 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
 Result: 1
-Runtime: 21.388263940811157 seconds
+Runtime: 20.941431999206543 seconds
 
 Hyperparameters:
 Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.41873836517334 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.47599720954895 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 21.494070291519165 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 2
-Runtime: 21.47121500968933 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.47190284729004 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 21.470213413238525 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.5428204536438 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.628154277801514 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.64732003211975 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.6446270942688 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.546598434448242 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 21.51207947731018 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.48248028755188 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.468197345733643 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.483764171600342 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 2
-Runtime: 21.280068397521973 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.900914907455444 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 21.498470544815063 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.390050172805786 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.34620213508606 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 21.330810546875 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.349425792694092 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.329083681106567 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.343148708343506 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.350541830062866 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.304094076156616 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.341477632522583 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.344382762908936 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.350633144378662 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 3
-Runtime: 21.354695320129395 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.344749212265015 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.312350511550903 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 3
-Runtime: 21.341440200805664 seconds
-
-Hyperparameters:
-Delta: 0.1
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 2
-Runtime: 21.722253561019897 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 15.15268874168396 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.27571177482605 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.29922914505005 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.50872015953064 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.509488582611084 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.509113550186157 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.501832723617554 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.501073837280273 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.491783618927002 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.501424312591553 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.505220890045166 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.1
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.543827533721924 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.570122718811035 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.555148363113403 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.54543399810791 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.486824989318848 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.491084814071655 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 20.408416986465454 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.80469036102295 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 17.805991172790527 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.346653938293457 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.361915826797485 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.36598801612854 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 0.55
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 2
-Runtime: 13.411769390106201 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 1
-Runtime: 13.39915418624878 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.452784061431885 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.484425783157349 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.643391370773315 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.603284358978271 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 0.5
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 13.436754941940308 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.414626121520996 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.406607627868652 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
 Result: 2
-Runtime: 13.456060647964478 seconds
+Runtime: 20.596047401428223 seconds
 
 Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.490815162658691 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 3.5
-Result: 1
-Runtime: 13.439271688461304 seconds
-
-Hyperparameters:
-Delta: 0.55
-bonus_coef_0: 1.0
-bonus_coef_1: 1.0
-ucb_H: 10
-Q_upper_bound: 4.0
-Result: 1
-Runtime: 13.4329674243927 seconds
-
-Hyperparameters:
-Delta: 1.0
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.0
-Result: 1
-Runtime: 13.388939380645752 seconds
-
-Hyperparameters:
-Delta: 1.0
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.410678148269653 seconds
-
-Hyperparameters:
-Delta: 1.0
-bonus_coef_0: 0.1
-bonus_coef_1: 0.5
-ucb_H: 5
-Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.452150821685791 seconds
-
-Hyperparameters:
-Delta: 1.0
+Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.42294454574585 seconds
+Result: 1
+Runtime: 13.142310619354248 seconds
 
 Hyperparameters:
-Delta: 1.0
+Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.411874532699585 seconds
+Result: 1
+Runtime: 12.829576015472412 seconds
 
 Hyperparameters:
-Delta: 1.0
+Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 13.439377784729004 seconds
+Runtime: 12.88045358657837 seconds
 
 Hyperparameters:
-Delta: 1.0
+Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 13.501872777938843 seconds
+Result: 0
+Runtime: 13.122435092926025 seconds
 
 Hyperparameters:
-Delta: 1.0
+Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.449274063110352 seconds
+Result: 2
+Runtime: 13.20362401008606 seconds
 
 Hyperparameters:
-Delta: 1.0
+Delta: 0.1
 bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
 Result: 2
-Runtime: 13.524471521377563 seconds
+Runtime: 13.141641855239868 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 13.278253316879272 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 17.998974084854126 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 13.08604621887207 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.945515394210815 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 12.824782609939575 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 12.879205465316772 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.834747552871704 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 12.887628078460693 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 2
+Runtime: 12.874465703964233 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.847495555877686 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 2
+Runtime: 12.97775411605835 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 12.902069568634033 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 1
+Runtime: 12.828171014785767 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 12.961957931518555 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 12.843400239944458 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 1
+Runtime: 12.827160835266113 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 12.918964385986328 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 12.852213382720947 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 1
+Runtime: 12.834949731826782 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 20.98151469230652 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 2
+Runtime: 20.9328293800354 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 20.960187673568726 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.95081853866577 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 20.97127604484558 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 1
+Runtime: 21.07664155960083 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 21.183300971984863 seconds
+
+Hyperparameters:
+Delta: 0.1
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 22.04333996772766 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 21.100725889205933 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 21.035468339920044 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 20.999817848205566 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 20.945861339569092 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.932655572891235 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 20.95099902153015 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 20.945016860961914 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.880828380584717 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 20.83527374267578 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 20.796380758285522 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.790714502334595 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 20.85820245742798 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 20.86454701423645 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.84740924835205 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 20.917798042297363 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 20.882956981658936 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.849950790405273 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 18.061518669128418 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.954508304595947 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 2
+Runtime: 12.986057043075562 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 12.887896060943604 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 1
+Runtime: 12.917584419250488 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 13.051834106445312 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.55
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 1
+Runtime: 12.944086790084839 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.962931394577026 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 12.919620513916016 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 12.92606806755066 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.851872444152832 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 1
+Runtime: 13.025762557983398 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 13.300451755523682 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.960156679153442 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 12.909149169921875 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 13.017542600631714 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.965001821517944 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 2
+Runtime: 12.857272863388062 seconds
+
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 1.0
+bonus_coef_1: 1.0
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 12.911200761795044 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 12.899759292602539 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 12.880743980407715 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 12.878371000289917 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 16.928428173065186 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 20.522028923034668 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 10
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 15.70553469657898 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 0
+Runtime: 21.01106357574463 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 3.5
+Result: 0
+Runtime: 21.071521520614624 seconds
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 0.1
+bonus_coef_1: 1.0
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 0
+Runtime: 20.383851289749146 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -734,7 +734,7 @@ bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 14.310952425003052 seconds
+Runtime: 12.952060222625732 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -742,8 +742,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 20.72083353996277 seconds
+Result: 0
+Runtime: 13.049305200576782 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -752,7 +752,7 @@ bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 21.637714624404907 seconds
+Runtime: 12.973100900650024 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -761,7 +761,7 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 21.694399118423462 seconds
+Runtime: 13.07763671875 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -770,7 +770,7 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.68994379043579 seconds
+Runtime: 12.874540567398071 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -778,8 +778,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 21.680171728134155 seconds
+Result: 1
+Runtime: 13.053966045379639 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -788,7 +788,7 @@ bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 21.68600559234619 seconds
+Runtime: 13.021347284317017 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -797,7 +797,7 @@ bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.684337854385376 seconds
+Runtime: 13.023037910461426 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -806,7 +806,7 @@ bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 21.709781169891357 seconds
+Runtime: 13.023630619049072 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -815,7 +815,7 @@ bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
 Result: 1
-Runtime: 21.69812560081482 seconds
+Runtime: 13.048799991607666 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -824,7 +824,7 @@ bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.698581218719482 seconds
+Runtime: 12.970033645629883 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -833,7 +833,7 @@ bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 21.69706916809082 seconds
+Runtime: 13.099316835403442 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -842,7 +842,7 @@ bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 21.702970504760742 seconds
+Runtime: 13.051258087158203 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -851,7 +851,7 @@ bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.698156118392944 seconds
+Runtime: 13.008161783218384 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -859,8 +859,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.70307445526123 seconds
+Result: 0
+Runtime: 12.934015274047852 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -869,7 +869,7 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 21.70397424697876 seconds
+Runtime: 13.079028606414795 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -878,7 +878,7 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.7027530670166 seconds
+Runtime: 12.9960458278656 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -887,7 +887,7 @@ bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 20.982882499694824 seconds
+Runtime: 13.017958164215088 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -896,7 +896,7 @@ bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 21.621521949768066 seconds
+Runtime: 13.029982566833496 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -905,7 +905,7 @@ bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 20.44243574142456 seconds
+Runtime: 13.045862197875977 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -914,7 +914,7 @@ bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 21.570194721221924 seconds
+Runtime: 12.982627153396606 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -922,8 +922,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.583039045333862 seconds
+Result: 0
+Runtime: 12.963969230651855 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -932,7 +932,7 @@ bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.572441816329956 seconds
+Runtime: 12.96532917022705 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -941,7 +941,7 @@ bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
 Result: 0
-Runtime: 21.533647537231445 seconds
+Runtime: 16.14764165878296 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -950,7 +950,7 @@ bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
 Result: 0
-Runtime: 21.557496070861816 seconds
+Runtime: 12.983581066131592 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -959,7 +959,7 @@ bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
 Result: 0
-Runtime: 21.552011013031006 seconds
+Runtime: 13.163806676864624 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -967,6 +967,6 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 21.563726902008057 seconds
+Result: 0
+Runtime: 12.996996641159058 seconds
 

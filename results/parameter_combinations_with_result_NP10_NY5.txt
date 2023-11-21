@@ -1,0 +1,18 @@
+Hyperparameters:
+Delta: 0.55
+bonus_coef_0: 0.1
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 3.0
+Result: 203
+Runtime: 197.0054211616516 seconds
+
+
+Hyperparameters:
+Delta: 1.0
+bonus_coef_0: 1.0
+bonus_coef_1: 0.5
+ucb_H: 5
+Q_upper_bound: 4.0
+Result: 203
+Runtime: 202.27041244506836 seconds

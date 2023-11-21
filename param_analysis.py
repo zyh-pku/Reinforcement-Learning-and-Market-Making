@@ -37,10 +37,17 @@ def result_analysis(file_path, save_to):
     filtered_data = []
     parameter_combinations_with_result_0 = []
 
+    # Get minimum result
+    results = []
+    for entry in result_entries:
+        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry)
+        results.append(result)
+    min_result = min(results)
+
     # Parse the data and filter based on Result
     for entry in result_entries:
         hyperparameters, result, runtime = extract_hyperparameters_and_results(entry)
-        if result == 0:
+        if result == min_result:  # or 0
             filtered_data.append(hyperparameters)
             parameter_combinations_with_result_0.append(entry)
 
@@ -76,6 +83,8 @@ def result_analysis(file_path, save_to):
         result_0_file.write("\n\n".join(parameter_combinations_with_result_0))
 
 if __name__ == '__main__':
-    file_path = "results/hyperparameter_results_NP2_NY1.txt"
-    save_to = "results/parameter_combinations_with_result_0_NP2_NY1.txt"
+    N_P = 10
+    N_Y = 5
+    file_path = f"results/hyperparameter_results_NP{N_P}_NY{N_Y}.txt"
+    save_to = f"results/parameter_combinations_with_result_NP{N_P}_NY{N_Y}.txt"
     result_analysis(file_path, save_to)

@@ -4,8 +4,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.265461206436157 seconds
+Result: 275
+Runtime: 235.92367029190063 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -13,8 +13,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 20.941431999206543 seconds
+Result: 269
+Runtime: 164.67980480194092 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -22,8 +22,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 2
-Runtime: 20.596047401428223 seconds
+Result: 238
+Runtime: 204.79773569107056 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -31,8 +31,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 13.142310619354248 seconds
+Result: 262
+Runtime: 195.1386067867279 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -40,8 +40,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 12.829576015472412 seconds
+Result: 242
+Runtime: 186.01777935028076 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -49,8 +49,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.88045358657837 seconds
+Result: 215
+Runtime: 200.12834000587463 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -58,8 +58,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.122435092926025 seconds
+Result: 277
+Runtime: 195.4532699584961 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -67,8 +67,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 2
-Runtime: 13.20362401008606 seconds
+Result: 265
+Runtime: 197.8206970691681 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -76,8 +76,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 2
-Runtime: 13.141641855239868 seconds
+Result: 267
+Runtime: 201.21517610549927 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -85,8 +85,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.278253316879272 seconds
+Result: 270
+Runtime: 182.63605403900146 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -94,8 +94,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 17.998974084854126 seconds
+Result: 263
+Runtime: 202.62478256225586 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -103,8 +103,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 13.08604621887207 seconds
+Result: 240
+Runtime: 194.75763368606567 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -112,8 +112,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.945515394210815 seconds
+Result: 272
+Runtime: 200.10299634933472 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -121,8 +121,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 12.824782609939575 seconds
+Result: 264
+Runtime: 204.26553869247437 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -130,8 +130,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 12.879205465316772 seconds
+Result: 240
+Runtime: 196.67631578445435 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -139,8 +139,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.834747552871704 seconds
+Result: 265
+Runtime: 197.0527310371399 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -148,8 +148,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 12.887628078460693 seconds
+Result: 250
+Runtime: 197.82331657409668 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -157,8 +157,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 2
-Runtime: 12.874465703964233 seconds
+Result: 229
+Runtime: 203.84726476669312 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -166,8 +166,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.847495555877686 seconds
+Result: 275
+Runtime: 196.9611144065857 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -175,8 +175,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 2
-Runtime: 12.97775411605835 seconds
+Result: 269
+Runtime: 203.8912718296051 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -184,8 +184,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 12.902069568634033 seconds
+Result: 264
+Runtime: 198.5782880783081 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -193,8 +193,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 12.828171014785767 seconds
+Result: 274
+Runtime: 179.92430233955383 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -202,8 +202,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 12.961957931518555 seconds
+Result: 264
+Runtime: 198.4641752243042 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -211,8 +211,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 12.843400239944458 seconds
+Result: 249
+Runtime: 200.34913420677185 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -220,8 +220,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 12.827160835266113 seconds
+Result: 275
+Runtime: 203.0756800174713 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -229,8 +229,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.918964385986328 seconds
+Result: 263
+Runtime: 195.45095205307007 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -238,8 +238,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 12.852213382720947 seconds
+Result: 245
+Runtime: 203.656574010849 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -247,8 +247,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 12.834949731826782 seconds
+Result: 268
+Runtime: 202.5282003879547 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -256,8 +256,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 20.98151469230652 seconds
+Result: 260
+Runtime: 167.0652096271515 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -265,8 +265,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 2
-Runtime: 20.9328293800354 seconds
+Result: 235
+Runtime: 199.2630660533905 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -274,8 +274,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 20.960187673568726 seconds
+Result: 273
+Runtime: 169.50100827217102 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -283,8 +283,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.95081853866577 seconds
+Result: 268
+Runtime: 200.24733471870422 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -292,8 +292,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 20.97127604484558 seconds
+Result: 264
+Runtime: 201.68725514411926 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -301,8 +301,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 21.07664155960083 seconds
+Result: 276
+Runtime: 184.9106686115265 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -310,8 +310,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 21.183300971984863 seconds
+Result: 266
+Runtime: 198.47436666488647 seconds
 
 Hyperparameters:
 Delta: 0.1
@@ -319,8 +319,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 22.04333996772766 seconds
+Result: 253
+Runtime: 203.69511556625366 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -328,8 +328,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.100725889205933 seconds
+Result: 203
+Runtime: 197.0054211616516 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -337,8 +337,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.035468339920044 seconds
+Result: 211
+Runtime: 210.6080801486969 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -346,8 +346,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 20.999817848205566 seconds
+Result: 207
+Runtime: 177.09092330932617 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -355,8 +355,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 20.945861339569092 seconds
+Result: 233
+Runtime: 197.75790357589722 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -364,8 +364,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.932655572891235 seconds
+Result: 223
+Runtime: 203.22226428985596 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -373,8 +373,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 20.95099902153015 seconds
+Result: 225
+Runtime: 177.73278498649597 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -382,8 +382,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 20.945016860961914 seconds
+Result: 232
+Runtime: 204.03359603881836 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -391,8 +391,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.880828380584717 seconds
+Result: 208
+Runtime: 177.01979851722717 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -400,8 +400,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 20.83527374267578 seconds
+Result: 223
+Runtime: 200.69492769241333 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -409,8 +409,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 20.796380758285522 seconds
+Result: 228
+Runtime: 178.45455884933472 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -418,8 +418,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.790714502334595 seconds
+Result: 225
+Runtime: 170.6980357170105 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -427,8 +427,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 20.85820245742798 seconds
+Result: 216
+Runtime: 203.40335249900818 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -436,8 +436,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 20.86454701423645 seconds
+Result: 220
+Runtime: 198.5533628463745 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -445,8 +445,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.84740924835205 seconds
+Result: 208
+Runtime: 163.6178925037384 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -454,8 +454,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 20.917798042297363 seconds
+Result: 223
+Runtime: 180.67462801933289 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -463,8 +463,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 20.882956981658936 seconds
+Result: 236
+Runtime: 168.95720410346985 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -472,8 +472,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.849950790405273 seconds
+Result: 235
+Runtime: 186.04387784004211 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -481,8 +481,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 18.061518669128418 seconds
+Result: 218
+Runtime: 188.1812674999237 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -490,8 +490,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.954508304595947 seconds
+Result: 221
+Runtime: 195.68095183372498 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -499,8 +499,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 2
-Runtime: 12.986057043075562 seconds
+Result: 211
+Runtime: 206.7088007926941 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -508,8 +508,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.887896060943604 seconds
+Result: 232
+Runtime: 198.25553345680237 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -517,8 +517,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 12.917584419250488 seconds
+Result: 228
+Runtime: 185.9001452922821 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -526,8 +526,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.051834106445312 seconds
+Result: 234
+Runtime: 197.089289188385 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -535,8 +535,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 12.944086790084839 seconds
+Result: 214
+Runtime: 165.5276119709015 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -544,8 +544,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.962931394577026 seconds
+Result: 236
+Runtime: 202.37881588935852 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -553,8 +553,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.919620513916016 seconds
+Result: 226
+Runtime: 206.99312901496887 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -562,8 +562,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.92606806755066 seconds
+Result: 204
+Runtime: 169.10399341583252 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -571,8 +571,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.851872444152832 seconds
+Result: 244
+Runtime: 202.62499833106995 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -580,8 +580,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 1
-Runtime: 13.025762557983398 seconds
+Result: 235
+Runtime: 161.02493500709534 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -589,8 +589,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.300451755523682 seconds
+Result: 236
+Runtime: 165.1659061908722 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -598,8 +598,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.960156679153442 seconds
+Result: 227
+Runtime: 189.18841791152954 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -607,8 +607,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.909149169921875 seconds
+Result: 220
+Runtime: 202.9231526851654 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -616,8 +616,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.017542600631714 seconds
+Result: 234
+Runtime: 201.25235676765442 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -625,8 +625,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.965001821517944 seconds
+Result: 241
+Runtime: 203.4457724094391 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -634,8 +634,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 2
-Runtime: 12.857272863388062 seconds
+Result: 239
+Runtime: 177.5290093421936 seconds
 
 Hyperparameters:
 Delta: 0.55
@@ -643,8 +643,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.911200761795044 seconds
+Result: 233
+Runtime: 214.1828112602234 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -652,8 +652,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.899759292602539 seconds
+Result: 218
+Runtime: 209.05964350700378 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -661,8 +661,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.880743980407715 seconds
+Result: 209
+Runtime: 205.85111045837402 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -670,8 +670,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.878371000289917 seconds
+Result: 213
+Runtime: 195.8859724998474 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -679,8 +679,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 16.928428173065186 seconds
+Result: 217
+Runtime: 197.6900589466095 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -688,8 +688,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 20.522028923034668 seconds
+Result: 213
+Runtime: 211.25294613838196 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -697,8 +697,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 15.70553469657898 seconds
+Result: 212
+Runtime: 174.0817277431488 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -706,8 +706,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 21.01106357574463 seconds
+Result: 212
+Runtime: 209.7254502773285 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -715,8 +715,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 21.071521520614624 seconds
+Result: 222
+Runtime: 202.9644157886505 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -724,8 +724,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 20.383851289749146 seconds
+Result: 217
+Runtime: 183.01939034461975 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -733,8 +733,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.952060222625732 seconds
+Result: 224
+Runtime: 199.9828760623932 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -742,8 +742,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.049305200576782 seconds
+Result: 236
+Runtime: 199.46634101867676 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -751,8 +751,8 @@ bonus_coef_0: 0.1
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.973100900650024 seconds
+Result: 213
+Runtime: 160.976580619812 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -760,8 +760,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.07763671875 seconds
+Result: 223
+Runtime: 201.00887966156006 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -769,8 +769,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.874540567398071 seconds
+Result: 233
+Runtime: 188.01579093933105 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -778,8 +778,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 1
-Runtime: 13.053966045379639 seconds
+Result: 214
+Runtime: 169.85004425048828 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -787,8 +787,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.021347284317017 seconds
+Result: 224
+Runtime: 204.76730871200562 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -796,8 +796,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.023037910461426 seconds
+Result: 229
+Runtime: 192.40350675582886 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -805,8 +805,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.023630619049072 seconds
+Result: 233
+Runtime: 171.54720783233643 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -814,8 +814,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 1
-Runtime: 13.048799991607666 seconds
+Result: 235
+Runtime: 174.76507115364075 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -823,8 +823,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.970033645629883 seconds
+Result: 233
+Runtime: 190.03548192977905 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -832,8 +832,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.099316835403442 seconds
+Result: 232
+Runtime: 194.96881771087646 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -841,8 +841,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.051258087158203 seconds
+Result: 237
+Runtime: 184.5467026233673 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -850,8 +850,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.008161783218384 seconds
+Result: 227
+Runtime: 193.14990210533142 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -859,8 +859,8 @@ bonus_coef_0: 0.55
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.934015274047852 seconds
+Result: 228
+Runtime: 202.35982155799866 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -868,8 +868,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.079028606414795 seconds
+Result: 232
+Runtime: 199.4881501197815 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -877,8 +877,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.9960458278656 seconds
+Result: 227
+Runtime: 203.11909008026123 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -886,8 +886,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 13.017958164215088 seconds
+Result: 203
+Runtime: 202.27041244506836 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -895,8 +895,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 13.029982566833496 seconds
+Result: 215
+Runtime: 168.22073459625244 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -904,8 +904,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.045862197875977 seconds
+Result: 229
+Runtime: 200.6309425830841 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -913,8 +913,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 0.5
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.982627153396606 seconds
+Result: 225
+Runtime: 204.06363248825073 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -922,8 +922,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.963969230651855 seconds
+Result: 226
+Runtime: 201.56235218048096 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -931,8 +931,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 12.96532917022705 seconds
+Result: 213
+Runtime: 193.20650625228882 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -940,8 +940,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 5
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 16.14764165878296 seconds
+Result: 237
+Runtime: 198.65240693092346 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -949,8 +949,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.0
-Result: 0
-Runtime: 12.983581066131592 seconds
+Result: 239
+Runtime: 218.7628457546234 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -958,8 +958,8 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 3.5
-Result: 0
-Runtime: 13.163806676864624 seconds
+Result: 231
+Runtime: 196.7189497947693 seconds
 
 Hyperparameters:
 Delta: 1.0
@@ -967,6 +967,6 @@ bonus_coef_0: 1.0
 bonus_coef_1: 1.0
 ucb_H: 10
 Q_upper_bound: 4.0
-Result: 0
-Runtime: 12.996996641159058 seconds
+Result: 236
+Runtime: 196.99688291549683 seconds
 
