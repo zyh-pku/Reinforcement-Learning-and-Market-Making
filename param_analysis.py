@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import re
+import pandas as pd
+import seaborn as sns
 
 # Function to extract hyperparameters and results from the text
 def extract_hyperparameters_and_results(text):
@@ -24,11 +26,66 @@ def extract_hyperparameters_and_results(text):
             runtime = float(re.search(r'\d+\.\d+', line).group())  # Extract runtime as a float
     return hyperparameters, result, runtime
 
+def parse_experiment_data_v2(file_lines):
+    data = []
+    current_experiment = {}
+    for line in file_lines:
+        # Identifying hyperparameter lines and the result line
+        if ':' in line and 'Hyperparameters' not in line:
+            key, value = line.split(':')
+            # For runtime, remove 'seconds' from the value
+            if 'seconds' in value:
+                value = value.replace('seconds', '').strip()
+            current_experiment[key.strip()] = float(value.strip())
+        # When a blank line is encountered, it signifies the end of an experiment's data
+        elif line == '\n':
+            if current_experiment:  # Ensure the current experiment has data
+                data.append(current_experiment)
+                current_experiment = {}
+    return pd.DataFrame(data)
+
+
+def plot_param_effects(file_path):
+    with open(file_path, 'r') as file:
+        file_content = file.readlines()
+
+    # Re-parsing the file content
+    df = parse_experiment_data_v2(file_content)
+
+    df.head()
+
+
+    # Setting the aesthetics for the plots
+    sns.set(style="whitegrid")
+
+    # Creating plots for each hyperparameter against the result
+    fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(15, 15))
+    fig.suptitle('Effect of Hyperparameters on Experiment Result', fontsize=16)
+
+    # Plotting
+    sns.scatterplot(data=df, x='Delta', y='Result', ax=axes[0, 0])
+    sns.scatterplot(data=df, x='bonus_coef_0', y='Result', ax=axes[0, 1])
+    sns.scatterplot(data=df, x='bonus_coef_1', y='Result', ax=axes[1, 0])
+    sns.scatterplot(data=df, x='ucb_H', y='Result', ax=axes[1, 1])
+    sns.scatterplot(data=df, x='Q_upper_bound', y='Result', ax=axes[2, 0])
+
+    # Removing the empty subplot
+    fig.delaxes(axes[2][1])
+
+    # Adjusting layout
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.9)
+
+    plt.show()
+
+
 def result_analysis(file_path, save_to):
 
     # Read the contents of the text file
     with open(file_path, "r") as file:
         lines = file.read()
+
+    plot_param_effects(file_path)
 
     # Split the text into individual result entries
     result_entries = re.split(r'\n(?=Hyperparameters:)', lines)
