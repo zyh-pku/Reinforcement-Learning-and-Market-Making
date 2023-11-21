@@ -15,7 +15,7 @@ from market import MarketEnvironment
 
 class QLearningAgent:
 
-    def __init__(self, env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta,  \
+    def __init__(self, env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta=0.1,  \
         N_Bellman_iter = 100, \
         Q_upper_bound=4., UCB=True,\
         bonus_coef_0=0.1, bonus_coef_1=1., ucb_H=50, \
@@ -33,6 +33,7 @@ class QLearningAgent:
         self.GAMMA = 0.95
         self.GAMMA_Delta = np.exp(-self.GAMMA*self.Delta)
         self.Q_upper_bound = Q_upper_bound
+
         
         # true value function and optimal policy obtained by Bellman equation iteration
         self.N_Bellman_iter = N_Bellman_iter

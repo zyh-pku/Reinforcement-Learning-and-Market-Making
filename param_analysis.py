@@ -142,6 +142,6 @@ def result_analysis(file_path, save_to):
 if __name__ == '__main__':
     N_P = 10
     N_Y = 5
-    file_path = f"results/hyperparameter_results_NP{N_P}_NY{N_Y}.txt"
-    save_to = f"results/parameter_combinations_with_result_NP{N_P}_NY{N_Y}.txt"
+    file_path = f"results/hyperparameter_results_UCB_NP{N_P}_NY{N_Y}.txt"
+    save_to = f"results/parameter_combinations_with_result_UCB_NP{N_P}_NY{N_Y}.txt"
     result_analysis(file_path, save_to)
