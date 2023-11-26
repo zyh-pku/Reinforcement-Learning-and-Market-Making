@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 
 # Function to extract hyperparameters and results from the text
-def extract_hyperparameters_and_results(text):
+def extract_hyperparameters_and_results(text, UCB=True):
     hyperparameters = {}
     result = None
     runtime = None
@@ -12,13 +12,17 @@ def extract_hyperparameters_and_results(text):
     for line in lines:
         if line.startswith("Delta:"):
             hyperparameters["Delta"] = float(line.split(":")[1].strip())
-        elif line.startswith("bonus_coef_0:"):
+        elif line.startswith("eps0:") and not UCB:
+            hyperparameters["eps0"] = float(line.split(":")[1].strip())
+        elif line.startswith("exp0:") and not UCB:
+            hyperparameters["exp0"] = float(line.split(":")[1].strip())
+        elif line.startswith("bonus_coef_0:") and UCB:
             hyperparameters["bonus_coef_0"] = float(line.split(":")[1].strip())
-        elif line.startswith("bonus_coef_1:"):
+        elif line.startswith("bonus_coef_1:") and UCB:
             hyperparameters["bonus_coef_1"] = float(line.split(":")[1].strip())
-        elif line.startswith("ucb_H:"):
+        elif line.startswith("ucb_H:") and UCB:
             hyperparameters["ucb_H"] = int(line.split(":")[1].strip())
-        elif line.startswith("Q_upper_bound:"):
+        elif line.startswith("Q_upper_bound:") and UCB:
             hyperparameters["Q_upper_bound"] = float(line.split(":")[1].strip())
         elif line.startswith("Result:"):
             result = int(line.split(":")[1].strip())
@@ -45,32 +49,75 @@ def parse_experiment_data_v2(file_lines):
     return pd.DataFrame(data)
 
 
-def plot_param_effects(file_path):
+# def plot_param_effects(file_path):
+#     with open(file_path, 'r') as file:
+#         file_content = file.readlines()
+
+#     # Re-parsing the file content
+#     df = parse_experiment_data_v2(file_content)
+
+#     df.head()
+
+
+#     # Setting the aesthetics for the plots
+#     sns.set(style="whitegrid")
+
+#     # Creating plots for each hyperparameter against the result
+#     fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(15, 15))
+#     fig.suptitle('Effect of Hyperparameters on Experiment Result', fontsize=16)
+
+#     # Plotting
+#     sns.scatterplot(data=df, x='Delta', y='Result', ax=axes[0, 0])
+#     sns.scatterplot(data=df, x='bonus_coef_0', y='Result', ax=axes[0, 1])
+#     sns.scatterplot(data=df, x='bonus_coef_1', y='Result', ax=axes[1, 0])
+#     sns.scatterplot(data=df, x='ucb_H', y='Result', ax=axes[1, 1])
+#     sns.scatterplot(data=df, x='Q_upper_bound', y='Result', ax=axes[2, 0])
+
+#     # Removing the empty subplot
+#     fig.delaxes(axes[2][1])
+
+#     # Adjusting layout
+#     plt.tight_layout()
+#     plt.subplots_adjust(top=0.9)
+
+#     plt.show()
+
+def plot_param_effects(file_path, UCB=True):
     with open(file_path, 'r') as file:
         file_content = file.readlines()
 
     # Re-parsing the file content
     df = parse_experiment_data_v2(file_content)
 
-    df.head()
-
-
     # Setting the aesthetics for the plots
     sns.set(style="whitegrid")
 
+    # Select hyperparameters based on UCB flag
+    if UCB:
+        parameter_names = ['Delta', 'bonus_coef_0', 'bonus_coef_1', 'ucb_H', 'Q_upper_bound']
+    else:
+        parameter_names = ['Delta', 'eps0', 'exp0']
+
+    # Determine the number of rows and columns for subplots
+    num_params = len(parameter_names)
+    nrows = (num_params + 1) // 2
+    ncols = 2 if num_params > 1 else 1
+
     # Creating plots for each hyperparameter against the result
-    fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(15, 15))
+    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(15, 5 * nrows))
     fig.suptitle('Effect of Hyperparameters on Experiment Result', fontsize=16)
 
-    # Plotting
-    sns.scatterplot(data=df, x='Delta', y='Result', ax=axes[0, 0])
-    sns.scatterplot(data=df, x='bonus_coef_0', y='Result', ax=axes[0, 1])
-    sns.scatterplot(data=df, x='bonus_coef_1', y='Result', ax=axes[1, 0])
-    sns.scatterplot(data=df, x='ucb_H', y='Result', ax=axes[1, 1])
-    sns.scatterplot(data=df, x='Q_upper_bound', y='Result', ax=axes[2, 0])
+    # Flatten axes array if more than one row
+    if nrows > 1:
+        axes = axes.flatten()
 
-    # Removing the empty subplot
-    fig.delaxes(axes[2][1])
+    # Plotting each hyperparameter
+    for i, param_name in enumerate(parameter_names):
+        sns.scatterplot(data=df, x=param_name, y='Result', ax=axes[i])
+
+    # Remove any extra subplots
+    for j in range(i + 1, nrows * ncols):
+        fig.delaxes(axes[j])
 
     # Adjusting layout
     plt.tight_layout()
@@ -80,12 +127,17 @@ def plot_param_effects(file_path):
 
 
 def result_analysis(file_path, save_to):
+    if 'UCB' in file_path:
+        UCB=True
+    else:
+        UCB=False
+
 
     # Read the contents of the text file
     with open(file_path, "r") as file:
         lines = file.read()
 
-    plot_param_effects(file_path)
+    plot_param_effects(file_path, UCB)
 
     # Split the text into individual result entries
     result_entries = re.split(r'\n(?=Hyperparameters:)', lines)
@@ -97,13 +149,13 @@ def result_analysis(file_path, save_to):
     # Get minimum result
     results = []
     for entry in result_entries:
-        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry)
+        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry, UCB)
         results.append(result)
     min_result = min(results)
 
     # Parse the data and filter based on Result
     for entry in result_entries:
-        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry)
+        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry, UCB)
         if result == min_result:  # or 0
             filtered_data.append(hyperparameters)
             parameter_combinations_with_result_0.append(entry)

@@ -10,6 +10,7 @@ import time
 import copy
 
 UCB = False
+np.random.seed(999)
 
 # Define the hyperparameter search space
 if UCB:
@@ -25,10 +26,9 @@ else:
     Delta_values = [0.1]
     eps0_values = [0.9, 0.95, 0.99]
     exp0_values = [0.7, 0.8, 0.9]
-    Q_upper_bound_values = np.linspace(3.0, 4.0, num=3)
 
     # Define parameter names
-    parameter_names = ['Delta', 'eps0', 'exp0', 'Q_upper_bound']
+    parameter_names = ['Delta', 'eps0', 'exp0']
 
 
 # Create a list of all possible hyperparameter combinations
