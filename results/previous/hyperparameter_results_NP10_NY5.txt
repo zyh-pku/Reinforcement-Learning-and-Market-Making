@@ -1,0 +1,216 @@
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.7
+Q_upper_bound: 3.0
+Result: 188
+Runtime: 203.9236569404602 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.7
+Q_upper_bound: 3.5
+Result: 186
+Runtime: 204.33848357200623 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.7
+Q_upper_bound: 4.0
+Result: 182
+Runtime: 183.24413537979126 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.8
+Q_upper_bound: 3.0
+Result: 186
+Runtime: 187.47421550750732 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.8
+Q_upper_bound: 3.5
+Result: 187
+Runtime: 161.77393746376038 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.8
+Q_upper_bound: 4.0
+Result: 198
+Runtime: 163.99526810646057 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.9
+Q_upper_bound: 3.0
+Result: 193
+Runtime: 184.6396427154541 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.9
+Q_upper_bound: 3.5
+Result: 207
+Runtime: 184.16487383842468 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.9
+Q_upper_bound: 4.0
+Result: 192
+Runtime: 192.96560430526733 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.7
+Q_upper_bound: 3.0
+Result: 207
+Runtime: 190.64721250534058 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.7
+Q_upper_bound: 3.5
+Result: 201
+Runtime: 197.77344489097595 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.7
+Q_upper_bound: 4.0
+Result: 208
+Runtime: 171.56213784217834 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.8
+Q_upper_bound: 3.0
+Result: 214
+Runtime: 185.1643636226654 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.8
+Q_upper_bound: 3.5
+Result: 227
+Runtime: 165.49497509002686 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.8
+Q_upper_bound: 4.0
+Result: 218
+Runtime: 201.14884853363037 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.9
+Q_upper_bound: 3.0
+Result: 214
+Runtime: 191.0389108657837 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.9
+Q_upper_bound: 3.5
+Result: 211
+Runtime: 199.79204750061035 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.95
+exp0: 0.9
+Q_upper_bound: 4.0
+Result: 207
+Runtime: 179.20006346702576 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.7
+Q_upper_bound: 3.0
+Result: 224
+Runtime: 196.81678533554077 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.7
+Q_upper_bound: 3.5
+Result: 224
+Runtime: 203.89352798461914 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.7
+Q_upper_bound: 4.0
+Result: 222
+Runtime: 197.9570038318634 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.8
+Q_upper_bound: 3.0
+Result: 229
+Runtime: 176.5368971824646 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.8
+Q_upper_bound: 3.5
+Result: 218
+Runtime: 191.0683674812317 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.8
+Q_upper_bound: 4.0
+Result: 231
+Runtime: 189.6867561340332 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.9
+Q_upper_bound: 3.0
+Result: 230
+Runtime: 167.2776358127594 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.9
+Q_upper_bound: 3.5
+Result: 228
+Runtime: 185.7526717185974 seconds
+
+Hyperparameters:
+Delta: 0.1
+eps0: 0.99
+exp0: 0.9
+Q_upper_bound: 4.0
+Result: 232
+Runtime: 202.79495549201965 seconds
+

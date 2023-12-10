@@ -1,0 +1,7 @@
+Hyperparameters:
+Delta: 0.1
+eps0: 0.9
+exp0: 0.7
+Q_upper_bound: 4.0
+Result: 182
+Runtime: 183.24413537979126 seconds

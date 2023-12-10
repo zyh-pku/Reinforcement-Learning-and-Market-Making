@@ -24,8 +24,10 @@ if UCB:
 
 else:
     Delta_values = [0.1]
-    eps0_values = [0.9, 0.95, 0.99]
-    exp0_values = [0.7, 0.8, 0.9]
+    # eps0_values = [0.9, 0.95, 0.99]
+    # exp0_values = [0.7, 0.8, 0.9]
+    eps0_values = np.linspace(0.1, 0.9, num=9)
+    exp0_values = np.linspace(0.1, 0.9, num=9)
 
     # Define parameter names
     parameter_names = ['Delta', 'eps0', 'exp0']
@@ -59,10 +61,28 @@ def evaluate_agent(**kwargs):
     result = agent.results_check()
     return result, end_time - start_time
 
+
+def write_to_file(file_path, results):
+    with open(file_path, "w") as f:
+        for params, result_info in results.items():
+            f.write(f"Hyperparameters:\n")
+            for param_name, param_value in result_info['parameters'].items():
+                f.write(f"{param_name}: {param_value}\n")
+            f.write(f"Result: {result_info['result']}\n")
+            f.write(f"Runtime: {result_info['runtime']} seconds\n")
+            f.write("\n")
+
 # Progress counter
 total_combinations = len(list(copy.copy(hyperparameter_combinations)))
 print(f"Total number of combinations: {total_combinations}")
 progress = 0
+
+# Save results to a file
+if UCB:
+    file_path = f"results/hyperparameter_results_UCB_NP{dim_price_grid}_NY{bound_inventory}.txt"
+else:
+    file_path = f"results/hyperparameter_results_NP{dim_price_grid}_NY{bound_inventory}.txt"
+
 
 # Perform grid search
 for vars in hyperparameter_combinations:
@@ -85,16 +105,6 @@ for vars in hyperparameter_combinations:
     
     results[tuple(param_values)] = result_with_params
 
-# Save results to a file
-if UCB:
-    file_path = f"results/hyperparameter_results_UCB_NP{dim_price_grid}_NY{bound_inventory}.txt"
-else:
-    file_path = f"results/hyperparameter_results_NP{dim_price_grid}_NY{bound_inventory}.txt"
-with open(file_path, "w") as f:
-    for params, result_info in results.items():
-        f.write(f"Hyperparameters:\n")
-        for param_name, param_value in result_info['parameters'].items():
-            f.write(f"{param_name}: {param_value}\n")
-        f.write(f"Result: {result_info['result']}\n")
-        f.write(f"Runtime: {result_info['runtime']} seconds\n")
-        f.write("\n")
+    # Write results to a file
+    write_to_file(file_path, results)
+
