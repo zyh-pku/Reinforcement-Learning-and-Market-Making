@@ -7,15 +7,24 @@ import seaborn as sns
 def extract_hyperparameters_and_results(text, UCB=True):
     hyperparameters = {}
     result = None
+    v_error = None #new add
     runtime = None
     lines = text.strip().split('\n')
     for line in lines:
+        #['Delta', 'eps_epoch', 'exp0', 'exp_epoch', 'exp' ]
         if line.startswith("Delta:"):
             hyperparameters["Delta"] = float(line.split(":")[1].strip())
         elif line.startswith("eps0:") and not UCB:
             hyperparameters["eps0"] = float(line.split(":")[1].strip())
         elif line.startswith("exp0:") and not UCB:
             hyperparameters["exp0"] = float(line.split(":")[1].strip())
+        elif line.startswith("exp:") and not UCB:
+            hyperparameters["exp"] = float(line.split(":")[1].strip())
+        elif line.startswith("exp_epoch:") and not UCB:
+            hyperparameters["exp_epoch"] = float(line.split(":")[1].strip())            
+        elif line.startswith("eps_epoch:") and not UCB:
+            hyperparameters["eps_epoch"] = float(line.split(":")[1].strip()) 
+            
         elif line.startswith("bonus_coef_0:") and UCB:
             hyperparameters["bonus_coef_0"] = float(line.split(":")[1].strip())
         elif line.startswith("bonus_coef_1:") and UCB:
@@ -26,9 +35,13 @@ def extract_hyperparameters_and_results(text, UCB=True):
             hyperparameters["Q_upper_bound"] = float(line.split(":")[1].strip())
         elif line.startswith("Result:"):
             result = int(line.split(":")[1].strip())
+            
+        elif line.startswith("Value_Error:"):
+            v_error = float(re.search(r'\d+\.\d+', line).group())  # new add Extract value_error as a float
+            
         elif line.startswith("Runtime:"):
             runtime = float(re.search(r'\d+\.\d+', line).group())  # Extract runtime as a float
-    return hyperparameters, result, runtime
+    return hyperparameters, result, v_error, runtime
 
 def parse_experiment_data_v2(file_lines):
     data = []
@@ -96,7 +109,7 @@ def plot_param_effects(file_path, UCB=True):
     if UCB:
         parameter_names = ['Delta', 'bonus_coef_0', 'bonus_coef_1', 'ucb_H', 'Q_upper_bound']
     else:
-        parameter_names = ['Delta', 'eps0', 'exp0']
+        parameter_names = ['Delta', 'eps_epoch', 'exp0', 'exp_epoch', 'exp' ]
 
     # Determine the number of rows and columns for subplots
     num_params = len(parameter_names)
@@ -137,7 +150,7 @@ def result_analysis(file_path, save_to):
     with open(file_path, "r") as file:
         lines = file.read()
 
-    plot_param_effects(file_path, UCB)
+#    plot_param_effects(file_path, UCB)
 
     # Split the text into individual result entries
     result_entries = re.split(r'\n(?=Hyperparameters:)', lines)
@@ -148,14 +161,16 @@ def result_analysis(file_path, save_to):
 
     # Get minimum result
     results = []
+    v_error_list = [] #new add
     for entry in result_entries:
-        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry, UCB)
+        hyperparameters, result, v_error, runtime = extract_hyperparameters_and_results(entry, UCB)
+        v_error_list.append(v_error)
         results.append(result)
     min_result = min(results)
 
     # Parse the data and filter based on Result
     for entry in result_entries:
-        hyperparameters, result, runtime = extract_hyperparameters_and_results(entry, UCB)
+        hyperparameters, result, v_error, runtime = extract_hyperparameters_and_results(entry, UCB)
         if result == min_result:  # or 0
             filtered_data.append(hyperparameters)
             parameter_combinations_with_result_0.append(entry)
@@ -192,10 +207,11 @@ def result_analysis(file_path, save_to):
         result_0_file.write("\n\n".join(parameter_combinations_with_result_0))
 
 if __name__ == '__main__':
-    N_P = 10
-    N_Y = 5
+    N_P = 2
+    N_Y = 1
     # file_path = f"results/hyperparameter_results_UCB_NP{N_P}_NY{N_Y}.txt"
     # save_to = f"results/parameter_combinations_with_result_UCB_NP{N_P}_NY{N_Y}.txt"
-    file_path = f"results/hyperparameter_results_NP{N_P}_NY{N_Y}.txt"
-    save_to = f"results/parameter_combinations_with_result_NP{N_P}_NY{N_Y}.txt"
-    result_analysis(file_path, save_to)
+    for KKK in range(3):
+        file_path = f"results/hyperparameter_results_NP{N_P}_NY{N_Y}_Delta{KKK}.txt"
+        save_to = f"results/parameter_combinations_with_result_NP{N_P}_NY{N_Y}_Delta{KKK}.txt"
+        result_analysis(file_path, save_to)
