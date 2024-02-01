@@ -15,10 +15,12 @@ class MarketEnvironment:
         self.tick_size = 1/3
         self.order_size = 1
         
+        self.Delta_0 = 0.1
+        
         # The two parameters below: for a limit order at price level p, the probability that this order is executed is 
         # equal to A*exp(-k1*|p-midprice|)*Delta, where |p-midprice| is the absolute distance between p and midprice.
         self.k1 = 2
-        self.A = np.exp(1)*(1/self.Delta)*0.4
+        self.A = np.exp(1)*(1/self.Delta_0)*0.4
 
         # Transition probability matrix
         self.trans_prob_Q_matrix_midprice_upper_offdiagonal_entries = np.zeros((self.dim_midprice_grid-1, self.dim_midprice_grid))
@@ -35,7 +37,7 @@ class MarketEnvironment:
             # lambda_seq = np.random.uniform(0, 1, self.dim_midprice_grid-1)
             lambda_seq = np.array((self.dim_midprice_grid-1)*[1/3])
             lambda_seq[0] = 0.5
-            lambda_seq *= (1/self.Delta)
+            lambda_seq *= (1/self.Delta_0)
 
         self.lambda_upper_offdiagonal_entries = lambda_seq
         self.lambda_lower_offdiagonal_entries = np.flip(lambda_seq, axis=0)
@@ -61,7 +63,6 @@ class MarketEnvironment:
         """Reset the environment to its initial state."""
         # self.midprice_data = np.zeros(self.N_RL_iter+1)
         # self.inventory_data = np.zeros(self.N_RL_iter+1)
-
         
         self.midprice_data = self.dim_midprice_grid//2
         self.inventory_data = self.dim_inventory_grid//2
