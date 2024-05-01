@@ -6,12 +6,12 @@ from market import MarketEnvironment
 class QLearningAgent:
 
     def __init__(self, env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price, Delta=0.1,  \
-        Bellman_iter_V_initial=2.5, N_Bellman_iter = 1000, Bellman_iter_threshold=1e-5, \
-        Q_upper_bound=4., UCB=False,\
+        N_Bellman_iter = 100, Bellman_iter_threshold = 0.001, Bellman_iter_V_initial = 2.3, \
+            V_RL_iter_threshold = 0.065, V_RL_iter_initial = 2.3, \
+        Q_upper_bound=4., UCB=True,\
         bonus_coef_0=0.1, bonus_coef_1=1., ucb_H=50, \
         lr = 0.8, lr_exponent = 2, \
         exp = 1.0, exp0 = 0.8, exp_epoch = 100, \
-        V_RL_iter_threshold = 0.065, V_RL_iter_initial = 2.3, \
         N_RL_iter=12*10**4, N_learning_steps=3*10**4):
         # env is the environment class object
         # dim_midprice_grid is the number of midprice levels
@@ -152,7 +152,7 @@ class QLearningAgent:
                 self.V_RL_iter_steps = i
                 break
             ######
-            if i % (2*10**3) == 0:
+            if i % (10**4) == 0:
                 print(f"Iteration: {i}")
                 print(f"V error: {self.V_error}")
             # the transition from i to i+1
@@ -311,7 +311,7 @@ class QLearningAgent:
         
         V_max_increment = float('inf')
         i = -1
-        while V_max_increment > self.Bellman_iter_threshold and i < self.N_Bellman_iter-1:
+        while V_max_increment > self.Bellman_iter_threshold:
             i+=1
             self.V_star = self.V_star_converge_track[ : , : , i]
             V_max_increment = 0
@@ -337,9 +337,9 @@ class QLearningAgent:
 
                             midprice_integer_expectation = np.dot(prob_price, np.array(range(1,self.dim_midprice_grid+1)))
 
-                            V_tmp = prob_buy_order_filled * (midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size  - self.env.transaction_cost) + \
-                            (midprice_integer_expectation-midprice_integer)*(self.env.tick_size/2)*inventory - self.env.phi_inventory_risk*(inventory**2)*self.Delta + \
-                            self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
+                            V_tmp = prob_buy_order_filled * (midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size  - self.env.transaction_cost) 
+                            + (midprice_integer_expectation-midprice_integer)*(self.env.tick_size/2)*inventory - self.env.phi_inventory_risk*(inventory**2)*self.Delta 
+                            + self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
 
                             if V_tmp > V_max_at_this_state:
                                 V_max_at_this_state = V_tmp
@@ -361,9 +361,9 @@ class QLearningAgent:
 
                             midprice_integer_expectation = np.dot(prob_price, np.array(range(1,self.dim_midprice_grid+1)))
    
-                            V_tmp = prob_ask_order_filled * (idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2  - self.env.transaction_cost) + \
-                            (midprice_integer_expectation-midprice_integer)*(self.env.tick_size/2)*inventory - self.env.phi_inventory_risk*(inventory**2)*self.Delta + \
-                            self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
+                            V_tmp = prob_ask_order_filled * (idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2  - self.env.transaction_cost) 
+                            + (midprice_integer_expectation-midprice_integer)*(self.env.tick_size/2)*inventory - self.env.phi_inventory_risk*(inventory**2)*self.Delta                  
+                            + self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
 
                             if V_tmp > V_max_at_this_state:
                                 V_max_at_this_state = V_tmp
@@ -388,10 +388,10 @@ class QLearningAgent:
 
                                 midprice_integer_expectation = np.dot(prob_price, np.array(range(1,self.dim_midprice_grid+1)))
     
-                                V_tmp = prob_ask_order_filled * (idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2 - self.env.transaction_cost) + \
-                                prob_buy_order_filled * (midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size - self.env.transaction_cost) + \
-                                (midprice_integer_expectation-midprice_integer)*(self.env.tick_size/2)*inventory - self.env.phi_inventory_risk*(inventory**2)*self.Delta + \
-                                self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
+                                V_tmp = prob_ask_order_filled * (idx_ask_price*self.env.tick_size - midprice_integer*self.env.tick_size/2 - self.env.transaction_cost) 
+                                + prob_buy_order_filled * (midprice_integer*self.env.tick_size/2 - idx_buy_price*self.env.tick_size - self.env.transaction_cost) 
+                                + (midprice_integer_expectation-midprice_integer)*(self.env.tick_size/2)*inventory - self.env.phi_inventory_risk*(inventory**2)*self.Delta                             
+                                + self.GAMMA_Delta * np.dot(prob_price.T ,np.dot(self.V_star, prob_inventory)) # the np.dot is doing the expectation
     
                                 if V_tmp > V_max_at_this_state:
                                     V_max_at_this_state = V_tmp
@@ -400,7 +400,6 @@ class QLearningAgent:
                                     
                     self.V_star_converge_track[idx_midprice , idx_inventory, i+1] = V_max_at_this_state
                     V_max_increment = max(V_max_increment, abs(V_max_at_this_state-self.V_star[idx_midprice , idx_inventory]))
-                    # print(f"V_max_increment: {V_max_increment}")
         self.Bellman_iter_steps_converge = i
             
     def print_true_values_and_plot_Bellman_iteration(self, ):                                    
@@ -411,8 +410,8 @@ class QLearningAgent:
         
         for idx_midprice in range(self.dim_midprice_grid):
             for idx_inventory in range(self.dim_inventory_grid):
-                axs[idx_midprice, idx_inventory].plot(self.V_star_converge_track[idx_midprice, idx_inventory, 0:self.Bellman_iter_steps_converge+1])
-                
+                #axs[idx_midprice, idx_inventory].plot(self.V_star_converge_track[idx_midprice, idx_inventory, 0:self.Bellman_iter_steps_converge+1])
+                axs[idx_midprice, idx_inventory].plot(self.V_star_converge_track[idx_midprice, idx_inventory, 0:200])
                 axs[idx_midprice, idx_inventory].set_title(f"(price,inventory)=({idx_midprice},{idx_inventory})")
                 axs[idx_midprice, idx_inventory].set_xlabel("Step")
                 axs[idx_midprice, idx_inventory].set_ylabel("Value")
@@ -420,7 +419,6 @@ class QLearningAgent:
         
         plt.tight_layout()
         plt.show()
-        print('---------- the number of Bellman equation iterations to converge: ----------')
         print(self.Bellman_iter_steps_converge)
         print('---------- true optimal value function V_star: ----------')
         print(self.V_star)
