@@ -6,7 +6,7 @@ import random
 import itertools
 import time
 import copy
-
+import argparse
 import os
 
 # new_dir = "/mnt/gsmfs2/home/libuser27/A_RLMM"
@@ -17,9 +17,14 @@ from market import MarketEnvironment
 
 UCB = False
 
-Delta_index = 1
+# Delta_index = 1
+# Delta_values = [ np.logspace(-1, -3, num=10)[Delta_index] ]
 
-Delta_values = [ np.logspace(-1, -3, num=10)[Delta_index] ]
+# parse arguments delta
+parser = argparse.ArgumentParser()
+parser.add_argument('--delta_idx', type=int, default=0)
+args = parser.parse_args()
+Delta_values = [args.delta_idx]
 
 # Define the hyperparameter search space
 # if UCB:
