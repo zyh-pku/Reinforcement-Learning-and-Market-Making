@@ -112,7 +112,7 @@ progress = 0
 # if UCB:
 #     file_path = f"results/hyperparameter_results_UCB_NP{dim_price_grid}_NY{bound_inventory}.txt"
 # else:
-file_path = f"results/hyperparameter_results_NP{dim_price_grid}_NY{bound_inventory}_Delta{Delta_index}.txt"
+file_path = f"results/hyperparameter_results_NP{dim_price_grid}_NY{bound_inventory}_Delta{args.delta_idx}.txt"
 
 
 # Perform grid search
