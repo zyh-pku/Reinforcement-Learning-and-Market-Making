@@ -24,7 +24,7 @@ UCB = False
 parser = argparse.ArgumentParser()
 parser.add_argument('--delta_idx', type=int, default=0)
 args = parser.parse_args()
-Delta_values = [args.delta_idx]
+Delta_values = [np.logspace(-1, -3, num=10)[args.delta_idx]]
 
 # Define the hyperparameter search space
 # if UCB:
