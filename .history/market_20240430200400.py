@@ -117,10 +117,10 @@ class MarketEnvironment:
         self.midprice_data = idx_midprice_next # all are integers, i.e., 0,1,2,...,dim_midprice_grid-1
         self.inventory_data = idx_inventory_next # all are integers, i.e., 0,1,2,...,dim_inventory_grid-1
 
-        # the reward function here must be align with the reward function in the function _find_V_star_and_optimal_policy(self, ) in q_learning.py
+
         reward = ( -midprice_integer*self.tick_size/2+idx_ask_price*self.tick_size - self.transaction_cost )*ask_order_change + \
         ( midprice_integer*self.tick_size/2-idx_buy_price*self.tick_size - self.transaction_cost )*buy_order_change + \
-        (midprice_next-midprice_integer)*(self.tick_size/2)*inventory - self.phi_inventory_risk*(inventory**2)*self.Delta
+        (midprice_next-midprice_integer)*inventory - self.phi_inventory_risk*(inventory**2)*self.Delta
 
         return reward, idx_midprice_next, idx_inventory_next, action_ask_price_list, action_buy_price_list
            
