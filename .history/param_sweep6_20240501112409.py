@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+
+Delta_index = 1
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import random
@@ -17,10 +22,6 @@ from market import MarketEnvironment
 
 UCB = False
 
-Delta_index = 1
-
-Delta_values = [ np.logspace(-1, -3, num=10)[Delta_index] ]
-
 # Define the hyperparameter search space
 # if UCB:
 #     Delta_values = np.linspace(0.1, 1.0, num=3)  # Creates 10 values from 0.1 to 1.0 with a spacing of 0.1
@@ -30,26 +31,26 @@ Delta_values = [ np.logspace(-1, -3, num=10)[Delta_index] ]
 #     Q_upper_bound_values = np.linspace(3.0, 4.0, num=3)
 #     # Define parameter names
 #     parameter_names = ['Delta', 'bonus_coef_0', 'bonus_coef_1', 'ucb_H', 'Q_upper_bound']
-# else: 
-# # the following are a quick test:
-# lr_exponent_values = np.linspace(0.501, 0.9, num=5)[0:1]
-# lr_values = [0.25, 0.5, 0.75, 1.0][0:1]
 
-# exp0_values = np.linspace(0.25, 0.95, num=5)[0:1]
-# exp_epoch_values = [5, 10, 25, 50 ][0:1]
-# exp_values = [0.3, 0.5, 0.65, 0.8, 0.95][0:1] 
-# # the following are the full test:
-lr_exponent_values = np.linspace(0.501, 0.9, num=5)
-lr_values = [0.25, 0.5, 0.75, 1.0]
-exp0_values = np.linspace(0.25, 0.95, num=5)
-exp_epoch_values = [5, 10, 25, 50 ]
-exp_values = [0.3, 0.5, 0.65, 0.8, 0.95]
+# else:
+    
+Delta_values = [ np.logspace(-1, -3, num=10)[Delta_index] ]
+lr_exponent_values = np.linspace(0.501, 0.9, num=5)[0:1]
+lr_values = [0.1, 0.3, 0.5, 0.75, 1.0][0:1]
+
+exp0_values = np.linspace(0.25, 0.95, num=5)[0:1]
+exp_epoch_values = [5, 10, 25, 50 ][0:1]
+exp_values = [0.3, 0.5, 0.65, 0.8, 0.95][0:1] # [0.8, 1.0]
+# exp0_values = [0.7, 0.8, 0.9]
+# eps0_values = np.linspace(0.1, 0.9, num=9)
+
 
 # Define parameter names
 parameter_names = ['Delta', 'lr', 'lr_exponent', 'exp0', 'exp_epoch', 'exp' ]
 
-# stop the RL iteration when the value function error is less than this threshold:
-V_error_threshold_for_RL_iteration_stop = 0.075 
+
+
+V_error_threshold_for_RL_iteration_stop = 0.075 # stop the RL iteration when the value function error is less than this threshold
 
 
 # Create a list of all possible hyperparameter combinations

@@ -11,7 +11,7 @@ class QLearningAgent:
         bonus_coef_0=0.1, bonus_coef_1=1., ucb_H=50, \
         lr = 0.8, lr_exponent = 0.501, \
         exp = 1.0, exp0 = 0.8, exp_epoch = 100, \
-        V_RL_iter_threshold = 0.075, V_RL_iter_initial = 2.5, N_RL_iter=2*10**4, N_learning_steps=2*10**4 ):
+        V_RL_iter_threshold = 0.065, V_RL_iter_initial = 2.5, N_RL_iter=2*10**4, N_learning_steps=2*10**4 ):
         # env is the environment class object
         # dim_midprice_grid is the number of midprice levels
         # dim_inventory_grid is the number of inventory levels
@@ -27,7 +27,6 @@ class QLearningAgent:
         # Delta is the time increment
         # GAMMA is the discount factor
         # GAMMA_Delta is the discount factor computed with the time increment Delta
-
         # Q_upper_bound is the upper bound for the Q-table,  and is only used when UCB=True
         # bonus_coef_0, bonus_coef_1, ucb_H are the parameters for the UCB exploration, they are useless now because we use eps-greedy exploration
         

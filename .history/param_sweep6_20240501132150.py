@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+
+Delta_index = 1
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import random
@@ -16,9 +21,6 @@ from q_learning_ucb import QLearningAgent
 from market import MarketEnvironment
 
 UCB = False
-
-Delta_index = 1
-
 Delta_values = [ np.logspace(-1, -3, num=10)[Delta_index] ]
 
 # Define the hyperparameter search space
