@@ -1,0 +1,9216 @@
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.16561650718147058
+RL_Iteration_Steps: 20000
+Runtime: 5.627996444702148 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3000321907132535
+RL_Iteration_Steps: 20000
+Runtime: 5.295792102813721 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.17602406040971363
+RL_Iteration_Steps: 20000
+Runtime: 5.31258225440979 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3273695042616862
+RL_Iteration_Steps: 20000
+Runtime: 5.302644729614258 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.22680529053410448
+RL_Iteration_Steps: 20000
+Runtime: 5.3578221797943115 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.32135712495502977
+RL_Iteration_Steps: 20000
+Runtime: 5.252146005630493 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.30134467274787635
+RL_Iteration_Steps: 20000
+Runtime: 5.244305849075317 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3078166184987312
+RL_Iteration_Steps: 20000
+Runtime: 5.206990480422974 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.16861684200291593
+RL_Iteration_Steps: 20000
+Runtime: 5.53945255279541 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.30130949272053664
+RL_Iteration_Steps: 20000
+Runtime: 5.397607803344727 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.2919778911521478
+RL_Iteration_Steps: 20000
+Runtime: 5.254475116729736 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.17656586805353447
+RL_Iteration_Steps: 20000
+Runtime: 5.446063280105591 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.20722012084423325
+RL_Iteration_Steps: 20000
+Runtime: 5.41393256187439 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.2958745966382059
+RL_Iteration_Steps: 20000
+Runtime: 5.592629909515381 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.18309039480914047
+RL_Iteration_Steps: 20000
+Runtime: 5.482950448989868 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.2829143355623933
+RL_Iteration_Steps: 20000
+Runtime: 5.335067272186279 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.23173491960943116
+RL_Iteration_Steps: 20000
+Runtime: 5.366213798522949 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.30783562415551247
+RL_Iteration_Steps: 20000
+Runtime: 5.346221685409546 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.17500250278561547
+RL_Iteration_Steps: 20000
+Runtime: 5.209064722061157 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3336643987971968
+RL_Iteration_Steps: 20000
+Runtime: 6.261182069778442 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.1664944043243164
+RL_Iteration_Steps: 20000
+Runtime: 5.3542375564575195 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.30627111382347616
+RL_Iteration_Steps: 20000
+Runtime: 5.204432487487793 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.28254665017808067
+RL_Iteration_Steps: 20000
+Runtime: 5.199857711791992 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.16518487265052295
+RL_Iteration_Steps: 20000
+Runtime: 5.213724136352539 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.19885186076883432
+RL_Iteration_Steps: 20000
+Runtime: 5.208180904388428 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3012387323282595
+RL_Iteration_Steps: 20000
+Runtime: 5.225862264633179 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.18295511612199622
+RL_Iteration_Steps: 20000
+Runtime: 5.208122968673706 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.17690323002524755
+RL_Iteration_Steps: 20000
+Runtime: 5.199958086013794 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.21936979803475065
+RL_Iteration_Steps: 20000
+Runtime: 5.203890085220337 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.28934989450300197
+RL_Iteration_Steps: 20000
+Runtime: 5.2035157680511475 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.301398918641814
+RL_Iteration_Steps: 20000
+Runtime: 5.2163355350494385 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.30251085210226414
+RL_Iteration_Steps: 20000
+Runtime: 5.212225437164307 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.23171751941998586
+RL_Iteration_Steps: 20000
+Runtime: 5.2077484130859375 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.32076882339725765
+RL_Iteration_Steps: 20000
+Runtime: 5.2069947719573975 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.17441680120863268
+RL_Iteration_Steps: 20000
+Runtime: 5.199124336242676 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3113757381087696
+RL_Iteration_Steps: 20000
+Runtime: 5.2124574184417725 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.1710745253647583
+RL_Iteration_Steps: 20000
+Runtime: 5.2181408405303955 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.30780542100456554
+RL_Iteration_Steps: 20000
+Runtime: 5.223719120025635 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.17627409367074387
+RL_Iteration_Steps: 20000
+Runtime: 5.200422048568726 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.16939441048660875
+RL_Iteration_Steps: 20000
+Runtime: 5.208441734313965 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.15793236375887432
+RL_Iteration_Steps: 20000
+Runtime: 5.201935291290283 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.2960643960844873
+RL_Iteration_Steps: 20000
+Runtime: 5.198734521865845 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.3114216833896908
+RL_Iteration_Steps: 20000
+Runtime: 5.202564477920532 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.18448534541178807
+RL_Iteration_Steps: 20000
+Runtime: 5.209288597106934 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.21861322184230447
+RL_Iteration_Steps: 20000
+Runtime: 5.233492851257324 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.299662785792044
+RL_Iteration_Steps: 20000
+Runtime: 5.2797064781188965 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.3039368180179647
+RL_Iteration_Steps: 20000
+Runtime: 5.267028570175171 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.1877487173378456
+RL_Iteration_Steps: 20000
+Runtime: 5.258134365081787 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.15930579912784903
+RL_Iteration_Steps: 20000
+Runtime: 5.26139497756958 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.28811496943919623
+RL_Iteration_Steps: 20000
+Runtime: 5.262983798980713 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.30096028693886856
+RL_Iteration_Steps: 20000
+Runtime: 5.24696683883667 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.1884393292554658
+RL_Iteration_Steps: 20000
+Runtime: 5.234975337982178 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.2176895367252718
+RL_Iteration_Steps: 20000
+Runtime: 5.234408855438232 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3141661995966256
+RL_Iteration_Steps: 20000
+Runtime: 5.258790969848633 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.19024537128453245
+RL_Iteration_Steps: 20000
+Runtime: 5.239569664001465 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.23987581711066452
+RL_Iteration_Steps: 20000
+Runtime: 5.217746734619141 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.21178693626282552
+RL_Iteration_Steps: 20000
+Runtime: 5.221348762512207 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3000356313426593
+RL_Iteration_Steps: 20000
+Runtime: 5.584189414978027 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.229887148203602
+RL_Iteration_Steps: 20000
+Runtime: 5.218086004257202 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.19092877338216718
+RL_Iteration_Steps: 20000
+Runtime: 5.197127819061279 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.21486469843642686
+RL_Iteration_Steps: 20000
+Runtime: 5.223779201507568 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.23508665983638632
+RL_Iteration_Steps: 20000
+Runtime: 5.241454601287842 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.20844832542030423
+RL_Iteration_Steps: 20000
+Runtime: 5.236013174057007 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.17760617742534768
+RL_Iteration_Steps: 20000
+Runtime: 5.214246988296509 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.25868966532462245
+RL_Iteration_Steps: 20000
+Runtime: 5.183486461639404 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.36508032807653246
+RL_Iteration_Steps: 20000
+Runtime: 5.20142674446106 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2753055287782633
+RL_Iteration_Steps: 20000
+Runtime: 5.190311908721924 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3721039005435802
+RL_Iteration_Steps: 20000
+Runtime: 5.222154855728149 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.3104745996635372
+RL_Iteration_Steps: 20000
+Runtime: 5.212618827819824 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3758523087674779
+RL_Iteration_Steps: 20000
+Runtime: 5.211701154708862 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.3681926967977973
+RL_Iteration_Steps: 20000
+Runtime: 5.233211994171143 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.36515356523897147
+RL_Iteration_Steps: 20000
+Runtime: 5.198736667633057 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.26138037601465314
+RL_Iteration_Steps: 20000
+Runtime: 5.218681335449219 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3614758591216223
+RL_Iteration_Steps: 20000
+Runtime: 5.221053123474121 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.35980349638319664
+RL_Iteration_Steps: 20000
+Runtime: 5.200021505355835 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.2770194053280721
+RL_Iteration_Steps: 20000
+Runtime: 5.2101287841796875 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.3009496693443845
+RL_Iteration_Steps: 20000
+Runtime: 5.208954095840454 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.354801680501728
+RL_Iteration_Steps: 20000
+Runtime: 5.20260214805603 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2777581165449172
+RL_Iteration_Steps: 20000
+Runtime: 5.197027206420898 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.35343603023691683
+RL_Iteration_Steps: 20000
+Runtime: 5.208021640777588 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.36428673710504667
+RL_Iteration_Steps: 20000
+Runtime: 5.221132278442383 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3737004930883039
+RL_Iteration_Steps: 20000
+Runtime: 5.2130327224731445 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.27184651183077513
+RL_Iteration_Steps: 20000
+Runtime: 5.190711498260498 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.3753858308124749
+RL_Iteration_Steps: 20000
+Runtime: 5.2204883098602295 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30969058921496107
+RL_Iteration_Steps: 20000
+Runtime: 5.226613521575928 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.34746619802156564
+RL_Iteration_Steps: 20000
+Runtime: 5.225250482559204 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.35533309302552096
+RL_Iteration_Steps: 20000
+Runtime: 5.25443172454834 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.2611160770214487
+RL_Iteration_Steps: 20000
+Runtime: 5.252460956573486 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.30962998443985423
+RL_Iteration_Steps: 20000
+Runtime: 5.275022029876709 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.356064845893334
+RL_Iteration_Steps: 20000
+Runtime: 5.255571603775024 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.27698653247626703
+RL_Iteration_Steps: 20000
+Runtime: 5.255577087402344 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.27553873826898867
+RL_Iteration_Steps: 20000
+Runtime: 5.232858896255493 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30860757325249955
+RL_Iteration_Steps: 20000
+Runtime: 5.239968538284302 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.36083282082970936
+RL_Iteration_Steps: 20000
+Runtime: 5.270311594009399 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.3673844545143332
+RL_Iteration_Steps: 20000
+Runtime: 5.253614902496338 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.3719047596387659
+RL_Iteration_Steps: 20000
+Runtime: 5.248912334442139 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 3
+Value_Error: 0.3794867301967013
+RL_Iteration_Steps: 20000
+Runtime: 5.257290840148926 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3642191096553131
+RL_Iteration_Steps: 20000
+Runtime: 5.255035638809204 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.36071212210708037
+RL_Iteration_Steps: 20000
+Runtime: 5.263817548751831 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.366770087845246
+RL_Iteration_Steps: 20000
+Runtime: 5.238526821136475 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30165388437171536
+RL_Iteration_Steps: 20000
+Runtime: 5.236079454421997 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3671131379449699
+RL_Iteration_Steps: 20000
+Runtime: 5.251464128494263 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2763520364858314
+RL_Iteration_Steps: 20000
+Runtime: 5.227370262145996 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.27013637301202564
+RL_Iteration_Steps: 20000
+Runtime: 5.2425596714019775 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.3048564576784458
+RL_Iteration_Steps: 20000
+Runtime: 5.239015102386475 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.36236699772760206
+RL_Iteration_Steps: 20000
+Runtime: 5.234048366546631 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.3711814792120234
+RL_Iteration_Steps: 20000
+Runtime: 5.238285541534424 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.28401457382461803
+RL_Iteration_Steps: 20000
+Runtime: 5.234385967254639 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.3050926245748551
+RL_Iteration_Steps: 20000
+Runtime: 5.254387855529785 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.35663451801297175
+RL_Iteration_Steps: 20000
+Runtime: 5.244805812835693 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.365094884507124
+RL_Iteration_Steps: 20000
+Runtime: 5.241968393325806 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.2786175293191233
+RL_Iteration_Steps: 20000
+Runtime: 5.225209951400757 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30874484950455194
+RL_Iteration_Steps: 20000
+Runtime: 5.216132879257202 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.35961022879489635
+RL_Iteration_Steps: 20000
+Runtime: 5.223804950714111 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.36637462758309214
+RL_Iteration_Steps: 20000
+Runtime: 5.218876361846924 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.28089021127932146
+RL_Iteration_Steps: 20000
+Runtime: 5.24457859992981 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30301144390901236
+RL_Iteration_Steps: 20000
+Runtime: 5.243136167526245 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3704308288266258
+RL_Iteration_Steps: 20000
+Runtime: 5.222781658172607 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2875669139720558
+RL_Iteration_Steps: 20000
+Runtime: 5.2098047733306885 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.2850227684106019
+RL_Iteration_Steps: 20000
+Runtime: 5.216417551040649 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30068643960500374
+RL_Iteration_Steps: 20000
+Runtime: 5.236873626708984 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.365532119502074
+RL_Iteration_Steps: 20000
+Runtime: 5.417539596557617 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2829717416594275
+RL_Iteration_Steps: 20000
+Runtime: 5.230865955352783 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.29430858487501554
+RL_Iteration_Steps: 20000
+Runtime: 5.18716287612915 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30608980264617447
+RL_Iteration_Steps: 20000
+Runtime: 5.207123756408691 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.30885701208628724
+RL_Iteration_Steps: 20000
+Runtime: 5.201486349105835 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.28047318719537406
+RL_Iteration_Steps: 20000
+Runtime: 5.450155973434448 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.27467216366260283
+RL_Iteration_Steps: 20000
+Runtime: 5.233579874038696 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.37107774321938836
+RL_Iteration_Steps: 20000
+Runtime: 5.245318651199341 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.40751018164749997
+RL_Iteration_Steps: 20000
+Runtime: 5.251935005187988 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4124243069233615
+RL_Iteration_Steps: 20000
+Runtime: 5.256713628768921 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.4077734917184581
+RL_Iteration_Steps: 20000
+Runtime: 5.252209424972534 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.33555409860544794
+RL_Iteration_Steps: 20000
+Runtime: 5.264401912689209 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4053005200772084
+RL_Iteration_Steps: 20000
+Runtime: 5.268437385559082 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4136285667596695
+RL_Iteration_Steps: 20000
+Runtime: 5.277001857757568 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.4108864716799774
+RL_Iteration_Steps: 20000
+Runtime: 5.243388414382935 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.32172770086492175
+RL_Iteration_Steps: 20000
+Runtime: 5.226038694381714 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.40403662863748124
+RL_Iteration_Steps: 20000
+Runtime: 5.172692775726318 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.41081395420946487
+RL_Iteration_Steps: 20000
+Runtime: 5.175080060958862 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.35162670336131496
+RL_Iteration_Steps: 20000
+Runtime: 5.175954580307007 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.36212118129799586
+RL_Iteration_Steps: 20000
+Runtime: 5.193948268890381 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3980290991530464
+RL_Iteration_Steps: 20000
+Runtime: 5.1972856521606445 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3417389388507117
+RL_Iteration_Steps: 20000
+Runtime: 5.1821300983428955 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.40277231186838236
+RL_Iteration_Steps: 20000
+Runtime: 5.188239097595215 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.40558962358041173
+RL_Iteration_Steps: 20000
+Runtime: 5.1948041915893555 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.413446685925408
+RL_Iteration_Steps: 20000
+Runtime: 5.169709205627441 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.339914305348191
+RL_Iteration_Steps: 20000
+Runtime: 5.157630205154419 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.4083361788323452
+RL_Iteration_Steps: 20000
+Runtime: 5.175557374954224 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3321092878393572
+RL_Iteration_Steps: 20000
+Runtime: 5.161452293395996 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3903511311840613
+RL_Iteration_Steps: 20000
+Runtime: 5.166124105453491 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.40649415989465876
+RL_Iteration_Steps: 20000
+Runtime: 5.174745798110962 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.32733829089450905
+RL_Iteration_Steps: 20000
+Runtime: 5.159056901931763 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.33848982294649055
+RL_Iteration_Steps: 20000
+Runtime: 5.17096471786499 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.39771303969405736
+RL_Iteration_Steps: 20000
+Runtime: 5.174219608306885 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.34118377681031786
+RL_Iteration_Steps: 20000
+Runtime: 5.169476270675659 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3460058331385878
+RL_Iteration_Steps: 20000
+Runtime: 5.170644760131836 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3273189961869569
+RL_Iteration_Steps: 20000
+Runtime: 5.1793248653411865 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4039658134121087
+RL_Iteration_Steps: 20000
+Runtime: 5.183744192123413 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4129764674099552
+RL_Iteration_Steps: 20000
+Runtime: 5.198180913925171 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.4136970468889496
+RL_Iteration_Steps: 20000
+Runtime: 5.190608739852905 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.4078436799050196
+RL_Iteration_Steps: 20000
+Runtime: 5.178335428237915 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.40553240580682326
+RL_Iteration_Steps: 20000
+Runtime: 5.1748926639556885 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4095863205714867
+RL_Iteration_Steps: 20000
+Runtime: 5.233296632766724 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.3981687209081266
+RL_Iteration_Steps: 20000
+Runtime: 5.176360130310059 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3352273920164701
+RL_Iteration_Steps: 20000
+Runtime: 5.1782166957855225 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.4049111946508934
+RL_Iteration_Steps: 20000
+Runtime: 5.189818859100342 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3470789171408821
+RL_Iteration_Steps: 20000
+Runtime: 5.173057794570923 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.33696208317327647
+RL_Iteration_Steps: 20000
+Runtime: 5.180499315261841 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3272150970186094
+RL_Iteration_Steps: 20000
+Runtime: 5.1646645069122314 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4037165933813176
+RL_Iteration_Steps: 20000
+Runtime: 5.1853015422821045 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4132467985022985
+RL_Iteration_Steps: 20000
+Runtime: 5.231184005737305 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.34647919220160706
+RL_Iteration_Steps: 20000
+Runtime: 5.234781265258789 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.32700882105223217
+RL_Iteration_Steps: 20000
+Runtime: 5.22065544128418 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.40001908082537696
+RL_Iteration_Steps: 20000
+Runtime: 5.232088327407837 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.40866506392041435
+RL_Iteration_Steps: 20000
+Runtime: 5.221237421035767 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3466521720769866
+RL_Iteration_Steps: 20000
+Runtime: 5.217592239379883 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.32812520165035997
+RL_Iteration_Steps: 20000
+Runtime: 5.209755182266235 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4042994116628127
+RL_Iteration_Steps: 20000
+Runtime: 5.211580276489258 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.41207979542737716
+RL_Iteration_Steps: 20000
+Runtime: 5.216141939163208 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3431208011589857
+RL_Iteration_Steps: 20000
+Runtime: 5.1949992179870605 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.32856839952961003
+RL_Iteration_Steps: 20000
+Runtime: 5.211921691894531 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4018296481912489
+RL_Iteration_Steps: 20000
+Runtime: 5.207156658172607 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3446611010789624
+RL_Iteration_Steps: 20000
+Runtime: 5.207086801528931 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3476614106597826
+RL_Iteration_Steps: 20000
+Runtime: 5.234881162643433 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.34997679321654607
+RL_Iteration_Steps: 20000
+Runtime: 5.214676856994629 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4038575884085023
+RL_Iteration_Steps: 20000
+Runtime: 5.244218826293945 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.34967067757986925
+RL_Iteration_Steps: 20000
+Runtime: 5.36917519569397 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.35970602418546216
+RL_Iteration_Steps: 20000
+Runtime: 5.333866357803345 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3447184865985884
+RL_Iteration_Steps: 20000
+Runtime: 5.1900107860565186 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3856399918031075
+RL_Iteration_Steps: 20000
+Runtime: 5.414570569992065 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3474583881490778
+RL_Iteration_Steps: 20000
+Runtime: 5.625730276107788 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.33954899405091554
+RL_Iteration_Steps: 20000
+Runtime: 5.653258800506592 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.40551327560483896
+RL_Iteration_Steps: 20000
+Runtime: 5.458920240402222 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4274576150474494
+RL_Iteration_Steps: 20000
+Runtime: 5.442622184753418 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4358408392998685
+RL_Iteration_Steps: 20000
+Runtime: 5.229101657867432 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.43175737520776014
+RL_Iteration_Steps: 20000
+Runtime: 5.327295303344727 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.381490289345912
+RL_Iteration_Steps: 20000
+Runtime: 5.25742769241333 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.42008979884395403
+RL_Iteration_Steps: 20000
+Runtime: 5.2956578731536865 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4376523682181319
+RL_Iteration_Steps: 20000
+Runtime: 5.5010693073272705 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.43520923270432954
+RL_Iteration_Steps: 20000
+Runtime: 5.385550022125244 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.37441823713317923
+RL_Iteration_Steps: 20000
+Runtime: 5.390509128570557 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.42428350779737567
+RL_Iteration_Steps: 20000
+Runtime: 5.357114553451538 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.43921132317561806
+RL_Iteration_Steps: 20000
+Runtime: 5.252195358276367 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.39973906409985815
+RL_Iteration_Steps: 20000
+Runtime: 5.551737546920776 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3740000788844431
+RL_Iteration_Steps: 20000
+Runtime: 5.261919021606445 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.4210067434332463
+RL_Iteration_Steps: 20000
+Runtime: 5.53614616394043 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3958114915211848
+RL_Iteration_Steps: 20000
+Runtime: 5.454822063446045 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.430651770024955
+RL_Iteration_Steps: 20000
+Runtime: 5.289649486541748 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.4319667533251077
+RL_Iteration_Steps: 20000
+Runtime: 5.324312925338745 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4314429431782991
+RL_Iteration_Steps: 20000
+Runtime: 5.437229871749878 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3899831500595332
+RL_Iteration_Steps: 20000
+Runtime: 5.349225759506226 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.43002700020750995
+RL_Iteration_Steps: 20000
+Runtime: 5.282063007354736 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.37938155965434506
+RL_Iteration_Steps: 20000
+Runtime: 5.368151664733887 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.4168248488821118
+RL_Iteration_Steps: 20000
+Runtime: 5.378959655761719 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.43427734087531134
+RL_Iteration_Steps: 20000
+Runtime: 5.319901704788208 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.39300442033567196
+RL_Iteration_Steps: 20000
+Runtime: 5.2363715171813965 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.37880895618489774
+RL_Iteration_Steps: 20000
+Runtime: 5.238056659698486 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.420329080843453
+RL_Iteration_Steps: 20000
+Runtime: 5.550527334213257 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.39178453395780677
+RL_Iteration_Steps: 20000
+Runtime: 5.299450159072876 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3944445944171586
+RL_Iteration_Steps: 20000
+Runtime: 5.298756837844849 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3749040182392842
+RL_Iteration_Steps: 20000
+Runtime: 5.2759294509887695 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4247082004596314
+RL_Iteration_Steps: 20000
+Runtime: 5.282517910003662 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.43768439189964115
+RL_Iteration_Steps: 20000
+Runtime: 5.315094232559204 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.43481049259827875
+RL_Iteration_Steps: 20000
+Runtime: 5.320486068725586 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.4332331468149886
+RL_Iteration_Steps: 20000
+Runtime: 5.560741662979126 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.4213617544575925
+RL_Iteration_Steps: 20000
+Runtime: 4.879654169082642 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.43467198679401164
+RL_Iteration_Steps: 20000
+Runtime: 5.129047155380249 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.38804303139692786
+RL_Iteration_Steps: 20000
+Runtime: 5.281079292297363 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.38075692702469865
+RL_Iteration_Steps: 20000
+Runtime: 5.3359575271606445 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.42470686152952375
+RL_Iteration_Steps: 20000
+Runtime: 5.291952610015869 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.39437708060871035
+RL_Iteration_Steps: 20000
+Runtime: 5.402756214141846 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3875890377337301
+RL_Iteration_Steps: 20000
+Runtime: 5.438395977020264 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3762072362629092
+RL_Iteration_Steps: 20000
+Runtime: 5.6469457149505615 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4241754886920899
+RL_Iteration_Steps: 20000
+Runtime: 5.469136476516724 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4370762706360929
+RL_Iteration_Steps: 20000
+Runtime: 5.52338981628418 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3957745233936367
+RL_Iteration_Steps: 20000
+Runtime: 5.410936117172241 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.37557686219581354
+RL_Iteration_Steps: 20000
+Runtime: 5.4942567348480225 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.42186982194130396
+RL_Iteration_Steps: 20000
+Runtime: 5.342322111129761 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4344270273925912
+RL_Iteration_Steps: 20000
+Runtime: 5.253475189208984 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.4343398264628071
+RL_Iteration_Steps: 20000
+Runtime: 5.290031433105469 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3749852038493633
+RL_Iteration_Steps: 20000
+Runtime: 5.233247518539429 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.42542725091804856
+RL_Iteration_Steps: 20000
+Runtime: 5.761157035827637 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.4383153944477325
+RL_Iteration_Steps: 20000
+Runtime: 5.612232446670532 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.39131981582339703
+RL_Iteration_Steps: 20000
+Runtime: 5.471465110778809 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3690816047042178
+RL_Iteration_Steps: 20000
+Runtime: 5.264352560043335 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.42247738641740495
+RL_Iteration_Steps: 20000
+Runtime: 5.316742658615112 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3951382119761502
+RL_Iteration_Steps: 20000
+Runtime: 5.603713274002075 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3960166543379513
+RL_Iteration_Steps: 20000
+Runtime: 5.248838186264038 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.3796475503020762
+RL_Iteration_Steps: 20000
+Runtime: 5.466002941131592 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.4233892695026005
+RL_Iteration_Steps: 20000
+Runtime: 5.334199905395508 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3957179509437596
+RL_Iteration_Steps: 20000
+Runtime: 5.217306852340698 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.39754576579675893
+RL_Iteration_Steps: 20000
+Runtime: 5.248985290527344 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.37652181665141304
+RL_Iteration_Steps: 20000
+Runtime: 5.35625696182251 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.42269131120363923
+RL_Iteration_Steps: 20000
+Runtime: 5.500030517578125 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.3988681703357799
+RL_Iteration_Steps: 20000
+Runtime: 6.167537450790405 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.1
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.3936620232219865
+RL_Iteration_Steps: 20000
+Runtime: 5.5570228099823 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07397576633079339
+RL_Iteration_Steps: 2350
+Runtime: 0.6733200550079346 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.21364215682233478
+RL_Iteration_Steps: 20000
+Runtime: 5.42682957649231 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.24575840983098862
+RL_Iteration_Steps: 20000
+Runtime: 5.315363883972168 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.17545692630680554
+RL_Iteration_Steps: 20000
+Runtime: 5.724402666091919 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07453253854025021
+RL_Iteration_Steps: 2842
+Runtime: 0.7761855125427246 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.33126603720583336
+RL_Iteration_Steps: 20000
+Runtime: 5.570021629333496 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.24575003068938672
+RL_Iteration_Steps: 20000
+Runtime: 5.4100892543792725 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.26397607929751654
+RL_Iteration_Steps: 20000
+Runtime: 5.221365213394165 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.06541475489200144
+RL_Iteration_Steps: 2002
+Runtime: 0.5240814685821533 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.07873011395757068
+RL_Iteration_Steps: 20000
+Runtime: 5.2344584465026855 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.23317539687904398
+RL_Iteration_Steps: 20000
+Runtime: 5.214308023452759 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07081248351810787
+RL_Iteration_Steps: 2454
+Runtime: 0.6465263366699219 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.07994478507428138
+RL_Iteration_Steps: 20000
+Runtime: 5.218733072280884 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.07952375224921981
+RL_Iteration_Steps: 20000
+Runtime: 5.215861797332764 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07470564588932449
+RL_Iteration_Steps: 13244
+Runtime: 3.4405524730682373 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.19368627751245127
+RL_Iteration_Steps: 20000
+Runtime: 5.651030540466309 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.21295730051736816
+RL_Iteration_Steps: 20000
+Runtime: 5.417117357254028 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.21403670823891607
+RL_Iteration_Steps: 20000
+Runtime: 5.313791751861572 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.0717602024084294
+RL_Iteration_Steps: 2839
+Runtime: 0.7562401294708252 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.24388256164563638
+RL_Iteration_Steps: 20000
+Runtime: 5.249134540557861 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07185250225250694
+RL_Iteration_Steps: 15121
+Runtime: 3.9095399379730225 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.213708876429052
+RL_Iteration_Steps: 20000
+Runtime: 5.1639018058776855 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.19242590444194052
+RL_Iteration_Steps: 20000
+Runtime: 5.150923252105713 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07428039649662166
+RL_Iteration_Steps: 15946
+Runtime: 4.116864442825317 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.07339614360256652
+RL_Iteration_Steps: 2409
+Runtime: 0.6246640682220459 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07443213308851604
+RL_Iteration_Steps: 15181
+Runtime: 3.965207815170288 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.2140135148684088
+RL_Iteration_Steps: 20000
+Runtime: 5.190773963928223 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07469780482259569
+RL_Iteration_Steps: 13165
+Runtime: 3.412607192993164 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.10362407103082383
+RL_Iteration_Steps: 20000
+Runtime: 5.171146392822266 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.06280847282709123
+RL_Iteration_Steps: 2489
+Runtime: 0.6463286876678467 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07387975260307922
+RL_Iteration_Steps: 3898
+Runtime: 1.008608102798462 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.21228966555041895
+RL_Iteration_Steps: 20000
+Runtime: 5.1753785610198975 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.26073262044848056
+RL_Iteration_Steps: 20000
+Runtime: 5.1845128536224365 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.3113068620746069
+RL_Iteration_Steps: 20000
+Runtime: 5.173564195632935 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.2143110400107755
+RL_Iteration_Steps: 20000
+Runtime: 5.1844446659088135 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.20797487458962882
+RL_Iteration_Steps: 20000
+Runtime: 5.188408613204956 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.20667655344228608
+RL_Iteration_Steps: 20000
+Runtime: 5.210294485092163 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.21484186007351092
+RL_Iteration_Steps: 20000
+Runtime: 5.21762490272522 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07349411690185059
+RL_Iteration_Steps: 7833
+Runtime: 2.0438435077667236 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.10667527067648042
+RL_Iteration_Steps: 20000
+Runtime: 5.210102796554565 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07442324124298993
+RL_Iteration_Steps: 3902
+Runtime: 1.0197315216064453 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.21184428478703765
+RL_Iteration_Steps: 20000
+Runtime: 5.187286853790283 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07341709689607923
+RL_Iteration_Steps: 13227
+Runtime: 3.439648389816284 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07460960908457226
+RL_Iteration_Steps: 13167
+Runtime: 3.4078705310821533 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07290401112591116
+RL_Iteration_Steps: 5786
+Runtime: 1.5047364234924316 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07318309397213163
+RL_Iteration_Steps: 16063
+Runtime: 4.156314849853516 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.11165910200707829
+RL_Iteration_Steps: 20000
+Runtime: 5.175706624984741 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.11056819324924083
+RL_Iteration_Steps: 20000
+Runtime: 5.161054611206055 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07172816510905777
+RL_Iteration_Steps: 7590
+Runtime: 1.9669508934020996 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07473927654023882
+RL_Iteration_Steps: 7233
+Runtime: 1.8731629848480225 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07298115939591554
+RL_Iteration_Steps: 8811
+Runtime: 2.2940196990966797 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.21742315533828327
+RL_Iteration_Steps: 20000
+Runtime: 5.203796863555908 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07313418112730297
+RL_Iteration_Steps: 9117
+Runtime: 2.369931936264038 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07494758549217595
+RL_Iteration_Steps: 4575
+Runtime: 1.1877202987670898 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.08250305083487808
+RL_Iteration_Steps: 20000
+Runtime: 5.174499034881592 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.08193677828849699
+RL_Iteration_Steps: 20000
+Runtime: 5.176458358764648 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07184711885492456
+RL_Iteration_Steps: 12538
+Runtime: 3.2464749813079834 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07306342661614584
+RL_Iteration_Steps: 12122
+Runtime: 3.151733875274658 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07479151242528692
+RL_Iteration_Steps: 17208
+Runtime: 4.459076881408691 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07328642407846342
+RL_Iteration_Steps: 12556
+Runtime: 3.2614121437072754 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.0684645047477983
+RL_Iteration_Steps: 12215
+Runtime: 3.169699192047119 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07456588656393803
+RL_Iteration_Steps: 11116
+Runtime: 2.881160020828247 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07258558785234959
+RL_Iteration_Steps: 5754
+Runtime: 1.4961309432983398 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07150198943630492
+RL_Iteration_Steps: 7076
+Runtime: 1.8274281024932861 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07497317333132392
+RL_Iteration_Steps: 11776
+Runtime: 3.0344772338867188 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.12222888684738864
+RL_Iteration_Steps: 20000
+Runtime: 5.155199766159058 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.24089227733369034
+RL_Iteration_Steps: 20000
+Runtime: 5.165987014770508 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.21387347257355893
+RL_Iteration_Steps: 20000
+Runtime: 5.14981746673584 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07368363888869744
+RL_Iteration_Steps: 15546
+Runtime: 3.999134063720703 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3199571178159859
+RL_Iteration_Steps: 20000
+Runtime: 5.160756349563599 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.24457317061398465
+RL_Iteration_Steps: 20000
+Runtime: 5.17338228225708 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.23251416093260957
+RL_Iteration_Steps: 20000
+Runtime: 5.198875188827515 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.10005202194712881
+RL_Iteration_Steps: 20000
+Runtime: 5.209569454193115 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07479251199739334
+RL_Iteration_Steps: 15919
+Runtime: 4.1251208782196045 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.23579498403440668
+RL_Iteration_Steps: 20000
+Runtime: 5.205979824066162 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.11336760252629174
+RL_Iteration_Steps: 20000
+Runtime: 5.1949546337127686 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.10286304774354882
+RL_Iteration_Steps: 20000
+Runtime: 5.207595109939575 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.12018100938745402
+RL_Iteration_Steps: 20000
+Runtime: 5.204973936080933 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07470703218816688
+RL_Iteration_Steps: 19363
+Runtime: 5.048970460891724 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07407605435407083
+RL_Iteration_Steps: 15958
+Runtime: 4.148249387741089 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 3
+Value_Error: 0.31922064963613606
+RL_Iteration_Steps: 20000
+Runtime: 5.203600883483887 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.2568908411797963
+RL_Iteration_Steps: 20000
+Runtime: 5.192120790481567 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.11948564153503582
+RL_Iteration_Steps: 20000
+Runtime: 5.196066617965698 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.26644612087728925
+RL_Iteration_Steps: 20000
+Runtime: 5.22767448425293 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07492245291601352
+RL_Iteration_Steps: 15546
+Runtime: 4.051712512969971 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.29019535699667953
+RL_Iteration_Steps: 20000
+Runtime: 5.211603403091431 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.21994963603070516
+RL_Iteration_Steps: 20000
+Runtime: 5.202873468399048 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.11631101504711339
+RL_Iteration_Steps: 20000
+Runtime: 5.206261873245239 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.13650657474434746
+RL_Iteration_Steps: 20000
+Runtime: 5.207767963409424 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07449554698809902
+RL_Iteration_Steps: 17460
+Runtime: 4.528820753097534 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.12750872387226586
+RL_Iteration_Steps: 20000
+Runtime: 5.1565845012664795 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.24675891205385314
+RL_Iteration_Steps: 20000
+Runtime: 5.168107271194458 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.11728507449703418
+RL_Iteration_Steps: 20000
+Runtime: 5.169284105300903 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.21228731897972875
+RL_Iteration_Steps: 20000
+Runtime: 5.172865629196167 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07463713392131499
+RL_Iteration_Steps: 15645
+Runtime: 4.043285608291626 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.21815812727642836
+RL_Iteration_Steps: 20000
+Runtime: 5.177309513092041 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 3
+Value_Error: 0.2953291647306111
+RL_Iteration_Steps: 20000
+Runtime: 5.173229694366455 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.3198384450304901
+RL_Iteration_Steps: 20000
+Runtime: 5.186122417449951 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.16223570329207382
+RL_Iteration_Steps: 20000
+Runtime: 5.169389247894287 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.23023693896289998
+RL_Iteration_Steps: 20000
+Runtime: 5.2000892162323 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07445473371406841
+RL_Iteration_Steps: 16580
+Runtime: 4.303222417831421 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3200690667755097
+RL_Iteration_Steps: 20000
+Runtime: 5.1921000480651855 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.12969440100520702
+RL_Iteration_Steps: 20000
+Runtime: 5.179589748382568 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07469598416183931
+RL_Iteration_Steps: 15652
+Runtime: 4.039827108383179 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.10601535282400931
+RL_Iteration_Steps: 20000
+Runtime: 5.17539381980896 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.21130997292347287
+RL_Iteration_Steps: 20000
+Runtime: 5.1762940883636475 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.13112272547343817
+RL_Iteration_Steps: 20000
+Runtime: 5.175181150436401 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.13141688435595444
+RL_Iteration_Steps: 20000
+Runtime: 5.195920467376709 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.11308409668067032
+RL_Iteration_Steps: 20000
+Runtime: 5.201540470123291 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.12795536215466896
+RL_Iteration_Steps: 20000
+Runtime: 5.197749137878418 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.26182822136526607
+RL_Iteration_Steps: 20000
+Runtime: 5.212439775466919 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.16750427893027098
+RL_Iteration_Steps: 20000
+Runtime: 5.213057994842529 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.0742913508806029
+RL_Iteration_Steps: 8637
+Runtime: 2.2543208599090576 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.11224348922814942
+RL_Iteration_Steps: 20000
+Runtime: 5.229446172714233 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07491699486230052
+RL_Iteration_Steps: 15632
+Runtime: 4.076641321182251 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.10804387828675655
+RL_Iteration_Steps: 20000
+Runtime: 5.198733568191528 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.13356033820568225
+RL_Iteration_Steps: 20000
+Runtime: 5.203424692153931 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.13780107345296555
+RL_Iteration_Steps: 20000
+Runtime: 5.209376811981201 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.15514749190528265
+RL_Iteration_Steps: 20000
+Runtime: 5.21519660949707 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.09642607162953087
+RL_Iteration_Steps: 20000
+Runtime: 5.199074745178223 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.13296262766493516
+RL_Iteration_Steps: 20000
+Runtime: 5.213683605194092 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.12091530731928968
+RL_Iteration_Steps: 20000
+Runtime: 5.210995674133301 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.12988516689203866
+RL_Iteration_Steps: 20000
+Runtime: 5.2403411865234375 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.12213264332629592
+RL_Iteration_Steps: 20000
+Runtime: 5.230411529541016 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.13137590561644252
+RL_Iteration_Steps: 20000
+Runtime: 5.243514776229858 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.13990071987638242
+RL_Iteration_Steps: 20000
+Runtime: 5.2241833209991455 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07352460941032968
+RL_Iteration_Steps: 14363
+Runtime: 3.7464709281921387 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07353383537691993
+RL_Iteration_Steps: 12919
+Runtime: 3.3596041202545166 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.1290507705407955
+RL_Iteration_Steps: 20000
+Runtime: 5.15925931930542 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3149877015614413
+RL_Iteration_Steps: 20000
+Runtime: 5.172747611999512 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.2175543863525089
+RL_Iteration_Steps: 20000
+Runtime: 5.163306951522827 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.3027596427964636
+RL_Iteration_Steps: 20000
+Runtime: 5.172405958175659 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.19109103680181638
+RL_Iteration_Steps: 20000
+Runtime: 5.184933185577393 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3498140304226247
+RL_Iteration_Steps: 20000
+Runtime: 5.1923253536224365 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.3072774764059041
+RL_Iteration_Steps: 20000
+Runtime: 5.173791408538818 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.1669833616451819
+RL_Iteration_Steps: 20000
+Runtime: 5.165527105331421 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.15407960567292767
+RL_Iteration_Steps: 20000
+Runtime: 5.166248559951782 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.2898154246435647
+RL_Iteration_Steps: 20000
+Runtime: 5.168879508972168 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.2930383814657693
+RL_Iteration_Steps: 20000
+Runtime: 5.169651985168457 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.16746592034775976
+RL_Iteration_Steps: 20000
+Runtime: 5.158329725265503 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.1740171235126864
+RL_Iteration_Steps: 20000
+Runtime: 5.1663854122161865 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.20874841948007328
+RL_Iteration_Steps: 20000
+Runtime: 5.16726016998291 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.18421590344367766
+RL_Iteration_Steps: 20000
+Runtime: 5.166832208633423 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.17361043158705147
+RL_Iteration_Steps: 20000
+Runtime: 5.159749984741211 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.20852190276278781
+RL_Iteration_Steps: 20000
+Runtime: 5.177690029144287 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.31213895260915425
+RL_Iteration_Steps: 20000
+Runtime: 5.159351110458374 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.20339908593124045
+RL_Iteration_Steps: 20000
+Runtime: 5.2098493576049805 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.3310057500753656
+RL_Iteration_Steps: 20000
+Runtime: 5.193860292434692 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.18853846876971403
+RL_Iteration_Steps: 20000
+Runtime: 5.174756050109863 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3146159370445969
+RL_Iteration_Steps: 20000
+Runtime: 5.180804491043091 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.27008406143599073
+RL_Iteration_Steps: 20000
+Runtime: 5.197454214096069 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.20847571400762854
+RL_Iteration_Steps: 20000
+Runtime: 5.218631744384766 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.1939418482851032
+RL_Iteration_Steps: 20000
+Runtime: 5.217164993286133 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.21554917715050959
+RL_Iteration_Steps: 20000
+Runtime: 5.210692405700684 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.2209590098834009
+RL_Iteration_Steps: 20000
+Runtime: 5.232044458389282 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.20478814675447143
+RL_Iteration_Steps: 20000
+Runtime: 5.20876145362854 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.18654543638173093
+RL_Iteration_Steps: 20000
+Runtime: 5.241106271743774 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.18478595269568743
+RL_Iteration_Steps: 20000
+Runtime: 5.225677013397217 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.16192738088205694
+RL_Iteration_Steps: 20000
+Runtime: 5.1953325271606445 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.2972205183259402
+RL_Iteration_Steps: 20000
+Runtime: 5.194663763046265 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.21000142951954714
+RL_Iteration_Steps: 20000
+Runtime: 5.198833465576172 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.343307295340618
+RL_Iteration_Steps: 20000
+Runtime: 5.203066825866699 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.3031110424433061
+RL_Iteration_Steps: 20000
+Runtime: 5.205914258956909 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.27715948783860966
+RL_Iteration_Steps: 20000
+Runtime: 5.19909405708313 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.17875400393393104
+RL_Iteration_Steps: 20000
+Runtime: 5.198776006698608 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3486427169737989
+RL_Iteration_Steps: 20000
+Runtime: 5.210870265960693 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.1697042287073356
+RL_Iteration_Steps: 20000
+Runtime: 5.197129249572754 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.16004555358796368
+RL_Iteration_Steps: 20000
+Runtime: 5.193860054016113 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.12059332784745935
+RL_Iteration_Steps: 20000
+Runtime: 5.224992752075195 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3012684788070623
+RL_Iteration_Steps: 20000
+Runtime: 5.242249250411987 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.2293818859241581
+RL_Iteration_Steps: 20000
+Runtime: 5.180255889892578 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.2300689994464813
+RL_Iteration_Steps: 20000
+Runtime: 5.1933910846710205 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.18285681378120078
+RL_Iteration_Steps: 20000
+Runtime: 5.187299966812134 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.29014202800998046
+RL_Iteration_Steps: 20000
+Runtime: 5.1755592823028564 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.1830136562228617
+RL_Iteration_Steps: 20000
+Runtime: 5.173583745956421 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.23902962556336638
+RL_Iteration_Steps: 20000
+Runtime: 5.170326232910156 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.12832894305519726
+RL_Iteration_Steps: 20000
+Runtime: 5.160377264022827 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.1674906661133604
+RL_Iteration_Steps: 20000
+Runtime: 5.167682409286499 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.1675862590695627
+RL_Iteration_Steps: 20000
+Runtime: 5.169594764709473 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.21200267220737423
+RL_Iteration_Steps: 20000
+Runtime: 5.1719889640808105 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.14891599158779645
+RL_Iteration_Steps: 20000
+Runtime: 5.171957731246948 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.253920276814382
+RL_Iteration_Steps: 20000
+Runtime: 5.19580602645874 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.24326530165726012
+RL_Iteration_Steps: 20000
+Runtime: 5.19607400894165 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.234229730421057
+RL_Iteration_Steps: 20000
+Runtime: 5.194762468338013 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.17408098122856952
+RL_Iteration_Steps: 20000
+Runtime: 5.1775946617126465 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.22814287868351935
+RL_Iteration_Steps: 20000
+Runtime: 5.1832849979400635 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.18398477893208875
+RL_Iteration_Steps: 20000
+Runtime: 5.176042795181274 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.18433728623115897
+RL_Iteration_Steps: 20000
+Runtime: 5.172778367996216 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.1829794479635236
+RL_Iteration_Steps: 20000
+Runtime: 5.182211637496948 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.23207189217299007
+RL_Iteration_Steps: 20000
+Runtime: 5.210294008255005 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.20011744296718748
+RL_Iteration_Steps: 20000
+Runtime: 5.1871724128723145 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.16320403739430578
+RL_Iteration_Steps: 20000
+Runtime: 5.187036752700806 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.20633075026910053
+RL_Iteration_Steps: 20000
+Runtime: 5.2031683921813965 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.35810349719100154
+RL_Iteration_Steps: 20000
+Runtime: 5.2041015625 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.25862205610250477
+RL_Iteration_Steps: 20000
+Runtime: 5.21309232711792 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3690253946367035
+RL_Iteration_Steps: 20000
+Runtime: 5.243202209472656 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.2653901713735931
+RL_Iteration_Steps: 20000
+Runtime: 5.241309881210327 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.37981413764052796
+RL_Iteration_Steps: 20000
+Runtime: 5.228135585784912 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.36700213847718466
+RL_Iteration_Steps: 20000
+Runtime: 5.220509052276611 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.3621472869523208
+RL_Iteration_Steps: 20000
+Runtime: 5.207279920578003 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.2553462314782222
+RL_Iteration_Steps: 20000
+Runtime: 5.202723503112793 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3558954990425427
+RL_Iteration_Steps: 20000
+Runtime: 5.2284393310546875 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.3559352336375494
+RL_Iteration_Steps: 20000
+Runtime: 5.217732906341553 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.26921170673601313
+RL_Iteration_Steps: 20000
+Runtime: 5.203603267669678 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.24868224600783284
+RL_Iteration_Steps: 20000
+Runtime: 5.212766170501709 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.34891231619004026
+RL_Iteration_Steps: 20000
+Runtime: 5.216867923736572 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.26431291778007404
+RL_Iteration_Steps: 20000
+Runtime: 5.203010320663452 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.34133101611505445
+RL_Iteration_Steps: 20000
+Runtime: 5.209213972091675 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.3089287821305313
+RL_Iteration_Steps: 20000
+Runtime: 5.2049407958984375 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3823072646457
+RL_Iteration_Steps: 20000
+Runtime: 5.206997632980347 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2501863284171444
+RL_Iteration_Steps: 20000
+Runtime: 5.178990125656128 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.3651499697245453
+RL_Iteration_Steps: 20000
+Runtime: 5.176872968673706 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.2633650767576028
+RL_Iteration_Steps: 20000
+Runtime: 5.158403635025024 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.3587873897378082
+RL_Iteration_Steps: 20000
+Runtime: 5.191072702407837 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.34421103727791946
+RL_Iteration_Steps: 20000
+Runtime: 5.172705411911011 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.2848274940291464
+RL_Iteration_Steps: 20000
+Runtime: 5.184274435043335 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.2596821739738191
+RL_Iteration_Steps: 20000
+Runtime: 5.186964750289917 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.34480257943225645
+RL_Iteration_Steps: 20000
+Runtime: 5.165276765823364 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2707507036671788
+RL_Iteration_Steps: 20000
+Runtime: 5.150012254714966 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.2983459178883563
+RL_Iteration_Steps: 20000
+Runtime: 5.181384325027466 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.25443460897852566
+RL_Iteration_Steps: 20000
+Runtime: 5.170161962509155 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3494525947427407
+RL_Iteration_Steps: 20000
+Runtime: 5.1657555103302 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.25022146915227905
+RL_Iteration_Steps: 20000
+Runtime: 5.169381856918335 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.369290159540165
+RL_Iteration_Steps: 20000
+Runtime: 5.169363498687744 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.30880054739054463
+RL_Iteration_Steps: 20000
+Runtime: 5.163942575454712 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3730881470916185
+RL_Iteration_Steps: 20000
+Runtime: 5.180139780044556 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.24660163923823042
+RL_Iteration_Steps: 20000
+Runtime: 5.172281503677368 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.3292804670662943
+RL_Iteration_Steps: 20000
+Runtime: 5.156263589859009 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.25431784823105286
+RL_Iteration_Steps: 20000
+Runtime: 5.195512533187866 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3710378192566033
+RL_Iteration_Steps: 20000
+Runtime: 5.196205139160156 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2677951726491652
+RL_Iteration_Steps: 20000
+Runtime: 5.167855262756348 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.26404441871295825
+RL_Iteration_Steps: 20000
+Runtime: 5.149464845657349 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.209206168203119
+RL_Iteration_Steps: 20000
+Runtime: 5.169370651245117 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.357603910893741
+RL_Iteration_Steps: 20000
+Runtime: 5.165209770202637 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2888184318778464
+RL_Iteration_Steps: 20000
+Runtime: 5.194092273712158 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.28707961561376694
+RL_Iteration_Steps: 20000
+Runtime: 5.194353342056274 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.2175331385745891
+RL_Iteration_Steps: 20000
+Runtime: 5.224522829055786 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.3488456765535717
+RL_Iteration_Steps: 20000
+Runtime: 5.215353965759277 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2604816743898444
+RL_Iteration_Steps: 20000
+Runtime: 5.2401206493377686 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.27529503944043254
+RL_Iteration_Steps: 20000
+Runtime: 5.211565971374512 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.21580228654495093
+RL_Iteration_Steps: 20000
+Runtime: 5.195235729217529 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3526802458091174
+RL_Iteration_Steps: 20000
+Runtime: 5.210176944732666 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.27331795373398027
+RL_Iteration_Steps: 20000
+Runtime: 5.200272083282471 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.3573261728803625
+RL_Iteration_Steps: 20000
+Runtime: 5.212262392044067 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.2078917885881819
+RL_Iteration_Steps: 20000
+Runtime: 5.230172395706177 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.31735544206987587
+RL_Iteration_Steps: 20000
+Runtime: 5.225800275802612 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.27969497140840804
+RL_Iteration_Steps: 20000
+Runtime: 5.208261489868164 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.2808696445932619
+RL_Iteration_Steps: 20000
+Runtime: 5.2143874168396 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.2478302103127472
+RL_Iteration_Steps: 20000
+Runtime: 5.217915296554565 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.28922697553819177
+RL_Iteration_Steps: 20000
+Runtime: 5.2083094120025635 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.2995202722918968
+RL_Iteration_Steps: 20000
+Runtime: 5.221664905548096 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.2984446432680503
+RL_Iteration_Steps: 20000
+Runtime: 5.20359468460083 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.23571926522386866
+RL_Iteration_Steps: 20000
+Runtime: 5.216693162918091 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.3061354244769636
+RL_Iteration_Steps: 20000
+Runtime: 5.231552839279175 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.2719326771695223
+RL_Iteration_Steps: 20000
+Runtime: 5.223645210266113 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.26566143901663697
+RL_Iteration_Steps: 20000
+Runtime: 5.2141430377960205 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07238572177351754
+RL_Iteration_Steps: 824
+Runtime: 0.21481871604919434 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.3354171916312856
+RL_Iteration_Steps: 20000
+Runtime: 5.176316022872925 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.16891131121801095
+RL_Iteration_Steps: 20000
+Runtime: 5.155551195144653 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.22365836287954544
+RL_Iteration_Steps: 20000
+Runtime: 5.180110454559326 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.0698158851885573
+RL_Iteration_Steps: 590
+Runtime: 0.1542959213256836 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.20683339047054394
+RL_Iteration_Steps: 20000
+Runtime: 5.185763120651245 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07067492654743734
+RL_Iteration_Steps: 1194
+Runtime: 0.3100285530090332 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.20299747835165727
+RL_Iteration_Steps: 20000
+Runtime: 5.192211627960205 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.06918214328825778
+RL_Iteration_Steps: 556
+Runtime: 0.14569902420043945 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.0700761862683068
+RL_Iteration_Steps: 492
+Runtime: 0.12858963012695312 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.07433714904758792
+RL_Iteration_Steps: 1139
+Runtime: 0.29674792289733887 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.06316440737150986
+RL_Iteration_Steps: 1079
+Runtime: 0.28069019317626953 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.06649643688644113
+RL_Iteration_Steps: 474
+Runtime: 0.12449336051940918 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.07092221349766037
+RL_Iteration_Steps: 1198
+Runtime: 0.31230783462524414 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.06635365116086733
+RL_Iteration_Steps: 1601
+Runtime: 0.4155125617980957 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.06283331147998483
+RL_Iteration_Steps: 1191
+Runtime: 0.3083217144012451 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07264888778501977
+RL_Iteration_Steps: 2384
+Runtime: 0.617443323135376 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.30033404614058457
+RL_Iteration_Steps: 20000
+Runtime: 5.198099136352539 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.07408837162435278
+RL_Iteration_Steps: 1196
+Runtime: 0.31351780891418457 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 4
+Value_Error: 0.3353325878207776
+RL_Iteration_Steps: 20000
+Runtime: 5.193363428115845 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.07325977229952851
+RL_Iteration_Steps: 1420
+Runtime: 0.37266993522644043 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.06772565441225353
+RL_Iteration_Steps: 594
+Runtime: 0.15560269355773926 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.20343418255539847
+RL_Iteration_Steps: 20000
+Runtime: 5.994745492935181 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.06326481049819632
+RL_Iteration_Steps: 579
+Runtime: 0.15195417404174805 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.06900051890474046
+RL_Iteration_Steps: 792
+Runtime: 0.2085576057434082 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07100381373840081
+RL_Iteration_Steps: 930
+Runtime: 0.24317312240600586 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.06281826269538904
+RL_Iteration_Steps: 1115
+Runtime: 0.29203248023986816 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07310504142684682
+RL_Iteration_Steps: 2316
+Runtime: 0.6048147678375244 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.06340898428529851
+RL_Iteration_Steps: 1274
+Runtime: 0.33408522605895996 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07372378835317983
+RL_Iteration_Steps: 1300
+Runtime: 0.34055662155151367 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.06939158888931107
+RL_Iteration_Steps: 943
+Runtime: 0.24636626243591309 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07174390785790274
+RL_Iteration_Steps: 1529
+Runtime: 0.39771556854248047 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.0706320302680048
+RL_Iteration_Steps: 2387
+Runtime: 0.6221802234649658 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.22302883022811937
+RL_Iteration_Steps: 20000
+Runtime: 5.175748109817505 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 4
+Value_Error: 0.30592029058492987
+RL_Iteration_Steps: 20000
+Runtime: 5.178377628326416 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07466235632362661
+RL_Iteration_Steps: 2256
+Runtime: 0.5844087600708008 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.060717251668803485
+RL_Iteration_Steps: 1130
+Runtime: 0.2957313060760498 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.2416235061066394
+RL_Iteration_Steps: 20000
+Runtime: 5.175487995147705 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.07167930765667618
+RL_Iteration_Steps: 1117
+Runtime: 0.2906486988067627 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.0742213740460489
+RL_Iteration_Steps: 1081
+Runtime: 0.28200459480285645 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.06916872565021537
+RL_Iteration_Steps: 827
+Runtime: 0.21661758422851562 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.07441686328876296
+RL_Iteration_Steps: 1481
+Runtime: 0.3867332935333252 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07389049152286598
+RL_Iteration_Steps: 2376
+Runtime: 0.6169047355651855 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07354774373300321
+RL_Iteration_Steps: 2353
+Runtime: 0.611231803894043 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.0603082523921703
+RL_Iteration_Steps: 1512
+Runtime: 0.39655184745788574 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.06809133153025826
+RL_Iteration_Steps: 502
+Runtime: 0.13202595710754395 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.06606892571973333
+RL_Iteration_Steps: 1622
+Runtime: 0.42285990715026855 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.0710611383131976
+RL_Iteration_Steps: 2185
+Runtime: 0.5670435428619385 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07141940770985666
+RL_Iteration_Steps: 909
+Runtime: 0.23666119575500488 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.0743601533130227
+RL_Iteration_Steps: 1420
+Runtime: 0.3717811107635498 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.07471268348627325
+RL_Iteration_Steps: 2351
+Runtime: 0.6170864105224609 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.24733684913895448
+RL_Iteration_Steps: 20000
+Runtime: 5.230725288391113 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07421896625472835
+RL_Iteration_Steps: 1260
+Runtime: 0.33370065689086914 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.06972023320039566
+RL_Iteration_Steps: 3886
+Runtime: 1.016709566116333 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.07174284221462868
+RL_Iteration_Steps: 19413
+Runtime: 5.060854911804199 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07309890733643742
+RL_Iteration_Steps: 1790
+Runtime: 0.4660305976867676 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.04177311554352192
+RL_Iteration_Steps: 401
+Runtime: 0.10588550567626953 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.0721205679237471
+RL_Iteration_Steps: 4153
+Runtime: 1.08552885055542 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.06551119088022128
+RL_Iteration_Steps: 1396
+Runtime: 0.36507725715637207 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07108054093010852
+RL_Iteration_Steps: 3297
+Runtime: 0.8619458675384521 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.06331448718759303
+RL_Iteration_Steps: 393
+Runtime: 0.1033942699432373 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.06792507083353172
+RL_Iteration_Steps: 8668
+Runtime: 2.255016803741455 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.06511467470275711
+RL_Iteration_Steps: 3033
+Runtime: 0.7883613109588623 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07311942475254884
+RL_Iteration_Steps: 1460
+Runtime: 0.376859188079834 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.06985203779305715
+RL_Iteration_Steps: 1072
+Runtime: 0.2773251533508301 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.2460897801580364
+RL_Iteration_Steps: 20000
+Runtime: 5.180001735687256 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.23243815523460087
+RL_Iteration_Steps: 20000
+Runtime: 5.180962562561035 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.2103275144611363
+RL_Iteration_Steps: 20000
+Runtime: 5.177812337875366 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07433484263773327
+RL_Iteration_Steps: 1453
+Runtime: 0.3771846294403076 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.2985558943105655
+RL_Iteration_Steps: 20000
+Runtime: 5.1949193477630615 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07387638413636122
+RL_Iteration_Steps: 15429
+Runtime: 3.9932868480682373 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.2985276618149304
+RL_Iteration_Steps: 20000
+Runtime: 5.20263409614563 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.07229151186587801
+RL_Iteration_Steps: 1416
+Runtime: 0.3684852123260498 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.08368965148830165
+RL_Iteration_Steps: 20000
+Runtime: 5.195190191268921 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.3069713213410581
+RL_Iteration_Steps: 20000
+Runtime: 5.203494310379028 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07437739715350977
+RL_Iteration_Steps: 2368
+Runtime: 0.6162798404693604 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 3
+Value_Error: 0.2180737907201915
+RL_Iteration_Steps: 20000
+Runtime: 5.18638277053833 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.08456333682322281
+RL_Iteration_Steps: 20000
+Runtime: 5.1744163036346436 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.07284877709061055
+RL_Iteration_Steps: 2547
+Runtime: 0.6611340045928955 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.08463544208726859
+RL_Iteration_Steps: 20000
+Runtime: 5.180941343307495 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.21529716480375605
+RL_Iteration_Steps: 20000
+Runtime: 5.167577743530273 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.21187597192853636
+RL_Iteration_Steps: 20000
+Runtime: 5.1531853675842285 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07382150831989343
+RL_Iteration_Steps: 15355
+Runtime: 3.9694674015045166 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.24511583804979598
+RL_Iteration_Steps: 20000
+Runtime: 5.171486139297485 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07173681173475366
+RL_Iteration_Steps: 1421
+Runtime: 0.37019848823547363 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.07105411719506716
+RL_Iteration_Steps: 1193
+Runtime: 0.3130640983581543 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.20872429319033392
+RL_Iteration_Steps: 20000
+Runtime: 5.231350660324097 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07003229850991
+RL_Iteration_Steps: 2014
+Runtime: 0.527097225189209 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.06836573235885224
+RL_Iteration_Steps: 2412
+Runtime: 0.6313328742980957 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07300609817738479
+RL_Iteration_Steps: 2545
+Runtime: 0.6662395000457764 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.11255802355942279
+RL_Iteration_Steps: 20000
+Runtime: 5.199980020523071 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.11319479191060111
+RL_Iteration_Steps: 20000
+Runtime: 5.200250625610352 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.10507240422203523
+RL_Iteration_Steps: 20000
+Runtime: 5.202592849731445 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07394033991838889
+RL_Iteration_Steps: 1152
+Runtime: 0.30165934562683105 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07303910905238098
+RL_Iteration_Steps: 3782
+Runtime: 0.9850430488586426 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.2182634882731671
+RL_Iteration_Steps: 20000
+Runtime: 5.191954851150513 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.21625475300879105
+RL_Iteration_Steps: 20000
+Runtime: 5.177133798599243 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.1070693677089567
+RL_Iteration_Steps: 20000
+Runtime: 5.16763162612915 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07434369109262695
+RL_Iteration_Steps: 2354
+Runtime: 0.6106293201446533 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.20768972930058194
+RL_Iteration_Steps: 20000
+Runtime: 5.186558485031128 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.06891548810905768
+RL_Iteration_Steps: 806
+Runtime: 0.21169090270996094 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.24918818816070187
+RL_Iteration_Steps: 20000
+Runtime: 5.201753616333008 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.06914806530352413
+RL_Iteration_Steps: 2827
+Runtime: 0.7355566024780273 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.11247247766777813
+RL_Iteration_Steps: 20000
+Runtime: 5.177695035934448 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07002774184410798
+RL_Iteration_Steps: 910
+Runtime: 0.23762083053588867 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.07146513699246926
+RL_Iteration_Steps: 2396
+Runtime: 0.623849630355835 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07360989250240824
+RL_Iteration_Steps: 15346
+Runtime: 3.985752820968628 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.07446650743566341
+RL_Iteration_Steps: 13142
+Runtime: 3.388136625289917 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.07288986893989824
+RL_Iteration_Steps: 1711
+Runtime: 0.4461674690246582 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07423458202826838
+RL_Iteration_Steps: 2548
+Runtime: 0.6624362468719482 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07268026961864482
+RL_Iteration_Steps: 15440
+Runtime: 3.9907455444335938 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.0745606025524137
+RL_Iteration_Steps: 6337
+Runtime: 1.6412415504455566 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.060218467112028495
+RL_Iteration_Steps: 1053
+Runtime: 0.27453017234802246 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07411751691227009
+RL_Iteration_Steps: 16069
+Runtime: 4.157602071762085 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07458578915587255
+RL_Iteration_Steps: 9092
+Runtime: 2.3559324741363525 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07073792690075065
+RL_Iteration_Steps: 7129
+Runtime: 1.8482019901275635 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 3
+Value_Error: 0.07453857720723356
+RL_Iteration_Steps: 554
+Runtime: 0.14526581764221191 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.09762885283636624
+RL_Iteration_Steps: 20000
+Runtime: 5.1764748096466064 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.08537183237720036
+RL_Iteration_Steps: 20000
+Runtime: 5.1855995655059814 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.0893215323480776
+RL_Iteration_Steps: 20000
+Runtime: 5.210101127624512 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.07548993884883881
+RL_Iteration_Steps: 20000
+Runtime: 5.23017430305481 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.0741049096188724
+RL_Iteration_Steps: 12376
+Runtime: 3.268690586090088 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07291635016299658
+RL_Iteration_Steps: 1479
+Runtime: 0.3899822235107422 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07099243913449005
+RL_Iteration_Steps: 12053
+Runtime: 3.1411566734313965 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07194528250849785
+RL_Iteration_Steps: 12258
+Runtime: 3.199528217315674 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07250866257811106
+RL_Iteration_Steps: 11076
+Runtime: 2.881500244140625 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.072828370015241
+RL_Iteration_Steps: 6026
+Runtime: 1.5682721138000488 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07320690028301025
+RL_Iteration_Steps: 2549
+Runtime: 0.6585850715637207 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07307942280402457
+RL_Iteration_Steps: 2681
+Runtime: 0.6954402923583984 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.2544972831995773
+RL_Iteration_Steps: 20000
+Runtime: 5.1955626010894775 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.30887091581149884
+RL_Iteration_Steps: 20000
+Runtime: 5.180713176727295 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.2264878868799789
+RL_Iteration_Steps: 20000
+Runtime: 5.180704593658447 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.11326947465938408
+RL_Iteration_Steps: 20000
+Runtime: 5.160649061203003 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.318813104401813
+RL_Iteration_Steps: 20000
+Runtime: 5.169640302658081 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.2763323565106144
+RL_Iteration_Steps: 20000
+Runtime: 5.1761252880096436 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.2933714042961513
+RL_Iteration_Steps: 20000
+Runtime: 5.169953107833862 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.0731823270674492
+RL_Iteration_Steps: 2699
+Runtime: 0.7003467082977295 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.1031636662927462
+RL_Iteration_Steps: 20000
+Runtime: 5.153168201446533 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.24424015642778274
+RL_Iteration_Steps: 20000
+Runtime: 5.162724494934082 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.11168428861062907
+RL_Iteration_Steps: 20000
+Runtime: 5.154518365859985 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.14380524556696495
+RL_Iteration_Steps: 20000
+Runtime: 5.172778367996216 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.2367014181882201
+RL_Iteration_Steps: 20000
+Runtime: 5.15824031829834 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07438257960798911
+RL_Iteration_Steps: 19364
+Runtime: 4.994085311889648 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.21912573534743673
+RL_Iteration_Steps: 20000
+Runtime: 5.160149574279785 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.12936708005378605
+RL_Iteration_Steps: 20000
+Runtime: 5.154914379119873 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.3502852457355692
+RL_Iteration_Steps: 20000
+Runtime: 5.1635589599609375 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.10901529443815505
+RL_Iteration_Steps: 20000
+Runtime: 5.1626763343811035 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.255288896661261
+RL_Iteration_Steps: 20000
+Runtime: 5.182835578918457 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.1385491664438696
+RL_Iteration_Steps: 20000
+Runtime: 5.171255588531494 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.24650533948209885
+RL_Iteration_Steps: 20000
+Runtime: 5.165259599685669 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.11992264547250242
+RL_Iteration_Steps: 20000
+Runtime: 5.151848316192627 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.10274244962978063
+RL_Iteration_Steps: 20000
+Runtime: 5.1561291217803955 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.10288578936326198
+RL_Iteration_Steps: 20000
+Runtime: 5.20140528678894 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07498700207088804
+RL_Iteration_Steps: 15564
+Runtime: 4.023712396621704 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.24713595865671234
+RL_Iteration_Steps: 20000
+Runtime: 5.196685075759888 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.22558396445312878
+RL_Iteration_Steps: 20000
+Runtime: 5.17676043510437 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.13823883304623807
+RL_Iteration_Steps: 20000
+Runtime: 5.1799681186676025 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.10092215555081818
+RL_Iteration_Steps: 20000
+Runtime: 5.218831300735474 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07425054170378909
+RL_Iteration_Steps: 15543
+Runtime: 4.043980360031128 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.21925280695727567
+RL_Iteration_Steps: 20000
+Runtime: 5.198235273361206 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.12880449743274136
+RL_Iteration_Steps: 20000
+Runtime: 5.206511735916138 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.07494220281819786
+RL_Iteration_Steps: 19913
+Runtime: 5.1779656410217285 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.25537304301335473
+RL_Iteration_Steps: 20000
+Runtime: 5.192843675613403 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.2184342734467939
+RL_Iteration_Steps: 20000
+Runtime: 5.181873798370361 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.1332471695973796
+RL_Iteration_Steps: 20000
+Runtime: 5.187038421630859 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.26959459244401973
+RL_Iteration_Steps: 20000
+Runtime: 5.188796758651733 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.24094458839181376
+RL_Iteration_Steps: 20000
+Runtime: 5.1770970821380615 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.15783014891757663
+RL_Iteration_Steps: 20000
+Runtime: 5.175527811050415 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.09410279010293143
+RL_Iteration_Steps: 20000
+Runtime: 5.192378044128418 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.10984947423416935
+RL_Iteration_Steps: 20000
+Runtime: 5.187836408615112 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.1379883476293
+RL_Iteration_Steps: 20000
+Runtime: 5.197179794311523 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.13254923107191363
+RL_Iteration_Steps: 20000
+Runtime: 5.403604030609131 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.23260406036897718
+RL_Iteration_Steps: 20000
+Runtime: 4.508092641830444 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07291827403382412
+RL_Iteration_Steps: 8493
+Runtime: 2.1695125102996826 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.14200958058752322
+RL_Iteration_Steps: 20000
+Runtime: 4.4697957038879395 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.1492398653979019
+RL_Iteration_Steps: 20000
+Runtime: 4.955285310745239 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07353183017292997
+RL_Iteration_Steps: 7861
+Runtime: 1.7244846820831299 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.14231411939756455
+RL_Iteration_Steps: 20000
+Runtime: 4.430361747741699 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07447483652874043
+RL_Iteration_Steps: 15334
+Runtime: 3.3893301486968994 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.2892885087538506
+RL_Iteration_Steps: 20000
+Runtime: 4.4073028564453125 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07490932034010322
+RL_Iteration_Steps: 15332
+Runtime: 3.3790297508239746 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.1637150949007773
+RL_Iteration_Steps: 20000
+Runtime: 4.410649299621582 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.1594731779179721
+RL_Iteration_Steps: 20000
+Runtime: 4.419964075088501 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.0994263473100041
+RL_Iteration_Steps: 20000
+Runtime: 4.830316781997681 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07429560399898305
+RL_Iteration_Steps: 16305
+Runtime: 4.216793537139893 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.11922742003751896
+RL_Iteration_Steps: 20000
+Runtime: 5.188915967941284 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.12944063813243512
+RL_Iteration_Steps: 20000
+Runtime: 5.193247079849243 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.1252512225108675
+RL_Iteration_Steps: 20000
+Runtime: 5.1787872314453125 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.11106572802481463
+RL_Iteration_Steps: 20000
+Runtime: 5.189755439758301 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.11881737580615281
+RL_Iteration_Steps: 20000
+Runtime: 5.192704677581787 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.0977171303249258
+RL_Iteration_Steps: 20000
+Runtime: 5.191279411315918 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.767
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07394339628942559
+RL_Iteration_Steps: 10998
+Runtime: 2.8479983806610107 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.0857798640321712
+RL_Iteration_Steps: 20000
+Runtime: 5.162042856216431 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.3069648595785135
+RL_Iteration_Steps: 20000
+Runtime: 5.171289682388306 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.3154843518513717
+RL_Iteration_Steps: 20000
+Runtime: 5.168123483657837 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.28025278560503075
+RL_Iteration_Steps: 20000
+Runtime: 5.163297653198242 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.15775829922427453
+RL_Iteration_Steps: 20000
+Runtime: 5.173532009124756 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 4
+Value_Error: 0.36296281619785153
+RL_Iteration_Steps: 20000
+Runtime: 5.219848394393921 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.3600732785532843
+RL_Iteration_Steps: 20000
+Runtime: 5.225405931472778 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.33298573008101773
+RL_Iteration_Steps: 20000
+Runtime: 5.231045246124268 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.13484853263730345
+RL_Iteration_Steps: 20000
+Runtime: 5.320116281509399 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.15925118936283145
+RL_Iteration_Steps: 20000
+Runtime: 5.27491307258606 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.28288725619531974
+RL_Iteration_Steps: 20000
+Runtime: 5.273313522338867 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.2029194372861367
+RL_Iteration_Steps: 20000
+Runtime: 5.19780421257019 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.17661419901964592
+RL_Iteration_Steps: 20000
+Runtime: 5.2211854457855225 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.18750882524864299
+RL_Iteration_Steps: 20000
+Runtime: 5.226682424545288 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.28306742896560344
+RL_Iteration_Steps: 20000
+Runtime: 5.208065986633301 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.25
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.16245586858698813
+RL_Iteration_Steps: 20000
+Runtime: 5.202799320220947 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.19651657251809773
+RL_Iteration_Steps: 20000
+Runtime: 5.1941139698028564 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.32351718988832356
+RL_Iteration_Steps: 20000
+Runtime: 5.199838161468506 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.17168792361019358
+RL_Iteration_Steps: 20000
+Runtime: 5.205420970916748 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 3
+Value_Error: 0.2808241150750752
+RL_Iteration_Steps: 20000
+Runtime: 5.19442892074585 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.1556306586015892
+RL_Iteration_Steps: 20000
+Runtime: 5.193384885787964 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.302910655961834
+RL_Iteration_Steps: 20000
+Runtime: 5.203831911087036 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.2817971349950783
+RL_Iteration_Steps: 20000
+Runtime: 5.168260097503662 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.17989582509041524
+RL_Iteration_Steps: 20000
+Runtime: 5.178018569946289 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.16591758941402768
+RL_Iteration_Steps: 20000
+Runtime: 5.16443395614624 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.19821153583526252
+RL_Iteration_Steps: 20000
+Runtime: 5.166996002197266 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 3
+Value_Error: 0.295815057005834
+RL_Iteration_Steps: 20000
+Runtime: 5.172144651412964 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.19569366610991468
+RL_Iteration_Steps: 20000
+Runtime: 5.171018123626709 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.10984483117397126
+RL_Iteration_Steps: 20000
+Runtime: 5.158639907836914 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.1725460636300662
+RL_Iteration_Steps: 20000
+Runtime: 5.1817662715911865 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.1548173340007879
+RL_Iteration_Steps: 20000
+Runtime: 5.22819447517395 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.1769244790314528
+RL_Iteration_Steps: 20000
+Runtime: 5.182608127593994 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.19368388973961492
+RL_Iteration_Steps: 20000
+Runtime: 5.171417474746704 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.1607542091122749
+RL_Iteration_Steps: 20000
+Runtime: 5.179347515106201 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 2
+Value_Error: 0.2435624878687861
+RL_Iteration_Steps: 20000
+Runtime: 5.169550180435181 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.232883786301461
+RL_Iteration_Steps: 20000
+Runtime: 5.176426887512207 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.15327490660135457
+RL_Iteration_Steps: 20000
+Runtime: 5.180482387542725 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 3
+Value_Error: 0.30431408914191804
+RL_Iteration_Steps: 20000
+Runtime: 5.170024871826172 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.2850445845225331
+RL_Iteration_Steps: 20000
+Runtime: 5.164175510406494 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.15588368081297377
+RL_Iteration_Steps: 20000
+Runtime: 5.159125328063965 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.14572341412059542
+RL_Iteration_Steps: 20000
+Runtime: 5.1587748527526855 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.17890137080981683
+RL_Iteration_Steps: 20000
+Runtime: 5.168582916259766 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.22294661242898295
+RL_Iteration_Steps: 20000
+Runtime: 5.173186302185059 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.22554432854771989
+RL_Iteration_Steps: 20000
+Runtime: 5.2036378383636475 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.15574478463384178
+RL_Iteration_Steps: 20000
+Runtime: 5.170396566390991 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.18490950647988003
+RL_Iteration_Steps: 20000
+Runtime: 5.203228235244751 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.1740215977082653
+RL_Iteration_Steps: 20000
+Runtime: 5.211911678314209 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.22453122610937237
+RL_Iteration_Steps: 20000
+Runtime: 5.22098970413208 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.1652772052161482
+RL_Iteration_Steps: 20000
+Runtime: 5.204242944717407 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.1922750902756296
+RL_Iteration_Steps: 20000
+Runtime: 5.225773334503174 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.18837214024350413
+RL_Iteration_Steps: 20000
+Runtime: 5.233499765396118 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 5
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.1996312824310924
+RL_Iteration_Steps: 20000
+Runtime: 5.223154544830322 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.09622163113253634
+RL_Iteration_Steps: 20000
+Runtime: 5.226623773574829 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.23013890860909036
+RL_Iteration_Steps: 20000
+Runtime: 5.250084638595581 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.22205397255535875
+RL_Iteration_Steps: 20000
+Runtime: 5.250730514526367 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 10
+exp: 0.9
+Policy_Error: 1
+Value_Error: 0.22861710510589184
+RL_Iteration_Steps: 20000
+Runtime: 5.238654136657715 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.16329930239708323
+RL_Iteration_Steps: 20000
+Runtime: 5.273603677749634 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 1
+Value_Error: 0.21501751748247644
+RL_Iteration_Steps: 20000
+Runtime: 5.236270427703857 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.21427044505847537
+RL_Iteration_Steps: 20000
+Runtime: 5.246865749359131 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.19278428784250679
+RL_Iteration_Steps: 20000
+Runtime: 5.221463918685913 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.3
+Policy_Error: 1
+Value_Error: 0.16881326036012156
+RL_Iteration_Steps: 20000
+Runtime: 5.23712420463562 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 2
+Value_Error: 0.2040782018129632
+RL_Iteration_Steps: 20000
+Runtime: 5.2368483543396 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.15190329165066352
+RL_Iteration_Steps: 20000
+Runtime: 5.240786790847778 seconds
+
+Hyperparameters:
+Delta: 0.1
+lr: 1.0
+lr_exponent: 0.9
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.15815936564616528
+RL_Iteration_Steps: 20000
+Runtime: 5.200990200042725 seconds
+

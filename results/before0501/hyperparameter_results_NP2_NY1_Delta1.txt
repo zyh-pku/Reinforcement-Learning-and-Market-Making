@@ -1,0 +1,12 @@
+Hyperparameters:
+Delta: 0.05994842503189409
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 5
+exp: 0.3
+Policy_Error: 2
+Value_Error: 0.21586289717085716
+RL_Iteration_Steps: 20000
+Runtime: 11.970526218414307 seconds
+

@@ -23,6 +23,9 @@ UCB = False
 # parse arguments delta
 parser = argparse.ArgumentParser()
 parser.add_argument('--delta_idx', type=int, default=0)
+parser.add_argument('--iter', type=int, default=20000)
+parser.add_argument('--v_error', type=float, default=0.075)
+
 args = parser.parse_args()
 Delta_values = [np.logspace(-1, -3, num=10)[args.delta_idx]]
 
@@ -54,7 +57,7 @@ exp_values = [0.3, 0.5, 0.7, 0.9]
 parameter_names = ['Delta', 'lr', 'lr_exponent', 'exp0', 'exp_epoch', 'exp' ]
 
 # stop the RL iteration when the value function error is less than this threshold:
-V_error_threshold_for_RL_iteration_stop = 0.075 
+V_error_threshold_for_RL_iteration_stop = args.v_error
 
 
 # Create a list of all possible hyperparameter combinations
@@ -64,8 +67,8 @@ hyperparameter_combinations = itertools.product(*vars)
 # Initialize a dictionary to store results
 results = {}
 
-dim_price_grid = 2 # N_P: price grid dimension - 1 (because we start from 0)
-bound_inventory = 1 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
+dim_price_grid = 5 # N_P: price grid dimension - 1 (because we start from 0)
+bound_inventory = 3 # N_Y: (inventory grid dimension - 1)/2 (because we allow both - and + and 0)
 
 dim_midprice_grid = 2*dim_price_grid-1
 dim_inventory_grid = 2*bound_inventory+1
@@ -78,7 +81,7 @@ def evaluate_agent(**kwargs):
     env.reset()
     agent = QLearningAgent(env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price,
                            V_RL_iter_threshold = V_error_threshold_for_RL_iteration_stop, 
-                           V_RL_iter_initial = 2.5, N_RL_iter=2*10**4, N_learning_steps=2*10**4,
+                           V_RL_iter_initial = 2.5, N_RL_iter=args.iter, N_learning_steps=args.iter,
                             UCB=UCB, **kwargs)
     start_time = time.time()
     np.random.seed(999)
