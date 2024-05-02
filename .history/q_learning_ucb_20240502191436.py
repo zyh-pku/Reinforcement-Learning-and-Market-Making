@@ -142,7 +142,11 @@ class QLearningAgent:
 
         for i in range(self.N_RL_iter):
             ###### compute the steps such that value function error is less than the threshold:
-            V_RL, _ , _ = self._translate_Q_table_to_value_and_policy()
+            V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid ) )
+
+            for idx_midprice in range(self.dim_midprice_grid):
+                for idx_inventory in range(self.dim_inventory_grid):
+                    V_RL[idx_midprice,idx_inventory]=np.max(self.Q_table[idx_midprice,idx_inventory,:,:])
             # compute the value function error at the current step:
             self.V_error = np.max( abs( V_RL - self.V_star ) )
             self.V_error_track[i] = self.V_error

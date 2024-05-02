@@ -142,7 +142,11 @@ class QLearningAgent:
 
         for i in range(self.N_RL_iter):
             ###### compute the steps such that value function error is less than the threshold:
-            V_RL, _ , _ = self._translate_Q_table_to_value_and_policy()
+            V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid ) )
+
+            for idx_midprice in range(self.dim_midprice_grid):
+                for idx_inventory in range(self.dim_inventory_grid):
+                    V_RL[idx_midprice,idx_inventory]=np.max(self.Q_table[idx_midprice,idx_inventory,:,:])
             # compute the value function error at the current step:
             self.V_error = np.max( abs( V_RL - self.V_star ) )
             self.V_error_track[i] = self.V_error
@@ -523,7 +527,60 @@ class QLearningAgent:
         '''
         # print('---------- the visiting number for each state: ----------')
         # print(self.state_counter_matrix)
-        _ , self.action_ask_price_RL, self.action_buy_price_RL = self._translate_Q_table_to_value_and_policy()
+        V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
+        # print('---------- the Q function for each state: ----------')
+        for idx_midprice in range(self.dim_midprice_grid):
+            for idx_inventory in range(self.dim_inventory_grid):
+                midprice_integer = int(idx_midprice + 1)
+                inventory = int(idx_inventory - self.env.bound_inventory)
+                if inventory == -self.env.bound_inventory: # then sell order is not allowed
+                    action_ask_price_list = [self.dim_action_ask_price-1] # do nothing for ask order
+                    action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                    # print( f'(midprice_integer,inventory)={midprice_integer},{inventory}' )
+                    # print(action_ask_price_list)
+                    # print(action_buy_price_list)
+                    # #print( state_action_counter_matrix[ idx_midprice, idx_inventory, action_ask_price_list, action_buy_price_list] )
+                    # print( self.state_action_counter_matrix[ idx_midprice, idx_inventory, :, :] )
+                    # print( self.Q_table[ idx_midprice, idx_inventory, :, :] )
+
+                    Q_values_at_state = self.Q_table[idx_midprice, idx_inventory, :, :][np.ix_( action_ask_price_list, action_buy_price_list )]
+                    idx_optimal_ask, idx_optimal_buy = np.where(Q_values_at_state == Q_values_at_state.max())
+                    idx_ask_price = self.dim_action_ask_price-1
+                    idx_buy_price = action_buy_price_list[ idx_optimal_buy[0] ]
+
+                elif inventory == self.env.bound_inventory: # then buy order is not allowed
+                    action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2]
+                    action_buy_price_list = [self.dim_action_buy_price-1] # do nothing for buy order
+                    # print( f'(midprice_integer,inventory)={midprice_integer},{inventory}' )
+                    # print(action_ask_price_list)
+                    # print(action_buy_price_list)
+                    # #print( state_action_counter_matrix[ idx_midprice, idx_inventory, action_ask_price_list, action_buy_price_list] )
+                    # print( self.state_action_counter_matrix[ idx_midprice, idx_inventory, :, :] )
+                    # print( self.Q_table[ idx_midprice, idx_inventory, :, :] )
+
+                    Q_values_at_state = self.Q_table[idx_midprice, idx_inventory, :, :][np.ix_( action_ask_price_list, action_buy_price_list )]
+                    idx_optimal_ask, idx_optimal_buy = np.where(Q_values_at_state == Q_values_at_state.max())
+                    idx_ask_price = action_ask_price_list[ idx_optimal_ask[0] ]
+                    idx_buy_price = self.dim_action_buy_price-1
+
+                else: # then both sell and buy orders are allowed
+                    action_ask_price_list = self.env.price_list[self.env.price_list>midprice_integer/2] # the action is exactly equal to the index
+                    action_buy_price_list = self.env.price_list[self.env.price_list<midprice_integer/2] # the action is exactly equal to the index
+                    # print( f'(midprice_integer,inventory)={midprice_integer},{inventory}' )
+                    # print(action_ask_price_list)
+                    # print(action_buy_price_list)
+                    # #print( state_action_counter_matrix[ idx_midprice, idx_inventory, action_ask_price_list, action_buy_price_list] )
+                    # print( self.state_action_counter_matrix[ idx_midprice, idx_inventory, :, :] )
+                    # print( self.Q_table[ idx_midprice, idx_inventory, :, :] )
+
+                    Q_values_at_state = self.Q_table[idx_midprice, idx_inventory, :, :][np.ix_( action_ask_price_list, action_buy_price_list )]
+                    idx_optimal_ask, idx_optimal_buy = np.where(Q_values_at_state == Q_values_at_state.max())
+                    idx_ask_price = action_ask_price_list[ idx_optimal_ask[0] ]
+                    idx_buy_price = action_buy_price_list[ idx_optimal_buy[0] ]
+
+                V_RL[idx_midprice, idx_inventory] = Q_values_at_state.max()
+                self.action_ask_price_RL[idx_midprice, idx_inventory] = idx_ask_price
+                self.action_buy_price_RL[idx_midprice, idx_inventory] = idx_buy_price
         # print('---------- the learned value function and policy: ----------')
         # print(V_RL)
         # print(action_ask_price_RL)

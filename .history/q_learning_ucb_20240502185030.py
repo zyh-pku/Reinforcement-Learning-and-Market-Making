@@ -142,7 +142,11 @@ class QLearningAgent:
 
         for i in range(self.N_RL_iter):
             ###### compute the steps such that value function error is less than the threshold:
-            V_RL, _ , _ = self._translate_Q_table_to_value_and_policy()
+            V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid ) )
+
+            for idx_midprice in range(self.dim_midprice_grid):
+                for idx_inventory in range(self.dim_inventory_grid):
+                    V_RL[idx_midprice,idx_inventory]=np.max(self.Q_table[idx_midprice,idx_inventory,:,:])
             # compute the value function error at the current step:
             self.V_error = np.max( abs( V_RL - self.V_star ) )
             self.V_error_track[i] = self.V_error
@@ -277,28 +281,28 @@ class QLearningAgent:
 
         
     def plot_Q_table(self,idx_midprice=2, idx_inventory=2):
-        plt.figure(1, figsize=(15, 5))
+        plt.figure(1, figsize=(10, 5))
         M=self.N_RL_iter
         idx_buy_price = 3
         for idx_ask_price in range(self.dim_action_ask_price):
-            plt.plot(self.Q_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
+            plt.plot(self.Q_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price}')
         idx_ask_price = 3
         for idx_buy_price in range(self.dim_action_buy_price):
-            plt.plot(self.Q_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
+            plt.plot(self.Q_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'buy={idx_buy_price}')
         plt.legend()
         plt.xlabel('step')
         plt.ylabel('Q(s,a)')
         plt.show()
 
         if self.UCB:
-            plt.figure(2, figsize=(15, 5))
+            plt.figure(1, figsize=(10, 5))
             M=self.N_RL_iter
             idx_buy_price = 3
             for idx_ask_price in range(self.dim_action_ask_price):
-                plt.plot(self.Q_hat_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
+                plt.plot(self.Q_hat_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price}')
             idx_ask_price = 3
             for idx_buy_price in range(self.dim_action_buy_price):
-                plt.plot(self.Q_hat_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
+                plt.plot(self.Q_hat_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'buy={idx_buy_price}')
             plt.legend()
             plt.xlabel('step')
             plt.ylabel('Q(s,a)')
@@ -456,10 +460,24 @@ class QLearningAgent:
         print(self.buy_price_star)
                                     
         
-    def _translate_Q_table_to_value_and_policy(self, ):
+    def result_metrics(self, ):
+        '''
+        
+        Parameters
+        ----------
+         : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+         : integer
+            the number of wrong policies. It is equal to the sum of wrong ask price and wrong buy price.
+            (the smaller it is, the better the RL algo is).
+
+        '''
+        # print('---------- the visiting number for each state: ----------')
+        # print(self.state_counter_matrix)
         V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
-        action_ask_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
-        action_buy_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
         # print('---------- the Q function for each state: ----------')
         for idx_midprice in range(self.dim_midprice_grid):
             for idx_inventory in range(self.dim_inventory_grid):
@@ -511,19 +529,8 @@ class QLearningAgent:
                     idx_buy_price = action_buy_price_list[ idx_optimal_buy[0] ]
 
                 V_RL[idx_midprice, idx_inventory] = Q_values_at_state.max()
-                action_ask_price_RL[idx_midprice, idx_inventory] = idx_ask_price
-                action_buy_price_RL[idx_midprice, idx_inventory] = idx_buy_price
-        return V_RL, action_ask_price_RL, action_buy_price_RL
-            
-    def result_metrics(self, ):
-        '''
-        Returns: integer
-            the number of wrong policies. It is equal to the sum of wrong ask price and wrong buy price.
-            (the smaller it is, the better the RL algo is).
-        '''
-        # print('---------- the visiting number for each state: ----------')
-        # print(self.state_counter_matrix)
-        _ , self.action_ask_price_RL, self.action_buy_price_RL = self._translate_Q_table_to_value_and_policy()
+                self.action_ask_price_RL[idx_midprice, idx_inventory] = idx_ask_price
+                self.action_buy_price_RL[idx_midprice, idx_inventory] = idx_buy_price
         # print('---------- the learned value function and policy: ----------')
         # print(V_RL)
         # print(action_ask_price_RL)

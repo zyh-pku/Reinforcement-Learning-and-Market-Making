@@ -89,8 +89,7 @@ class QLearningAgent:
         self.Q_table_track = V_RL_iter_initial + np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price, N_RL_iter))
         self.state_counter_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid))
         self.state_action_counter_matrix = np.zeros((self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price))
-        self.action_ask_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
-        self.action_buy_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
+
         # Initialize an additional Q_hat-table for Q-learning with UCB exploration
         self.Q_hat_table = V_RL_iter_initial + np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price) ) + self.Q_upper_bound
         self.Q_hat_table_track = V_RL_iter_initial + np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid, self.dim_action_ask_price, self.dim_action_buy_price, N_RL_iter) ) + self.Q_upper_bound
@@ -142,11 +141,15 @@ class QLearningAgent:
 
         for i in range(self.N_RL_iter):
             ###### compute the steps such that value function error is less than the threshold:
-            V_RL, _ , _ = self._translate_Q_table_to_value_and_policy()
+            V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid ) )
+
+            for idx_midprice in range(self.dim_midprice_grid):
+                for idx_inventory in range(self.dim_inventory_grid):
+                    V_RL[idx_midprice,idx_inventory]=np.max(self.Q_table[idx_midprice,idx_inventory,:,:])
             # compute the value function error at the current step:
             self.V_error = np.max( abs( V_RL - self.V_star ) )
             self.V_error_track[i] = self.V_error
-            self.V_error_track_full[:,:,i] = V_RL - self.V_star
+            self.V_error_track_full[:,:,i] = self.V_error
             if self.V_error < self.V_RL_iter_threshold:
                 self.V_error_full = V_RL - self.V_star
                 self.V_RL_iter_steps = i
@@ -270,38 +273,39 @@ class QLearningAgent:
                 axs[idx_midprice, idx_inventory].set_ylabel("value function error")
                 
                 axs[idx_midprice, idx_inventory].set_ylim(global_min-0.05, global_max+0.05)
-                axs[idx_midprice, idx_inventory].plot(subplot_data)
+
+                # Adding a horizontal line at the minimum value of each subplot's data
+                min_value_subplot = np.min(subplot_data)
+                axs[idx_midprice, idx_inventory].axhline(y=min_value_subplot-0.01, color='gray', linestyle='--')
+
+                # Reversing the x-axis
+                axs[idx_midprice, idx_inventory].invert_xaxis()
 
         plt.tight_layout()
+        # plt.savefig('V_convergence_vs_Delta_slides.eps', format='eps')
         plt.show()
 
         
-    def plot_Q_table(self,idx_midprice=2, idx_inventory=2):
-        plt.figure(1, figsize=(15, 5))
+    def plot_result(self,):
+        plt.figure(1, figsize=(20, 8))
         M=self.N_RL_iter
-        idx_buy_price = 3
-        for idx_ask_price in range(self.dim_action_ask_price):
-            plt.plot(self.Q_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
-        idx_ask_price = 3
-        for idx_buy_price in range(self.dim_action_buy_price):
-            plt.plot(self.Q_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
-        plt.legend()
+        plt.plot(self.Q_table_track[0,2,1,3,:M], label='a=1')
+        plt.plot(self.Q_table_track[0,2,2,3,:M], label='a=2')
+        plt.plot(self.Q_table_track[0,2,0,3,:M])
+        plt.plot(self.Q_table_track[0,2,3,3,:M])
         plt.xlabel('step')
         plt.ylabel('Q(s,a)')
         plt.show()
 
         if self.UCB:
-            plt.figure(2, figsize=(15, 5))
+            plt.figure(2, figsize=(20, 8))
             M=self.N_RL_iter
-            idx_buy_price = 3
-            for idx_ask_price in range(self.dim_action_ask_price):
-                plt.plot(self.Q_hat_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
-            idx_ask_price = 3
-            for idx_buy_price in range(self.dim_action_buy_price):
-                plt.plot(self.Q_hat_table_track[idx_midprice, idx_inventory, idx_ask_price, idx_buy_price,:M], label=f'ask={idx_ask_price},buy={idx_buy_price}')
-            plt.legend()
+            plt.plot(self.Q_hat_table_track[0,2,1,3,:M], label='a=1')
+            plt.plot(self.Q_hat_table_track[0,2,2,3,:M], label='a=2')
+            plt.plot(self.Q_hat_table_track[0,2,0,3,:M])
+            plt.plot(self.Q_hat_table_track[0,2,3,3,:M])
             plt.xlabel('step')
-            plt.ylabel('Q(s,a)')
+            plt.ylabel('Q_hat(s,a)')
             plt.show()
 
     def plot_learning_parameters(self):
@@ -430,7 +434,7 @@ class QLearningAgent:
         self.Bellman_iter_steps_converge = i
             
     def print_true_values_and_plot_Bellman_iteration(self, ):                                    
-        fig, axs = plt.subplots(self.dim_midprice_grid, self.dim_inventory_grid, figsize=(9, 9))
+        fig, axs = plt.subplots(self.dim_midprice_grid, self.dim_inventory_grid, figsize=(15, 15))
 
         global_min = np.min(self.V_star_converge_track)
         global_max = np.max(self.V_star_converge_track)
@@ -456,10 +460,26 @@ class QLearningAgent:
         print(self.buy_price_star)
                                     
         
-    def _translate_Q_table_to_value_and_policy(self, ):
-        V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
+    def result_metrics(self, ):
+        '''
+        
+        Parameters
+        ----------
+         : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+         : integer
+            the number of wrong policies. It is equal to the sum of wrong ask price and wrong buy price.
+            (the smaller it is, the better the RL algo is).
+
+        '''
+        # print('---------- the visiting number for each state: ----------')
+        # print(self.state_counter_matrix)
         action_ask_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
         action_buy_price_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
+        V_RL = np.zeros( (self.dim_midprice_grid, self.dim_inventory_grid) )
         # print('---------- the Q function for each state: ----------')
         for idx_midprice in range(self.dim_midprice_grid):
             for idx_inventory in range(self.dim_inventory_grid):
@@ -513,17 +533,6 @@ class QLearningAgent:
                 V_RL[idx_midprice, idx_inventory] = Q_values_at_state.max()
                 action_ask_price_RL[idx_midprice, idx_inventory] = idx_ask_price
                 action_buy_price_RL[idx_midprice, idx_inventory] = idx_buy_price
-        return V_RL, action_ask_price_RL, action_buy_price_RL
-            
-    def result_metrics(self, ):
-        '''
-        Returns: integer
-            the number of wrong policies. It is equal to the sum of wrong ask price and wrong buy price.
-            (the smaller it is, the better the RL algo is).
-        '''
-        # print('---------- the visiting number for each state: ----------')
-        # print(self.state_counter_matrix)
-        _ , self.action_ask_price_RL, self.action_buy_price_RL = self._translate_Q_table_to_value_and_policy()
         # print('---------- the learned value function and policy: ----------')
         # print(V_RL)
         # print(action_ask_price_RL)
@@ -533,7 +542,7 @@ class QLearningAgent:
         #print(V_RL)
         #print(self.V_star)
         #self.V_error = np.max( abs( V_RL - self.V_star ) )
-        return (self.action_ask_price_RL!=self.ask_price_star).sum()+(self.action_buy_price_RL!=self.buy_price_star).sum()
+        return (action_ask_price_RL!=self.ask_price_star).sum()+(action_buy_price_RL!=self.buy_price_star).sum()
 
 
 
