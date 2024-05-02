@@ -1,0 +1,121 @@
+Hyperparameters:
+Delta: 0.1
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 10
+exp: 0.3
+Policy_Error: 0
+Value_Error: 0.07453253854025021
+RL_Iteration_Steps: 2842
+Runtime: 0.7761855125427246 seconds
+
+Hyperparameters:
+Delta: 0.05994842503189409
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07188587591263396
+RL_Iteration_Steps: 3412
+Runtime: 0.8637561798095703 seconds
+
+Hyperparameters:
+Delta: 0.03593813663804628
+lr: 0.1
+lr_exponent: 0.501
+exp0: 0.25
+exp_epoch: 50
+exp: 0.7
+Policy_Error: 0
+Value_Error: 0.07325787583981436
+RL_Iteration_Steps: 4095
+Runtime: 1.0592503547668457 seconds
+
+Hyperparameters:
+Delta: 0.021544346900318846
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07219168495045913
+RL_Iteration_Steps: 6726
+Runtime: 1.7165281772613525 seconds
+
+Hyperparameters:
+Delta: 0.01291549665014884
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07471577408745578
+RL_Iteration_Steps: 8098
+Runtime: 2.0984394550323486 seconds
+
+Hyperparameters:
+Delta: 0.007742636826811269
+lr: 0.5
+lr_exponent: 0.501
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.5
+Policy_Error: 0
+Value_Error: 0.07314009335111615
+RL_Iteration_Steps: 10859
+Runtime: 2.84759259223938 seconds
+
+Hyperparameters:
+Delta: 0.004641588833612782
+lr: 0.5
+lr_exponent: 0.634
+exp0: 0.7166666666666666
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07492276694032896
+RL_Iteration_Steps: 11935
+Runtime: 2.9847323894500732 seconds
+
+Hyperparameters:
+Delta: 0.0027825594022071257
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.4833333333333333
+exp_epoch: 25
+exp: 0.9
+Policy_Error: 0
+Value_Error: 0.07474603902283627
+RL_Iteration_Steps: 12001
+Runtime: 3.0980653762817383 seconds
+
+Hyperparameters:
+Delta: 0.0016681005372000592
+lr: 1.0
+lr_exponent: 0.634
+exp0: 0.95
+exp_epoch: 25
+exp: 0.7
+Policy_Error: 1
+Value_Error: 0.07401534941328825
+RL_Iteration_Steps: 14009
+Runtime: 3.576774835586548 seconds
+
+Hyperparameters:
+Delta: 0.001
+lr: 1.0
+lr_exponent: 0.501
+exp0: 0.95
+exp_epoch: 50
+exp: 0.9
+Policy_Error: 2
+Value_Error: 0.07264970894398637
+RL_Iteration_Steps: 17141
+Runtime: 4.301302909851074 seconds
+
+

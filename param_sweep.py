@@ -50,7 +50,8 @@ Delta_values = [np.logspace(-1, -3, num=10)[args.delta_idx]]
 lr_exponent_values = np.linspace(0.501, 0.9, num=4)
 lr_values = [0.1, 0.5, 1.0]
 exp0_values = np.linspace(0.25, 0.95, num=4)
-exp_epoch_values = [5, 10, 25, 50 ]
+# exp_epoch_values = [5, 10, 25, 50 ]
+exp_epoch_values = [100, 200, 500]
 exp_values = [0.3, 0.5, 0.7, 0.9]
 
 # Define parameter names
@@ -81,7 +82,7 @@ def evaluate_agent(**kwargs):
     env.reset()
     agent = QLearningAgent(env, dim_midprice_grid, dim_inventory_grid, dim_action_ask_price, dim_action_buy_price,
                            V_RL_iter_threshold = V_error_threshold_for_RL_iteration_stop, 
-                           V_RL_iter_initial = 2.5, N_RL_iter=args.iter, N_learning_steps=args.iter,
+                           V_RL_iter_initial = 2.6, N_RL_iter=args.iter, N_learning_steps=args.iter,
                             UCB=UCB, **kwargs)
     start_time = time.time()
     np.random.seed(999)
